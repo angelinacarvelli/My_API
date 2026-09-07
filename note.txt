@@ -1,0 +1,28 @@
+I
+Find a topic you like (volcanoes/earthquakes/animals/...), get a lot (more than 1k row data)
+
+DROP table if exist DROP TABLE IF EXISTS removes a table only if it already exists, 
+so it won’t error when the table is missing.
+
+PRAGMA foreign_keys = ON enables SQLite’s foreign key constraint enforcement at runtime, 
+so SQLite will reject inserts/updates that break declared foreign-key relationships.
+
+OW heroes, skin -> rarity, map, mode -> ranked, qp et stadium
+
+II
+Build an API backend using any framework you want to use.
+
+Features of your project:
+
+User authentification in order to administer the data
+User Token (OAuth)
+Get/Post/Update/Destroy on your topic -- Get must be accessible without being connected
+Get will provide pagination (max 20 elements per page)
+Cache (redis)
+(Optional) A Graphql interface
+Documentation, but you can use swagger on your API. Example
+A postman Documentation (and you will provide the link inside your readme)
+III
+Your project must be hosted in the cloud. (AWS/Google Cloud/Azure/IBM) Each of these providers have a free tier. You should be able to host it for 0$. :)
+
+You will provide the URL of your project inside the README
