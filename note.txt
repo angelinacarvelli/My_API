@@ -43,7 +43,7 @@ II : framework :
 - Framework Backend (Node.js / Express.js) : simplifie l'integration des middlewares (jsonwebtoken, swagger-ui-express, ioredis).
 - Cache (Redis) : Stocke en mémoire les pages de requêtes GET
 - Sécurité & Auth (OAuth 2.0 / JWT) :Les routes GET reste publique =/ POST, PUT, DELETE token valide.
-- Tests & Documentation (Jest, Swagger, Postman) : Jest fait teste et permet de voir que tt marche bien niveau modif
+- Tests & Documentation (Jest et Swagger) : Jest fait teste et permet de voir que tt marche bien niveau modif
 Swagger fait une page web qui liste toutes les routes de API pour pouvoir consulter et tester directement / navigateur.
 
 tester API demarre node src/index.js + http://localhost:3000/api/plats
