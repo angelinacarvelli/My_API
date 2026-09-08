@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-I
+Consigne :
 Find a topic you like (volcanoes/earthquakes/animals/...), get a lot (more than 1k row data)
-
-recette du monde avec ingredient, nom et pays
-
-II
 Build an API backend using any framework you want to use.
-
 Features of your project:
-
 User authentification in order to administer the data
 User Token (OAuth)
 Get/Post/Update/Destroy on your topic -- Get must be accessible without being connected
@@ -17,37 +10,41 @@ Cache (redis)
 (Optional) A Graphql interface
 Documentation, but you can use swagger on your API. Example
 A postman Documentation (and you will provide the link inside your readme)
-III
 Your project must be hosted in the cloud. (AWS/Google Cloud/Azure/IBM) Each of these providers have a free tier. You should be able to host it for 0$. :)
-
 You will provide the URL of your project inside the README
-=======
-I
-Find a topic you like (volcanoes/earthquakes/animals/...), get a lot (more than 1k row data)
 
-DROP table if exist DROP TABLE IF EXISTS removes a table only if it already exists, 
-so it won’t error when the table is missing.
+-------------------------------------------------------------------------------
+| Jour    | Objectif                              | Résultat attendu           |
+| ------- | ------------------------------------- | -------------------------- |
+| **J1**  | Vérifier `plats.json` + config projet | +1000 plats valides        | fait
+| **J2**  | `index.js` + première route GET       | API démarre                | fait
+| **J3**  | `GET /plats` + `GET /plats/:id`       | GET fonctionnel            |
+| **J4**  | Pagination                            | max 20/page                |
+| **J5**  | POST                                  | création d'un plat         |
+| **J6**  | PUT + DELETE                          | CRUD terminé               |
+| **J7**  | Register/Login                        | authentification           |
+| **J8**  | JWT + `auth.js`                       | routes protégées           |
+| **J9**  | Tests auth + CRUD                     | sécurité vérifiée          |
+| **J10** | Redis connexion                       | Redis fonctionne           |
+| **J11** | Redis cache GET                       | cache opérationnel         |
+| **J12** | Invalidation cache                    | POST/PUT/DELETE cohérents  |
+| **J13** | Swagger                               | documentation API          |
+| **J14** | Postman                               | collection + documentation |
+| **J15** | Tests complets + corrections          | API stable                 |
+| **J16** | Docker                                | application Dockerisée     |
+| **J17** | Cloud deployment                      | URL publique               |
+| **J18** | README + vérification finale          | projet livrable            |
+--------------------------------------------------------------------------------
+MCD MLD DATABASE EN BONUS
 
-PRAGMA foreign_keys = ON enables SQLite’s foreign key constraint enforcement at runtime, 
-so SQLite will reject inserts/updates that break declared foreign-key relationships.
+Choix + justification si besoin:
+I : recette du monde avec ingredient, nom et pays
+II : framework :
+- Framework Backend (Node.js / Express.js) : simplifie l'integration des middlewares (jsonwebtoken, swagger-ui-express, ioredis).
+- Cache (Redis) : Stocke en mémoire les pages de requêtes GET
+- Sécurité & Auth (OAuth 2.0 / JWT) :Les routes GET reste publique =/ POST, PUT, DELETE token valide.
+- Tests & Documentation (Jest, Swagger, Postman) : Jest fait teste et permet de voir que tt marche bien niveau modif
+Swagger fait une page web qui liste toutes les routes de API pour pouvoir consulter et tester directement / navigateur.
+Postman apli qui execute, test et automatiste req HTTP verifie que API fonctionne dans tt les cas
 
-OW heroes, skin -> rarity, map, mode -> ranked, qp et stadium
-
-II
-Build an API backend using any framework you want to use.
-
-Features of your project:
-
-User authentification in order to administer the data
-User Token (OAuth)
-Get/Post/Update/Destroy on your topic -- Get must be accessible without being connected
-Get will provide pagination (max 20 elements per page)
-Cache (redis)
-(Optional) A Graphql interface
-Documentation, but you can use swagger on your API. Example
-A postman Documentation (and you will provide the link inside your readme)
-III
-Your project must be hosted in the cloud. (AWS/Google Cloud/Azure/IBM) Each of these providers have a free tier. You should be able to host it for 0$. :)
-
-You will provide the URL of your project inside the README
->>>>>>> dc02f0b3c2bedddc43ca9a6a1ead45526a1580dc
+tester API demarre node src/index.js +
