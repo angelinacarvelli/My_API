@@ -45,6 +45,5 @@ II : framework :
 - Sécurité & Auth (OAuth 2.0 / JWT) :Les routes GET reste publique =/ POST, PUT, DELETE token valide.
 - Tests & Documentation (Jest, Swagger, Postman) : Jest fait teste et permet de voir que tt marche bien niveau modif
 Swagger fait une page web qui liste toutes les routes de API pour pouvoir consulter et tester directement / navigateur.
-Postman apli qui execute, test et automatiste req HTTP verifie que API fonctionne dans tt les cas
 
-tester API demarre node src/index.js +
+tester API demarre node src/index.js + http://localhost:3000/api/plats
