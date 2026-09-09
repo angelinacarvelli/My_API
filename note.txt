@@ -56,3 +56,6 @@ allez sur google ou moteur de recherche et mettre URL
 fini en avance donc commencer le J4 : pagination 20 élement par page + capacité a rajouter page car on peut rajouter élement
 https://jsonic.io/guides/json-api-pagination slug avec express js + création interface graphique page
 https://canva.link/aj8tuiptk55xyan
+
+teste : GET http://localhost:3000/api/plats?page=1
+création de generate_slug.js pour rajouter slug a mon json sans tt faire a la main
