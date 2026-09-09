@@ -18,7 +18,7 @@ You will provide the URL of your project inside the README
 | ------- | ------------------------------------- | -------------------------- |
 | **J1**  | Vérifier `plats.json` + config projet | +1000 plats valides        | fait
 | **J2**  | `index.js` + première route GET       | API démarre                | fait
-| **J3**  | `GET /plats` + `GET /plats/:id`       | GET fonctionnel            |
+| **J3**  | `GET /plats` + `GET /plats/:id`       | GET fonctionnel            | fait
 | **J4**  | Pagination                            | max 20/page                |
 | **J5**  | POST                                  | création d'un plat         |
 | **J6**  | PUT + DELETE                          | CRUD terminé               |
@@ -54,3 +54,4 @@ allez sur google ou moteur de recherche et mettre URL
                                     - http://localhost:3000/api/plats/n pour n id entre 1 et 1000
                                     - http://localhost:3000/api/plats/n pour n id au delas de 1000 et en dessous de 0
 fini en avance donc commencer le J4 : pagination 20 élement par page + capacité a rajouter page car on peut rajouter élement
+https://jsonic.io/guides/json-api-pagination slug avec express js + création interface graphique page
