@@ -1,5 +1,5 @@
 const express = require("express");
-const { getAllPlats } = require("../services/plats.service");
+const { getAllPlats, getPlatById } = require("../services/plats.service");
 
 const router = express.Router();
 
@@ -9,6 +9,20 @@ router.get("/", async (req, res) => {
         res.json(plats);
     } catch (error) {
         res.status(500).json({ message: error.message });
+    }
+});
+
+router.get("/:id", async (req, res) => {
+    try {
+        const plat = await getPlatById(req.params.id);
+
+        if (!plat) {
+            return res.status(404).json({ message: "Plat non trouvé" });
+        }
+
+        return res.status(200).json(plat);
+    } catch (error) {
+        return res.status(500).json({ message: error.message });
     }
 });
 

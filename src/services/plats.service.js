@@ -9,4 +9,10 @@
         return data.plats;
     }
 
-    module.exports = { getAllPlats };
+    function getPlatById(id) {
+        const plat = getAllPlats().find((item) => String(item.id) === String(id));
+
+        return plat || null;
+    }
+
+    module.exports = { getAllPlats, getPlatById };

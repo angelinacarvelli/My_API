@@ -46,4 +46,11 @@ II : framework :
 - Tests & Documentation (Jest et Swagger) : Jest fait teste et permet de voir que tt marche bien niveau modif
 Swagger fait une page web qui liste toutes les routes de API pour pouvoir consulter et tester directement / navigateur.
 
-tester API demarre node src/index.js + http://localhost:3000/api/plats
+J1 : trouver sujet + poser architecture.
+J2 : tester API demarre node src/index.js + http://localhost:3000/api/plats
+J3 : tester GET fonctionnel : node src/index.js
+allez sur google ou moteur de recherche et mettre URL
+                                    - http://localhost:3000/api/plats pour tout les plats
+                                    - http://localhost:3000/api/plats/n pour n id entre 1 et 1000
+                                    - http://localhost:3000/api/plats/n pour n id au delas de 1000 et en dessous de 0
+fini en avance donc commencer le J4 : pagination 20 élement par page + capacité a rajouter page car on peut rajouter élement
