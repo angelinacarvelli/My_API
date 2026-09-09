@@ -6,9 +6,9 @@ const router = express.Router();
 router.get("/", async (req, res) => {
     try {
         const plats = await getAllPlats();
-        res.json(plats);
+        return res.json(plats);
     } catch (error) {
-        res.status(500).json({ message: error.message });
+        return res.status(500).json({ message: error.message }); 
     }
 });
 
