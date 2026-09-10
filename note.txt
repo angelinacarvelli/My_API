@@ -19,7 +19,7 @@ You will provide the URL of your project inside the README
 | **J1**  | Vérifier `plats.json` + config projet | +1000 plats valides        | fait
 | **J2**  | `index.js` + première route GET       | API démarre                | fait
 | **J3**  | `GET /plats` + `GET /plats/:id`       | GET fonctionnel            | fait
-| **J4**  | Pagination                            | max 20/page                |
+| **J4**  | Pagination                            | max 20/page                | fait
 | **J5**  | POST                                  | création d'un plat         |
 | **J6**  | PUT + DELETE                          | CRUD terminé               |
 | **J7**  | Register/Login                        | authentification           |
@@ -49,7 +49,7 @@ Swagger fait une page web qui liste toutes les routes de API pour pouvoir consul
 J1 : trouver sujet + poser architecture.
 J2 : tester API demarre node src/index.js + http://localhost:3000/api/plats
 J3 : tester GET fonctionnel : node src/index.js
-allez sur google ou moteur de recherche et mettre URL
+allez sur google ou moteur de recherche et mettre URL :
                                     - http://localhost:3000/api/plats pour tout les plats
                                     - http://localhost:3000/api/plats/n pour n id entre 1 et 1000
                                     - http://localhost:3000/api/plats/n pour n id au delas de 1000 et en dessous de 0
@@ -59,3 +59,6 @@ https://canva.link/aj8tuiptk55xyan
 
 teste : GET http://localhost:3000/api/plats?page=1
 création de generate_slug.js pour rajouter slug a mon json sans tt faire a la main
+j4 :
+                    http://localhost:3000/api/plats?page=1
+                    http://localhost:3000/api/plats/slug/pizza-margherita
