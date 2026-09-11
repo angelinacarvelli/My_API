@@ -20,7 +20,7 @@ You will provide the URL of your project inside the README
 | **J2**  | `index.js` + première route GET       | API démarre                | fait
 | **J3**  | `GET /plats` + `GET /plats/:id`       | GET fonctionnel            | fait
 | **J4**  | Pagination                            | max 20/page                | fait
-| **J5**  | POST                                  | création d'un plat         |
+| **J5**  | POST                                  | création d'un plat         | fait
 | **J6**  | PUT + DELETE                          | CRUD terminé               |
 | **J7**  | Register/Login                        | authentification           |
 | **J8**  | JWT + `auth.js`                       | routes protégées           |
@@ -62,3 +62,5 @@ création de generate_slug.js pour rajouter slug a mon json sans tt faire a la m
 j4 :
                     http://localhost:3000/api/plats?page=1
                     http://localhost:3000/api/plats/slug/pizza-margherita
+j5 : ajout de plat possible mm dans le plat.json + visible avec "open in a integrated browser" donc post possible
+  !!!!  problème interface a régler mais bonus !!!!

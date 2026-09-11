@@ -175,7 +175,6 @@ body {
     text-align: center;
 }
 
-/* --- Pagination --- */
 .pagination-container {
     display: flex;
     justify-content: center;
@@ -211,4 +210,185 @@ body {
     font-size: 16px;
     font-weight: bold;
     color: #6d5852;
+}
+.bottom-actions {
+    display: flex;
+    justify-content: right;
+    padding-top: 20px;
+    margin-top: 0px;
+}
+
+.btn-add {
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.btn-add:hover {
+    transform: translateY(-2px);
+}
+
+.add-recipe-body {
+    background: repeating-linear-gradient(
+        to right,
+        #ebd7c0,
+        #ebd7c0 40px,
+        #d8c3ab 40px,
+        #d8c3ab 80px
+    );
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", "Chalkboard SE", sans-serif; /* Police style manuscrit */
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 60px;
+    color: #c0292b;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.top-right-logo {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.top-right-logo .logo-img {
+    width: 200px;
+    height: auto;
+}
+
+.main-add-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.left-section-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.image-circle-frame {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 12px solid #6d5852;
+    overflow: hidden;
+    background-color: #c4e4ff; /* Ciel bleu clair par défaut */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.image-circle-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge-input {
+    margin-top: 20px;
+    background-color: #6d5852;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 30px;
+    font-size: 24px;
+    font-family: inherit;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    outline: none;
+    text-transform: uppercase;
+}
+.badge-input::placeholder {
+    color: #e2dcd9;
+}
+
+.hidden-name-input {
+    position: absolute;
+    top: -40px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px dashed #6d5852;
+    border-radius: 8px;
+    padding: 8px;
+    font-family: inherit;
+    font-size: 18px;
+    text-align: center;
+    width: 250px;
+    outline: none;
+}
+.hidden-name-input:focus {
+    background: #fff;
+    border-style: solid;
+}
+
+.right-section-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.ingredients-box {
+    background-color: #6d5852;
+    width: 300px;
+    height: 420px;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.ingredients-title {
+    color: #ffffff;
+    font-size: 28px;
+    margin: 0 0 20px 0;
+    letter-spacing: 2px;
+}
+
+.ingredients-textarea {
+    background: transparent;
+    border: none;
+    width: 100%;
+    flex-grow: 1;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: inherit;
+    text-align: center;
+    resize: none;
+    outline: none;
+}
+.ingredients-textarea::placeholder {
+    color: #ffffff;
+    font-size: 24px;
+    opacity: 0.8;
+}
+
+.btn-submit-recipe {
+    background-color: #c0292b;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+.btn-submit-recipe:hover {
+    transform: scale(1.05);
 }

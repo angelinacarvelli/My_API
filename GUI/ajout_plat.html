@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajout Recette - Cuisine du Monde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="add-recipe-body">
+    <a href="catalogue_exemple.html" class="back-arrow">&#8592;</a>
+
+    <div class="top-right-logo">
+        <img src="./images/logo.png" alt="Les Recettes - Cuisine du Monde" class="logo-img">
+    </div>
+
+    <form id="form-ajout-plat" class="main-add-container">
+        
+        <section class="left-section-add">
+            
+            <input type="text" id="input-nom" class="hidden-name-input" placeholder="Nom de la recette..." required>
+
+            <div class="curved-text-container">
+                <svg viewBox="0 0 300 150">
+                    <path id="curve" d="M 20,140 A 130,130 0 0,1 280,140" fill="transparent" />
+                    <text class="curved-text">
+                        <textPath href="#curve" startOffset="50%" text-anchor="middle">AJOUT RECETTE</textPath>
+                    </text>
+                </svg>
+            </div>
+
+            <div class="image-circle-frame">
+                <img src="" alt="Image de la recette" id="image-preview">
+            </div>
+
+            <input type="text" id="input-pays" class="badge-input" placeholder="PAYS..." required>
+        </section>
+
+        <section class="right-section-add">
+            <div class="ingredients-box">
+                <h2 class="ingredients-title">INGRÉDIENTS</h2>
+                <textarea id="input-ingredients" class="ingredients-textarea" placeholder="... ?" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-submit-recipe">Enregistrer la recette</button>
+        </section>
+    </form>
+
+    <script>
+        document.getElementById('form-ajout-plat').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const nom = document.getElementById('input-nom').value;
+            const pays = document.getElementById('input-pays').value;
+            const ingredientsText = document.getElementById('input-ingredients').value;
+            
+            const ingredientsArray = ingredientsText.split('\n').filter(i => i.trim() !== '');
+
+            const nouveauPlat = {
+                nom: nom,
+                pays: pays,
+                ingredients: ingredientsArray,
+                image: "./images/recipe.png"
+            };
+
+            try {
+                const response = await fetch('http://localhost:3000/api/plats', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(nouveauPlat)
+                });
+
+                if (response.ok) {
+                    alert("Recette ajoutée avec succès !");
+                    window.location.href = "catalogue_exemple.html"
+                } else {
+                    const err = await response.json();
+                    alert("Erreur lors de l'ajout : " + err.message);
+                }
+            } catch (error) {
+                console.error("Erreur serveur :", error);
+                alert("Impossible de contacter le serveur.");
+            }
+        });
+    </script>
+</body>
+</html>
