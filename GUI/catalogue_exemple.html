@@ -1,14 +1,63 @@
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>catalogue</title>
+    <title>Catalogue des recettes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <div class="actions">
-        <a href="./page_exemple.html" class="btn">recette 1</a>
+    <a href="Home_page.html" class="back-button">&#10140;</a>
+    
+    <div class="actions" id="catalog-container">
     </div>
+
+    <div class="pagination-container">
+        <button id="btn-prev" onclick="changePage(-1)" class="pagination-btn">Précédent</button>
+        <span id="page-info" class="page-info">Page 1 / 1</span>
+        <button id="btn-next" onclick="changePage(1)" class="pagination-btn">Suivant</button>
+    </div>
+
+    <script>
+        let currentPage = 1;
+        let totalPages = 1;
+
+        async function loadCatalog(page = 1) {
+            try {
+                const response = await fetch(`http://localhost:3000/api/plats?page=${page}`);
+                const result = await response.json();
+                
+                currentPage = result.page;
+                totalPages = result.totalPages;
+
+                const container = document.getElementById('catalog-container');
+                container.innerHTML = '';
+
+                result.data.forEach(plat => {
+                    const btn = document.createElement('a');
+                    btn.href = `./page_exemple.html?slug=${plat.slug}`;
+                    btn.className = 'btnhome';
+                    btn.textContent = plat.nom || plat.title;
+                    container.appendChild(btn);
+                });
+
+                document.getElementById('page-info').textContent = `Page ${currentPage} / ${totalPages}`;
+                document.getElementById('btn-prev').disabled = (currentPage <= 1);
+                document.getElementById('btn-next').disabled = (currentPage >= totalPages);
+
+            } catch (error) {
+                console.error('Erreur lors du chargement du catalogue :', error);
+            }
+        }
+
+        function changePage(direction) {
+            const newPage = currentPage + direction;
+            if (newPage >= 1 && newPage <= totalPages) {
+                loadCatalog(newPage);
+            }
+        }
+
+        loadCatalog(1);
+    </script>
 </body>
 </html>
