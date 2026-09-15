@@ -4,56 +4,150 @@ const path = require("path");
 const filePath = path.join(__dirname, "../../plats.json");
 
 async function readDataFromFile() {
-    const content = await fs.readFile(filePath, "utf8");
-    return JSON.parse(content);
+    try {
+        const content = await fs.readFile(filePath, "utf8");
+        const parsed = JSON.parse(content);
+        if (Array.isArray(parsed)) {
+            return { plats: parsed };
+        }
+        return parsed || { plats: [] };
+    } catch (err) {
+        console.error("Erreur de lecture de plats.json :", err.message);
+        return { plats: [] };
+    }
+}
+
+async function writeDataToFile(data) {
+    await fs.writeFile(filePath, JSON.stringify(data, null, 2), "utf8");
+}
+
+function normalizeString(str) {
+    if (str === null || str === undefined) return "";
+    return String(str)
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .trim();
 }
 
 async function getAllPlats(page = 1) {
     const data = await readDataFromFile();
-
     const plats = data.plats || [];
-
     const limit = 20;
-
     const totalPlats = plats.length;
-    const totalPages = Math.ceil(totalPlats / limit);
-
+    const totalPages = Math.ceil(totalPlats / limit) || 1;
     const start = (page - 1) * limit;
     const end = start + limit;
-
-    const platsDeLaPage = plats.slice(start, end);
-
     return {
         page,
         limit,
         totalPlats,
         totalPages,
-        data: platsDeLaPage
+        data: plats.slice(start, end)
     };
 }
 
 async function getPlatById(id) {
     const data = await readDataFromFile();
-
-    const plat = (data.plats || []).find(
-        (item) => String(item.id) === String(id)
-    );
-
-    return plat || null;
+    return (data.plats || []).find((item) => String(item.id) === String(id)) || null;
 }
 
-async function getPlatBySlug(slug) {
+async function getPlatBySlug(searchQuery) {
     const data = await readDataFromFile();
+    const plats = data.plats || [];
+    const normalizedQuery = normalizeString(searchQuery);
 
-    const plat = (data.plats || []).find(
-        (item) => item.slug === slug
-    );
+    if (!normalizedQuery) return null;
 
-    return plat || null;
+    // Mots de liaison à ignorer lors du découpage
+    const stopWords = ["et", "and", "avec", "de", "du", "la", "le", "des", "au", "aux", "with"];
+    const queryKeywords = normalizedQuery
+        .split(/\s+/)
+        .filter(word => word.length > 1 && !stopWords.includes(word));
+
+    let found = plats.find((item) => {
+        const itemNom = normalizeString(item.nom || item.title || item.name);
+        const itemSlug = normalizeString(item.slug);
+
+        // 1. Match exact nom ou slug
+        if (itemNom === normalizedQuery || itemSlug === normalizedQuery) {
+            return true;
+        }
+
+        // 2. La chaîne complète est contenue dans le nom
+        if (itemNom.includes(normalizedQuery)) {
+            return true;
+        }
+
+        // 3. Recherche si TOUS les mots-clés significatifs sont présents dans le titre/slug
+        if (queryKeywords.length > 0) {
+            return queryKeywords.every(keyword => itemNom.includes(keyword) || itemSlug.includes(keyword));
+        }
+
+        return false;
+    });
+
+    // 4. Fallback : si aucun résultat complet, trouver si au moins UN mot-clé principal correspond
+    if (!found && queryKeywords.length > 0) {
+        found = plats.find((item) => {
+            const itemNom = normalizeString(item.nom || item.title || item.name);
+            const itemSlug = normalizeString(item.slug);
+            return queryKeywords.some(keyword => itemNom.includes(keyword) || itemSlug.includes(keyword));
+        });
+    }
+
+    return found || null;
+}
+
+async function createPlat(platData) {
+    const data = await readDataFromFile();
+    const plats = data.plats || [];
+    const maxId = plats.reduce((max, item) => Math.max(max, Number(item.id) || 0), 0);
+    const newId = maxId + 1;
+    const nomRef = platData.nom || platData.title || "";
+    const slug = platData.slug || nomRef.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, "");
+    const newPlat = { id: newId, ...platData, slug };
+    plats.push(newPlat);
+    data.plats = plats;
+    await writeDataToFile(data);
+    return newPlat;
+}
+
+async function updatePlat(id, platData) {
+    const data = await readDataFromFile();
+    const plats = data.plats || [];
+    const index = plats.findIndex((item) => String(item.id) === String(id));
+    if (index === -1) return null;
+
+    const nomRef = platData.nom || platData.title || "";
+    const slug = nomRef
+        ? nomRef.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, "")
+        : plats[index].slug;
+
+    const updatedPlat = { ...plats[index], ...platData, id: plats[index].id, slug };
+    plats[index] = updatedPlat;
+    data.plats = plats;
+    await writeDataToFile(data);
+    return updatedPlat;
+}
+
+async function deletePlat(id) {
+    const data = await readDataFromFile();
+    const plats = data.plats || [];
+    const index = plats.findIndex((item) => String(item.id) === String(id));
+    if (index === -1) return null;
+
+    const deletedPlat = plats.splice(index, 1)[0];
+    data.plats = plats;
+    await writeDataToFile(data);
+    return deletedPlat;
 }
 
 module.exports = {
     getAllPlats,
     getPlatById,
-    getPlatBySlug
+    getPlatBySlug,
+    createPlat,
+    updatePlat,
+    deletePlat
 };

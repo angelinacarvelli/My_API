@@ -11,8 +11,7 @@
         "champignons",
         "oignons",
         "carottes"
-      ],
-      "slug": "coq-au-vin"
+      ]
     },
     {
       "id": 2,
@@ -25,8 +24,7 @@
         "lardons",
         "oignons",
         "bouquet garni"
-      ],
-      "slug": "boeuf-bourguignon"
+      ]
     },
     {
       "id": 3,
@@ -39,8 +37,7 @@
         "champignons",
         "oeuf",
         "poireau"
-      ],
-      "slug": "blanquette-de-veau"
+      ]
     },
     {
       "id": 4,
@@ -53,8 +50,7 @@
         "navets",
         "pommes de terre",
         "os à moelle"
-      ],
-      "slug": "pot-au-feu"
+      ]
     },
     {
       "id": 5,
@@ -67,8 +63,7 @@
         "couenne",
         "ail",
         "tomate"
-      ],
-      "slug": "cassoulet"
+      ]
     },
     {
       "id": 6,
@@ -81,8 +76,7 @@
         "pommes de terre",
         "vin blanc",
         "baies de genièvre"
-      ],
-      "slug": "choucroute-garnie"
+      ]
     },
     {
       "id": 7,
@@ -95,8 +89,7 @@
         "tomate",
         "oignon",
         "huile d'olive"
-      ],
-      "slug": "ratatouille"
+      ]
     },
     {
       "id": 8,
@@ -109,8 +102,7 @@
         "tomate",
         "ail",
         "rouille"
-      ],
-      "slug": "bouillabaisse"
+      ]
     },
     {
       "id": 9,
@@ -122,8 +114,7 @@
         "oeufs",
         "crème fraîche",
         "muscade"
-      ],
-      "slug": "quiche-lorraine"
+      ]
     },
     {
       "id": 10,
@@ -135,8 +126,7 @@
         "gruyère",
         "béchamel",
         "beurre"
-      ],
-      "slug": "croque-monsieur"
+      ]
     },
     {
       "id": 11,
@@ -148,8 +138,7 @@
         "lait",
         "ail",
         "muscade"
-      ],
-      "slug": "gratin-dauphinois"
+      ]
     },
     {
       "id": 12,
@@ -161,8 +150,7 @@
         "lardons",
         "oignons",
         "vin blanc"
-      ],
-      "slug": "tartiflette"
+      ]
     },
     {
       "id": 13,
@@ -173,8 +161,7 @@
         "pommes de terre",
         "charcuterie",
         "cornichons"
-      ],
-      "slug": "raclette"
+      ]
     },
     {
       "id": 14,
@@ -187,8 +174,7 @@
         "vin blanc",
         "ail",
         "pain"
-      ],
-      "slug": "fondue-savoyarde"
+      ]
     },
     {
       "id": 15,
@@ -199,8 +185,7 @@
         "tomme fraîche",
         "ail",
         "crème"
-      ],
-      "slug": "aligot"
+      ]
     },
     {
       "id": 16,
@@ -212,8 +197,7 @@
         "pain",
         "gruyère",
         "beurre"
-      ],
-      "slug": "soupe-a-l-oignon-gratinee"
+      ]
     },
     {
       "id": 17,
@@ -226,8 +210,7 @@
         "olives noires",
         "haricots verts",
         "anchois"
-      ],
-      "slug": "salade-nicoise"
+      ]
     },
     {
       "id": 18,
@@ -239,8 +222,7 @@
         "beurre",
         "sel",
         "poivre"
-      ],
-      "slug": "steak-frites"
+      ]
     },
     {
       "id": 19,
@@ -252,8 +234,7 @@
         "ail",
         "thym",
         "gros sel"
-      ],
-      "slug": "confit-de-canard"
+      ]
     },
     {
       "id": 20,
@@ -264,8 +245,7 @@
         "cerises",
         "vinaigre balsamique",
         "miel"
-      ],
-      "slug": "magret-de-canard-aux-cerises"
+      ]
     },
     {
       "id": 21,
@@ -277,8 +257,7 @@
         "persil",
         "beurre",
         "farine"
-      ],
-      "slug": "cuisses-de-grenouilles-persillees"
+      ]
     },
     {
       "id": 22,
@@ -290,8 +269,7 @@
         "ail",
         "persil",
         "échalote"
-      ],
-      "slug": "escargots-de-bourgogne"
+      ]
     },
     {
       "id": 23,
@@ -302,8 +280,7 @@
         "pain d'épices",
         "figues",
         "fleur de sel"
-      ],
-      "slug": "foie-gras-poele"
+      ]
     },
     {
       "id": 24,
@@ -315,8 +292,7 @@
         "sel",
         "poivre",
         "thym"
-      ],
-      "slug": "rillettes-du-mans"
+      ]
     },
     {
       "id": 25,
@@ -328,8 +304,7 @@
         "pâte",
         "pistaches",
         "gelée"
-      ],
-      "slug": "pate-en-croute"
+      ]
     },
     {
       "id": 26,
@@ -341,8 +316,7 @@
         "oeuf",
         "cognac",
         "thym"
-      ],
-      "slug": "terrine-de-campagne"
+      ]
     },
     {
       "id": 27,
@@ -353,8 +327,7 @@
         "moutarde",
         "crème",
         "vin blanc"
-      ],
-      "slug": "andouillette-sauce-moutarde"
+      ]
     },
     {
       "id": 28,
@@ -365,8 +338,7 @@
         "pommes",
         "beurre",
         "oignon"
-      ],
-      "slug": "boudin-noir-aux-pommes"
+      ]
     },
     {
       "id": 29,
@@ -378,8 +350,7 @@
         "oignon",
         "gruyère",
         "lait"
-      ],
-      "slug": "hachis-parmentier"
+      ]
     },
     {
       "id": 30,
@@ -391,8 +362,7 @@
         "huile d'olive",
         "ail",
         "lait"
-      ],
-      "slug": "brandade-de-morue"
+      ]
     },
     {
       "id": 31,
@@ -404,8 +374,7 @@
         "échalotes",
         "persil",
         "beurre"
-      ],
-      "slug": "moules-marinieres"
+      ]
     },
     {
       "id": 32,
@@ -417,8 +386,7 @@
         "farine",
         "citron",
         "persil"
-      ],
-      "slug": "sole-meuniere"
+      ]
     },
     {
       "id": 33,
@@ -430,8 +398,7 @@
         "beurre",
         "citron",
         "farine"
-      ],
-      "slug": "truite-aux-amandes"
+      ]
     },
     {
       "id": 34,
@@ -443,8 +410,7 @@
         "champignons",
         "chapelure",
         "vin blanc"
-      ],
-      "slug": "coquilles-saint-jacques-gratinees"
+      ]
     },
     {
       "id": 35,
@@ -457,8 +423,7 @@
         "échalote",
         "beurre",
         "estragon"
-      ],
-      "slug": "homard-a-l-americaine"
+      ]
     },
     {
       "id": 36,
@@ -470,8 +435,7 @@
         "oeufs",
         "sauce Nantua",
         "beurre"
-      ],
-      "slug": "quenelles-de-brochet"
+      ]
     },
     {
       "id": 37,
@@ -482,8 +446,7 @@
         "jambon blanc",
         "béchamel",
         "gruyère"
-      ],
-      "slug": "endives-au-jambon"
+      ]
     },
     {
       "id": 38,
@@ -496,8 +459,7 @@
         "piment d'Espelette",
         "oignons",
         "jambon de Bayonne"
-      ],
-      "slug": "poulet-basquaise"
+      ]
     },
     {
       "id": 39,
@@ -509,8 +471,7 @@
         "oignons",
         "oeufs",
         "piment d'Espelette"
-      ],
-      "slug": "piperade"
+      ]
     },
     {
       "id": 40,
@@ -522,8 +483,7 @@
         "haricots tarbais",
         "pommes de terre",
         "carottes"
-      ],
-      "slug": "garbure"
+      ]
     },
     {
       "id": 41,
@@ -535,8 +495,7 @@
         "oignons",
         "piment d'Espelette",
         "ail"
-      ],
-      "slug": "axoa-de-veau"
+      ]
     },
     {
       "id": 42,
@@ -549,8 +508,7 @@
         "tomate",
         "piment",
         "vin blanc"
-      ],
-      "slug": "ttoro"
+      ]
     },
     {
       "id": 43,
@@ -562,8 +520,7 @@
         "huile d'olive",
         "légumes vapeur",
         "oeuf dur"
-      ],
-      "slug": "aioli-provencal"
+      ]
     },
     {
       "id": 44,
@@ -575,8 +532,7 @@
         "anchois",
         "olives noires",
         "huile d'olive"
-      ],
-      "slug": "pissaladiere"
+      ]
     },
     {
       "id": 45,
@@ -587,8 +543,7 @@
         "huile d'olive",
         "eau",
         "poivre"
-      ],
-      "slug": "socca"
+      ]
     },
     {
       "id": 46,
@@ -601,8 +556,7 @@
         "oeuf dur",
         "olives",
         "anchois"
-      ],
-      "slug": "pan-bagnat"
+      ]
     },
     {
       "id": 47,
@@ -614,8 +568,7 @@
         "anchois",
         "huile d'olive",
         "ail"
-      ],
-      "slug": "tapenade"
+      ]
     },
     {
       "id": 48,
@@ -628,8 +581,7 @@
         "zeste d'orange",
         "carottes",
         "thym"
-      ],
-      "slug": "daube-provencale"
+      ]
     },
     {
       "id": 49,
@@ -641,8 +593,7 @@
         "tomate",
         "vin blanc",
         "lard"
-      ],
-      "slug": "pieds-et-paquets"
+      ]
     },
     {
       "id": 50,
@@ -654,8 +605,7 @@
         "poireau",
         "fenouil",
         "vin blanc"
-      ],
-      "slug": "bourride"
+      ]
     },
     {
       "id": 51,
@@ -667,8 +617,7 @@
         "tomate",
         "piment",
         "ail"
-      ],
-      "slug": "tielle-setoise"
+      ]
     },
     {
       "id": 52,
@@ -681,8 +630,7 @@
         "poireaux",
         "bouillon",
         "farce"
-      ],
-      "slug": "poule-au-pot"
+      ]
     },
     {
       "id": 53,
@@ -694,8 +642,7 @@
         "carottes",
         "petits pois",
         "pommes de terre"
-      ],
-      "slug": "navarin-d-agneau"
+      ]
     },
     {
       "id": 54,
@@ -707,8 +654,7 @@
         "romarin",
         "huile d'olive",
         "pommes de terre"
-      ],
-      "slug": "gigot-d-agneau-a-l-ail"
+      ]
     },
     {
       "id": 55,
@@ -720,8 +666,7 @@
         "truffe",
         "madère",
         "pain de mie"
-      ],
-      "slug": "tournedos-rossini"
+      ]
     },
     {
       "id": 56,
@@ -734,8 +679,7 @@
         "échalote",
         "moutarde",
         "tabasco"
-      ],
-      "slug": "steak-tartare"
+      ]
     },
     {
       "id": 57,
@@ -747,8 +691,7 @@
         "crème",
         "vin blanc",
         "lardons"
-      ],
-      "slug": "lapin-a-la-moutarde"
+      ]
     },
     {
       "id": 58,
@@ -760,8 +703,7 @@
         "sang",
         "lardons",
         "oignons grelots"
-      ],
-      "slug": "civet-de-lievre"
+      ]
     },
     {
       "id": 59,
@@ -773,8 +715,7 @@
         "crème",
         "champignons",
         "vin blanc"
-      ],
-      "slug": "blanquette-de-la-mer"
+      ]
     },
     {
       "id": 60,
@@ -785,8 +726,7 @@
         "béchamel",
         "gruyère",
         "muscade"
-      ],
-      "slug": "gratin-de-chou-fleur"
+      ]
     },
     {
       "id": 61,
@@ -799,8 +739,7 @@
         "ail",
         "pâtes",
         "parmesan"
-      ],
-      "slug": "soupe-au-pistou"
+      ]
     },
     {
       "id": 62,
@@ -812,8 +751,7 @@
         "bouillon",
         "oignon",
         "muscade"
-      ],
-      "slug": "veloute-de-potiron"
+      ]
     },
     {
       "id": 63,
@@ -825,8 +763,7 @@
         "crème",
         "bouillon",
         "ciboulette"
-      ],
-      "slug": "vichyssoise"
+      ]
     },
     {
       "id": 64,
@@ -838,8 +775,7 @@
         "lardons",
         "champignons",
         "échalotes"
-      ],
-      "slug": "oeufs-en-meurette"
+      ]
     },
     {
       "id": 65,
@@ -850,8 +786,7 @@
         "comté",
         "oeufs",
         "beurre"
-      ],
-      "slug": "gougeres"
+      ]
     },
     {
       "id": 66,
@@ -863,8 +798,7 @@
         "oeuf poché",
         "croûtons",
         "vinaigrette"
-      ],
-      "slug": "salade-lyonnaise"
+      ]
     },
     {
       "id": 67,
@@ -875,8 +809,7 @@
         "chapelure",
         "moutarde",
         "sauce gribiche"
-      ],
-      "slug": "tablier-de-sapeur"
+      ]
     },
     {
       "id": 68,
@@ -887,8 +820,7 @@
         "cornichons",
         "pain",
         "beurre"
-      ],
-      "slug": "rosette-et-cornichons"
+      ]
     },
     {
       "id": 69,
@@ -899,8 +831,7 @@
         "jaunes d'oeufs",
         "sucre",
         "vanille"
-      ],
-      "slug": "creme-brulee"
+      ]
     },
     {
       "id": 70,
@@ -911,8 +842,7 @@
         "pâte feuilletée",
         "beurre",
         "sucre caramélisé"
-      ],
-      "slug": "tarte-tatin"
+      ]
     },
     {
       "id": 71,
@@ -924,8 +854,7 @@
         "lait",
         "farine",
         "sucre"
-      ],
-      "slug": "clafoutis-aux-cerises"
+      ]
     },
     {
       "id": 72,
@@ -938,8 +867,7 @@
         "farine",
         "sucre",
         "rhum"
-      ],
-      "slug": "far-breton"
+      ]
     },
     {
       "id": 73,
@@ -949,8 +877,7 @@
         "pâte levée",
         "beurre demi-sel",
         "sucre"
-      ],
-      "slug": "kouign-amann"
+      ]
     },
     {
       "id": 74,
@@ -962,8 +889,7 @@
         "sucre",
         "jus d'orange",
         "Grand Marnier"
-      ],
-      "slug": "crepes-suzette"
+      ]
     },
     {
       "id": 75,
@@ -974,8 +900,7 @@
         "oeuf",
         "jambon",
         "emmental"
-      ],
-      "slug": "galette-bretonne"
+      ]
     },
     {
       "id": 76,
@@ -986,8 +911,7 @@
         "crème pralinée",
         "amandes effilées",
         "sucre glace"
-      ],
-      "slug": "paris-brest"
+      ]
     },
     {
       "id": 77,
@@ -998,8 +922,7 @@
         "crème pâtissière",
         "chocolat",
         "fondant"
-      ],
-      "slug": "eclair-au-chocolat"
+      ]
     },
     {
       "id": 78,
@@ -1010,8 +933,7 @@
         "crème pâtissière",
         "sucre glace",
         "vanille"
-      ],
-      "slug": "millefeuille"
+      ]
     },
     {
       "id": 79,
@@ -1022,8 +944,7 @@
         "choux",
         "caramel",
         "crème chiboust"
-      ],
-      "slug": "saint-honore"
+      ]
     },
     {
       "id": 80,
@@ -1034,8 +955,7 @@
         "ganache chocolat",
         "crème au café",
         "glaçage"
-      ],
-      "slug": "opera"
+      ]
     },
     {
       "id": 81,
@@ -1046,8 +966,7 @@
         "oeufs",
         "sucre",
         "beurre"
-      ],
-      "slug": "mousse-au-chocolat"
+      ]
     },
     {
       "id": 82,
@@ -1058,8 +977,7 @@
         "crème anglaise",
         "caramel",
         "amandes"
-      ],
-      "slug": "ile-flottante"
+      ]
     },
     {
       "id": 83,
@@ -1070,8 +988,7 @@
         "glace vanille",
         "sauce chocolat",
         "chantilly"
-      ],
-      "slug": "profiteroles"
+      ]
     },
     {
       "id": 84,
@@ -1083,8 +1000,7 @@
         "beurre",
         "sucre",
         "zeste de citron"
-      ],
-      "slug": "madeleines"
+      ]
     },
     {
       "id": 85,
@@ -1097,8 +1013,7 @@
         "vanille",
         "sucre",
         "farine"
-      ],
-      "slug": "canneles-bordelais"
+      ]
     },
     {
       "id": 86,
@@ -1109,8 +1024,7 @@
         "blancs d'oeufs",
         "beurre noisette",
         "sucre glace"
-      ],
-      "slug": "financiers"
+      ]
     },
     {
       "id": 87,
@@ -1121,8 +1035,7 @@
         "blancs d'oeufs",
         "sucre glace",
         "ganache"
-      ],
-      "slug": "macarons"
+      ]
     },
     {
       "id": 88,
@@ -1133,8 +1046,7 @@
         "rhum",
         "sirop",
         "chantilly"
-      ],
-      "slug": "baba-au-rhum"
+      ]
     },
     {
       "id": 89,
@@ -1146,8 +1058,7 @@
         "oeufs",
         "sucre",
         "meringue"
-      ],
-      "slug": "tarte-au-citron-meringuee"
+      ]
     },
     {
       "id": 90,
@@ -1158,8 +1069,7 @@
         "crème mousseline",
         "fraises",
         "pâte d'amande"
-      ],
-      "slug": "fraisier"
+      ]
     },
     {
       "id": 91,
@@ -1170,8 +1080,7 @@
         "crème au beurre",
         "chocolat",
         "sucre"
-      ],
-      "slug": "buche-de-noel"
+      ]
     },
     {
       "id": 92,
@@ -1183,8 +1092,7 @@
         "farine",
         "lait",
         "levure"
-      ],
-      "slug": "croissant"
+      ]
     },
     {
       "id": 93,
@@ -1195,8 +1103,7 @@
         "chocolat noir",
         "beurre",
         "farine"
-      ],
-      "slug": "pain-au-chocolat"
+      ]
     },
     {
       "id": 94,
@@ -1209,8 +1116,7 @@
         "lait",
         "levure",
         "sucre"
-      ],
-      "slug": "brioche"
+      ]
     },
     {
       "id": 95,
@@ -1220,8 +1126,7 @@
         "pâte à choux",
         "sucre perlé",
         "oeufs"
-      ],
-      "slug": "chouquettes"
+      ]
     },
     {
       "id": 96,
@@ -1233,8 +1138,7 @@
         "pâte feuilletée",
         "vin blanc",
         "échalote"
-      ],
-      "slug": "pate-lorrain"
+      ]
     },
     {
       "id": 97,
@@ -1246,8 +1150,7 @@
         "lardons",
         "oignons",
         "fromage blanc"
-      ],
-      "slug": "flammekueche"
+      ]
     },
     {
       "id": 98,
@@ -1260,8 +1163,7 @@
         "pommes de terre",
         "vin blanc d'Alsace",
         "poireaux"
-      ],
-      "slug": "baeckeoffe"
+      ]
     },
     {
       "id": 99,
@@ -1273,8 +1175,7 @@
         "amandes",
         "levure",
         "beurre"
-      ],
-      "slug": "kougelhopf"
+      ]
     },
     {
       "id": 100,
@@ -1285,8 +1186,7 @@
         "levure",
         "bicarbonate",
         "gros sel"
-      ],
-      "slug": "bretzel"
+      ]
     },
     {
       "id": 101,
@@ -1297,8 +1197,7 @@
         "pommes de terre",
         "cumin",
         "oignons"
-      ],
-      "slug": "munster-aux-pommes-de-terre"
+      ]
     },
     {
       "id": 102,
@@ -1310,8 +1209,7 @@
         "crème",
         "pommes",
         "calvados"
-      ],
-      "slug": "poulet-vallee-d-auge"
+      ]
     },
     {
       "id": 103,
@@ -1322,8 +1220,7 @@
         "lait",
         "sucre",
         "cannelle"
-      ],
-      "slug": "teurgoule"
+      ]
     },
     {
       "id": 104,
@@ -1335,8 +1232,7 @@
         "calvados",
         "carottes",
         "oignons"
-      ],
-      "slug": "tripes-a-la-mode-de-caen"
+      ]
     },
     {
       "id": 105,
@@ -1348,8 +1244,7 @@
         "champignons",
         "crème",
         "gruyère"
-      ],
-      "slug": "ficelle-picarde"
+      ]
     },
     {
       "id": 106,
@@ -1361,8 +1256,7 @@
         "oignons",
         "pain d'épices",
         "cassonade"
-      ],
-      "slug": "carbonade-flamande"
+      ]
     },
     {
       "id": 107,
@@ -1374,8 +1268,7 @@
         "porc",
         "gelée",
         "vin blanc"
-      ],
-      "slug": "potjevleesch"
+      ]
     },
     {
       "id": 108,
@@ -1387,8 +1280,7 @@
         "pain",
         "moutarde",
         "jambon"
-      ],
-      "slug": "welsh"
+      ]
     },
     {
       "id": 109,
@@ -1400,8 +1292,7 @@
         "carottes",
         "crème",
         "bouillon"
-      ],
-      "slug": "waterzooi"
+      ]
     },
     {
       "id": 110,
@@ -1413,8 +1304,7 @@
         "oignon",
         "vin blanc",
         "pommes de terre"
-      ],
-      "slug": "moules-frites"
+      ]
     },
     {
       "id": 111,
@@ -1426,8 +1316,7 @@
         "poireaux",
         "lard",
         "beurre"
-      ],
-      "slug": "stoemp"
+      ]
     },
     {
       "id": 112,
@@ -1438,8 +1327,7 @@
         "sirop de Liège",
         "oignons",
         "vinaigre"
-      ],
-      "slug": "boulets-a-la-liegeoise"
+      ]
     },
     {
       "id": 113,
@@ -1451,8 +1339,7 @@
         "câpres",
         "oignon",
         "worcestershire"
-      ],
-      "slug": "filet-americain"
+      ]
     },
     {
       "id": 114,
@@ -1463,8 +1350,7 @@
         "sucre perlé",
         "beurre",
         "oeufs"
-      ],
-      "slug": "gaufre-de-liege"
+      ]
     },
     {
       "id": 115,
@@ -1476,8 +1362,7 @@
         "blancs d'oeufs",
         "sucre glace",
         "beurre"
-      ],
-      "slug": "gaufre-de-bruxelles"
+      ]
     },
     {
       "id": 116,
@@ -1489,8 +1374,7 @@
         "cannelle",
         "beurre",
         "épices"
-      ],
-      "slug": "speculoos"
+      ]
     },
     {
       "id": 117,
@@ -1502,8 +1386,7 @@
         "oseille",
         "cerfeuil",
         "vin blanc"
-      ],
-      "slug": "anguilles-au-vert"
+      ]
     },
     {
       "id": 118,
@@ -1514,8 +1397,7 @@
         "jambon",
         "béchamel",
         "fromage"
-      ],
-      "slug": "chicons-au-gratin"
+      ]
     },
     {
       "id": 119,
@@ -1527,8 +1409,7 @@
         "champignons",
         "boulettes",
         "sauce blanche"
-      ],
-      "slug": "vol-au-vent"
+      ]
     },
     {
       "id": 120,
@@ -1540,8 +1421,7 @@
         "oignons",
         "moutarde",
         "pain"
-      ],
-      "slug": "carbonnade-flamande"
+      ]
     },
     {
       "id": 121,
@@ -1552,8 +1432,7 @@
         "beurre",
         "sel",
         "oignon"
-      ],
-      "slug": "rosti"
+      ]
     },
     {
       "id": 122,
@@ -1565,8 +1444,7 @@
         "vin blanc",
         "kirsch",
         "pain"
-      ],
-      "slug": "fondue-moitie-moitie"
+      ]
     },
     {
       "id": 123,
@@ -1577,8 +1455,7 @@
         "pommes de terre",
         "saucisse aux choux",
         "vin blanc"
-      ],
-      "slug": "papet-vaudois"
+      ]
     },
     {
       "id": 124,
@@ -1590,8 +1467,7 @@
         "champignons",
         "vin blanc",
         "rösti"
-      ],
-      "slug": "zurcher-geschnetzeltes"
+      ]
     },
     {
       "id": 125,
@@ -1602,8 +1478,7 @@
         "gruyère",
         "cornichons",
         "vinaigrette"
-      ],
-      "slug": "cervelas"
+      ]
     },
     {
       "id": 126,
@@ -1615,8 +1490,7 @@
         "yaourt",
         "noisettes",
         "citron"
-      ],
-      "slug": "birchermuesli"
+      ]
     },
     {
       "id": 127,
@@ -1627,8 +1501,7 @@
         "pâte à frire",
         "pommes de terre",
         "vinaigre de malt"
-      ],
-      "slug": "fish-and-chips"
+      ]
     },
     {
       "id": 128,
@@ -1640,8 +1513,7 @@
         "carottes",
         "oignons",
         "sauce"
-      ],
-      "slug": "shepherd-s-pie"
+      ]
     },
     {
       "id": 129,
@@ -1652,8 +1524,7 @@
         "purée de pommes de terre",
         "petits pois",
         "bouillon"
-      ],
-      "slug": "cottage-pie"
+      ]
     },
     {
       "id": 130,
@@ -1666,8 +1537,7 @@
         "haricots blancs",
         "tomate",
         "toast"
-      ],
-      "slug": "full-english-breakfast"
+      ]
     },
     {
       "id": 131,
@@ -1678,8 +1548,7 @@
         "duxelles",
         "pâte feuilletée",
         "jambon de Parme"
-      ],
-      "slug": "beef-wellington"
+      ]
     },
     {
       "id": 132,
@@ -1691,8 +1560,7 @@
         "oeufs",
         "lait",
         "jus de viande"
-      ],
-      "slug": "roast-beef-yorkshire-pudding"
+      ]
     },
     {
       "id": 133,
@@ -1703,8 +1571,7 @@
         "purée",
         "oignons",
         "sauce brune"
-      ],
-      "slug": "bangers-and-mash"
+      ]
     },
     {
       "id": 134,
@@ -1715,8 +1582,7 @@
         "pâte à Yorkshire",
         "oignons",
         "sauce"
-      ],
-      "slug": "toad-in-the-hole"
+      ]
     },
     {
       "id": 135,
@@ -1728,8 +1594,7 @@
         "pâte",
         "bière",
         "oignons"
-      ],
-      "slug": "steak-and-kidney-pie"
+      ]
     },
     {
       "id": 136,
@@ -1741,8 +1606,7 @@
         "rutabaga",
         "oignon",
         "pâte"
-      ],
-      "slug": "cornish-pasty"
+      ]
     },
     {
       "id": 137,
@@ -1754,8 +1618,7 @@
         "pickles",
         "jambon",
         "pomme"
-      ],
-      "slug": "ploughman-s-lunch"
+      ]
     },
     {
       "id": 138,
@@ -1766,8 +1629,7 @@
         "chair à saucisse",
         "chapelure",
         "huile"
-      ],
-      "slug": "scotch-egg"
+      ]
     },
     {
       "id": 139,
@@ -1778,8 +1640,7 @@
         "chou",
         "beurre",
         "oignon"
-      ],
-      "slug": "bubble-and-squeak"
+      ]
     },
     {
       "id": 140,
@@ -1791,8 +1652,7 @@
         "rutabaga",
         "pommes de terre",
         "épices"
-      ],
-      "slug": "haggis-neeps-and-tatties"
+      ]
     },
     {
       "id": 141,
@@ -1803,8 +1663,7 @@
         "pommes de terre",
         "oignon",
         "lait"
-      ],
-      "slug": "cullen-skink"
+      ]
     },
     {
       "id": 142,
@@ -1816,8 +1675,7 @@
         "lait",
         "clotted cream",
         "confiture de fraises"
-      ],
-      "slug": "scones-a-la-creme"
+      ]
     },
     {
       "id": 143,
@@ -1829,8 +1687,7 @@
         "farine",
         "beurre",
         "crème"
-      ],
-      "slug": "sticky-toffee-pudding"
+      ]
     },
     {
       "id": 144,
@@ -1842,8 +1699,7 @@
         "fruits rouges",
         "chantilly",
         "sherry"
-      ],
-      "slug": "trifle"
+      ]
     },
     {
       "id": 145,
@@ -1854,8 +1710,7 @@
         "fraises",
         "chantilly",
         "sucre"
-      ],
-      "slug": "eton-mess"
+      ]
     },
     {
       "id": 146,
@@ -1867,8 +1722,7 @@
         "raisins secs",
         "lait",
         "oeufs"
-      ],
-      "slug": "bread-and-butter-pudding"
+      ]
     },
     {
       "id": 147,
@@ -1880,8 +1734,7 @@
         "épices",
         "brandy",
         "chapelure"
-      ],
-      "slug": "christmas-pudding"
+      ]
     },
     {
       "id": 148,
@@ -1892,8 +1745,7 @@
         "confiture de lait",
         "biscuits",
         "crème fouettée"
-      ],
-      "slug": "banoffee-pie"
+      ]
     },
     {
       "id": 149,
@@ -1905,8 +1757,7 @@
         "carottes",
         "oignons",
         "persil"
-      ],
-      "slug": "irish-stew"
+      ]
     },
     {
       "id": 150,
@@ -1918,8 +1769,7 @@
         "beurre",
         "lait",
         "oignon nouveau"
-      ],
-      "slug": "colcannon"
+      ]
     },
     {
       "id": 151,
@@ -1930,8 +1780,7 @@
         "farine",
         "lait",
         "beurre"
-      ],
-      "slug": "boxty"
+      ]
     },
     {
       "id": 152,
@@ -1942,8 +1791,7 @@
         "bicarbonate",
         "babeurre",
         "sel"
-      ],
-      "slug": "soda-bread"
+      ]
     },
     {
       "id": 153,
@@ -1955,8 +1803,7 @@
         "pommes de terre",
         "oignons",
         "bouillon"
-      ],
-      "slug": "coddle"
+      ]
     },
     {
       "id": 154,
@@ -1967,8 +1814,7 @@
         "ketchup",
         "curry",
         "paprika"
-      ],
-      "slug": "currywurst"
+      ]
     },
     {
       "id": 155,
@@ -1979,8 +1825,7 @@
         "moutarde",
         "pain",
         "choucroute"
-      ],
-      "slug": "bratwurst"
+      ]
     },
     {
       "id": 156,
@@ -1992,8 +1837,7 @@
         "oeuf",
         "citron",
         "beurre"
-      ],
-      "slug": "schnitzel"
+      ]
     },
     {
       "id": 157,
@@ -2005,8 +1849,7 @@
         "pain d'épices",
         "oignons",
         "raisins secs"
-      ],
-      "slug": "sauerbraten"
+      ]
     },
     {
       "id": 158,
@@ -2017,8 +1860,7 @@
         "choucroute",
         "pois cassés",
         "moutarde"
-      ],
-      "slug": "eisbein"
+      ]
     },
     {
       "id": 159,
@@ -2030,8 +1872,7 @@
         "oignon",
         "bouillon",
         "moutarde"
-      ],
-      "slug": "kartoffelsalat"
+      ]
     },
     {
       "id": 160,
@@ -2042,8 +1883,7 @@
         "câpres",
         "sauce blanche",
         "citron"
-      ],
-      "slug": "konigsberger-klopse"
+      ]
     },
     {
       "id": 161,
@@ -2055,8 +1895,7 @@
         "épinards",
         "oignon",
         "bouillon"
-      ],
-      "slug": "maultaschen"
+      ]
     },
     {
       "id": 162,
@@ -2067,8 +1906,7 @@
         "oeufs",
         "emmental",
         "oignons frits"
-      ],
-      "slug": "spatzle-au-fromage"
+      ]
     },
     {
       "id": 163,
@@ -2080,8 +1918,7 @@
         "cornichons",
         "moutarde",
         "oignons"
-      ],
-      "slug": "rouladen"
+      ]
     },
     {
       "id": 164,
@@ -2093,8 +1930,7 @@
         "pommes de terre",
         "oeuf",
         "hareng"
-      ],
-      "slug": "labskaus"
+      ]
     },
     {
       "id": 165,
@@ -2106,8 +1942,7 @@
         "bicarbonate",
         "gros sel",
         "beurre"
-      ],
-      "slug": "brezel"
+      ]
     },
     {
       "id": 166,
@@ -2118,8 +1953,7 @@
         "cerises",
         "kirsch",
         "chantilly"
-      ],
-      "slug": "schwarzwalder-kirschtorte"
+      ]
     },
     {
       "id": 167,
@@ -2131,8 +1965,7 @@
         "pâte d'amande",
         "beurre",
         "sucre glace"
-      ],
-      "slug": "stollen"
+      ]
     },
     {
       "id": 168,
@@ -2144,8 +1977,7 @@
         "raisins secs",
         "cannelle",
         "chapelure"
-      ],
-      "slug": "apfelstrudel"
+      ]
     },
     {
       "id": 169,
@@ -2157,8 +1989,7 @@
         "oeuf",
         "citron",
         "beurre"
-      ],
-      "slug": "wiener-schnitzel"
+      ]
     },
     {
       "id": 170,
@@ -2170,8 +2001,7 @@
         "pommes de terre",
         "bouillon",
         "ciboulette"
-      ],
-      "slug": "tafelspitz"
+      ]
     },
     {
       "id": 171,
@@ -2183,8 +2013,7 @@
         "génoise",
         "glaçage",
         "beurre"
-      ],
-      "slug": "sachertorte"
+      ]
     },
     {
       "id": 172,
@@ -2195,8 +2024,7 @@
         "raisins secs",
         "sucre glace",
         "compote de prunes"
-      ],
-      "slug": "kaiserschmarrn"
+      ]
     },
     {
       "id": 173,
@@ -2208,8 +2036,7 @@
         "oignons",
         "bouillon",
         "pommes de terre"
-      ],
-      "slug": "goulash-viennois"
+      ]
     },
     {
       "id": 174,
@@ -2220,8 +2047,7 @@
         "chou frisé",
         "saucisse fumée",
         "beurre"
-      ],
-      "slug": "stamppot"
+      ]
     },
     {
       "id": 175,
@@ -2232,8 +2058,7 @@
         "chapelure",
         "moutarde",
         "bouillon"
-      ],
-      "slug": "bitterballen"
+      ]
     },
     {
       "id": 176,
@@ -2245,8 +2070,7 @@
         "céleri",
         "poireau",
         "lard"
-      ],
-      "slug": "erwtensoep"
+      ]
     },
     {
       "id": 177,
@@ -2256,8 +2080,7 @@
         "hareng cru",
         "oignon",
         "cornichons"
-      ],
-      "slug": "haring"
+      ]
     },
     {
       "id": 178,
@@ -2268,8 +2091,7 @@
         "sirop de caramel",
         "beurre",
         "cannelle"
-      ],
-      "slug": "stroopwafel"
+      ]
     },
     {
       "id": 179,
@@ -2280,8 +2102,7 @@
         "levure",
         "beurre",
         "sucre glace"
-      ],
-      "slug": "poffertjes"
+      ]
     },
     {
       "id": 180,
@@ -2293,8 +2114,7 @@
         "mozzarella",
         "basilic",
         "huile d'olive"
-      ],
-      "slug": "pizza-margherita"
+      ]
     },
     {
       "id": 181,
@@ -2306,8 +2126,7 @@
         "gorgonzola",
         "parmesan",
         "fontina"
-      ],
-      "slug": "pizza-quattro-formaggi"
+      ]
     },
     {
       "id": 182,
@@ -2319,8 +2138,7 @@
         "ail",
         "origan",
         "huile d'olive"
-      ],
-      "slug": "pizza-marinara"
+      ]
     },
     {
       "id": 183,
@@ -2332,8 +2150,7 @@
         "oeufs",
         "pecorino",
         "poivre noir"
-      ],
-      "slug": "spaghetti-carbonara"
+      ]
     },
     {
       "id": 184,
@@ -2346,8 +2163,7 @@
         "carotte",
         "céleri",
         "vin rouge"
-      ],
-      "slug": "spaghetti-bolognese"
+      ]
     },
     {
       "id": 185,
@@ -2359,8 +2175,7 @@
         "huile d'olive",
         "piment",
         "persil"
-      ],
-      "slug": "spaghetti-aglio-e-olio"
+      ]
     },
     {
       "id": 186,
@@ -2370,8 +2185,7 @@
         "tonnarelli",
         "pecorino romano",
         "poivre noir"
-      ],
-      "slug": "cacio-e-pepe"
+      ]
     },
     {
       "id": 187,
@@ -2383,8 +2197,7 @@
         "tomate",
         "pecorino",
         "piment"
-      ],
-      "slug": "amatriciana"
+      ]
     },
     {
       "id": 188,
@@ -2396,8 +2209,7 @@
         "ail",
         "piment",
         "persil"
-      ],
-      "slug": "penne-all-arrabbiata"
+      ]
     },
     {
       "id": 189,
@@ -2408,8 +2220,7 @@
         "ragù",
         "béchamel",
         "parmesan"
-      ],
-      "slug": "lasagnes-a-la-bolognaise"
+      ]
     },
     {
       "id": 190,
@@ -2422,8 +2233,7 @@
         "tomate",
         "vin rouge",
         "parmesan"
-      ],
-      "slug": "tagliatelle-al-ragu"
+      ]
     },
     {
       "id": 191,
@@ -2435,8 +2245,7 @@
         "épinards",
         "beurre",
         "sauge"
-      ],
-      "slug": "ravioli-ricotta-epinards"
+      ]
     },
     {
       "id": 192,
@@ -2447,8 +2256,7 @@
         "bouillon de chapon",
         "porc",
         "parmesan"
-      ],
-      "slug": "tortellini-in-brodo"
+      ]
     },
     {
       "id": 193,
@@ -2459,8 +2267,7 @@
         "tomate",
         "mozzarella",
         "basilic"
-      ],
-      "slug": "gnocchi-a-la-sorrentina"
+      ]
     },
     {
       "id": 194,
@@ -2472,8 +2279,7 @@
         "moelle",
         "bouillon",
         "parmesan"
-      ],
-      "slug": "risotto-alla-milanese"
+      ]
     },
     {
       "id": 195,
@@ -2485,8 +2291,7 @@
         "vin blanc",
         "beurre",
         "parmesan"
-      ],
-      "slug": "risotto-aux-cepes"
+      ]
     },
     {
       "id": 196,
@@ -2498,8 +2303,7 @@
         "seiche",
         "vin blanc",
         "ail"
-      ],
-      "slug": "risotto-al-nero-di-seppia"
+      ]
     },
     {
       "id": 197,
@@ -2511,8 +2315,7 @@
         "vin blanc",
         "gremolata",
         "carottes"
-      ],
-      "slug": "osso-buco"
+      ]
     },
     {
       "id": 198,
@@ -2524,8 +2327,7 @@
         "sauge",
         "vin blanc",
         "beurre"
-      ],
-      "slug": "saltimbocca-alla-romana"
+      ]
     },
     {
       "id": 199,
@@ -2537,8 +2339,7 @@
         "câpres",
         "mayonnaise",
         "anchois"
-      ],
-      "slug": "vitello-tonnato"
+      ]
     },
     {
       "id": 200,
@@ -2550,8 +2351,7 @@
         "romarin",
         "sel",
         "poivre"
-      ],
-      "slug": "bistecca-alla-fiorentina"
+      ]
     },
     {
       "id": 201,
@@ -2563,8 +2363,7 @@
         "mozzarella",
         "parmesan",
         "basilic"
-      ],
-      "slug": "parmigiana-di-melanzane"
+      ]
     },
     {
       "id": 202,
@@ -2577,8 +2376,7 @@
         "câpres",
         "vinaigre",
         "tomate"
-      ],
-      "slug": "caponata"
+      ]
     },
     {
       "id": 203,
@@ -2590,8 +2388,7 @@
         "mozzarella",
         "chapelure",
         "safran"
-      ],
-      "slug": "arancini"
+      ]
     },
     {
       "id": 204,
@@ -2603,8 +2400,7 @@
         "tomate",
         "chapelure",
         "oeuf"
-      ],
-      "slug": "suppli"
+      ]
     },
     {
       "id": 205,
@@ -2616,8 +2412,7 @@
         "romarin",
         "gros sel",
         "levure"
-      ],
-      "slug": "focaccia"
+      ]
     },
     {
       "id": 206,
@@ -2629,8 +2424,7 @@
         "jambon",
         "stracchino",
         "roquette"
-      ],
-      "slug": "piadina"
+      ]
     },
     {
       "id": 207,
@@ -2642,8 +2436,7 @@
         "ail",
         "basilic",
         "huile d'olive"
-      ],
-      "slug": "bruschetta"
+      ]
     },
     {
       "id": 208,
@@ -2654,8 +2447,7 @@
         "mozzarella di bufala",
         "basilic",
         "huile d'olive"
-      ],
-      "slug": "caprese"
+      ]
     },
     {
       "id": 209,
@@ -2666,8 +2458,7 @@
         "chapelure",
         "beurre",
         "citron"
-      ],
-      "slug": "vitello-alla-milanese"
+      ]
     },
     {
       "id": 210,
@@ -2679,8 +2470,7 @@
         "farine",
         "citron",
         "huile"
-      ],
-      "slug": "fritto-misto"
+      ]
     },
     {
       "id": 211,
@@ -2692,8 +2482,7 @@
         "ail",
         "persil",
         "vin blanc"
-      ],
-      "slug": "acqua-pazza"
+      ]
     },
     {
       "id": 212,
@@ -2706,8 +2495,7 @@
         "pâtes",
         "tomate",
         "basilic"
-      ],
-      "slug": "minestrone"
+      ]
     },
     {
       "id": 213,
@@ -2719,8 +2507,7 @@
         "haricots cannellini",
         "tomate",
         "huile d'olive"
-      ],
-      "slug": "ribollita"
+      ]
     },
     {
       "id": 214,
@@ -2732,8 +2519,7 @@
         "tomate",
         "romarin",
         "pancetta"
-      ],
-      "slug": "pasta-e-fagioli"
+      ]
     },
     {
       "id": 215,
@@ -2745,8 +2531,7 @@
         "concombre",
         "oignon rouge",
         "basilic"
-      ],
-      "slug": "panzanella"
+      ]
     },
     {
       "id": 216,
@@ -2758,8 +2543,7 @@
         "ail",
         "romarin",
         "poivre"
-      ],
-      "slug": "porchetta"
+      ]
     },
     {
       "id": 217,
@@ -2771,8 +2555,7 @@
         "cotechino",
         "légumes",
         "salsa verde"
-      ],
-      "slug": "bollito-misto"
+      ]
     },
     {
       "id": 218,
@@ -2784,8 +2567,7 @@
         "parmesan",
         "chapelure",
         "bouillon"
-      ],
-      "slug": "cotoletta-alla-bolognese"
+      ]
     },
     {
       "id": 219,
@@ -2797,8 +2579,7 @@
         "biscuits à la cuillère",
         "cacao",
         "oeufs"
-      ],
-      "slug": "tiramisu"
+      ]
     },
     {
       "id": 220,
@@ -2810,8 +2591,7 @@
         "gélatine",
         "vanille",
         "coulis de fruits rouges"
-      ],
-      "slug": "panna-cotta"
+      ]
     },
     {
       "id": 221,
@@ -2823,8 +2603,7 @@
         "fruits confits",
         "pistaches",
         "sucre"
-      ],
-      "slug": "cannoli-siciliens"
+      ]
     },
     {
       "id": 222,
@@ -2834,8 +2613,7 @@
         "jaunes d'oeufs",
         "sucre",
         "marsala"
-      ],
-      "slug": "zabaglione"
+      ]
     },
     {
       "id": 223,
@@ -2847,8 +2625,7 @@
         "fruits confits",
         "beurre",
         "levure"
-      ],
-      "slug": "panettone"
+      ]
     },
     {
       "id": 224,
@@ -2860,8 +2637,7 @@
         "semoule",
         "fruits confits",
         "cannelle"
-      ],
-      "slug": "sfogliatella"
+      ]
     },
     {
       "id": 225,
@@ -2873,8 +2649,7 @@
         "pistaches",
         "sucre",
         "jaunes d'oeufs"
-      ],
-      "slug": "gelato-a-la-pistache"
+      ]
     },
     {
       "id": 226,
@@ -2883,8 +2658,7 @@
       "ingredients": [
         "glace vanille",
         "espresso"
-      ],
-      "slug": "affogato"
+      ]
     },
     {
       "id": 227,
@@ -2895,8 +2669,7 @@
         "pâte d'amande",
         "fruits confits",
         "génoise"
-      ],
-      "slug": "cassata-sicilienne"
+      ]
     },
     {
       "id": 228,
@@ -2909,8 +2682,7 @@
         "haricots verts",
         "safran",
         "paprika"
-      ],
-      "slug": "paella-valenciana"
+      ]
     },
     {
       "id": 229,
@@ -2923,8 +2695,7 @@
         "calamars",
         "safran",
         "poivron"
-      ],
-      "slug": "paella-de-marisco"
+      ]
     },
     {
       "id": 230,
@@ -2935,8 +2706,7 @@
         "oeufs",
         "oignon",
         "huile d'olive"
-      ],
-      "slug": "tortilla-espanola"
+      ]
     },
     {
       "id": 231,
@@ -2949,8 +2719,7 @@
         "ail",
         "huile d'olive",
         "pain"
-      ],
-      "slug": "gazpacho"
+      ]
     },
     {
       "id": 232,
@@ -2963,8 +2732,7 @@
         "huile d'olive",
         "jambon",
         "oeuf dur"
-      ],
-      "slug": "salmorejo"
+      ]
     },
     {
       "id": 233,
@@ -2975,8 +2743,7 @@
         "sauce tomate piquante",
         "aïoli",
         "paprika"
-      ],
-      "slug": "patatas-bravas"
+      ]
     },
     {
       "id": 234,
@@ -2988,8 +2755,7 @@
         "piment",
         "huile d'olive",
         "persil"
-      ],
-      "slug": "gambas-al-ajillo"
+      ]
     },
     {
       "id": 235,
@@ -3001,8 +2767,7 @@
         "paprika",
         "huile d'olive",
         "gros sel"
-      ],
-      "slug": "pulpo-a-la-gallega"
+      ]
     },
     {
       "id": 236,
@@ -3011,8 +2776,7 @@
       "ingredients": [
         "jambon de porc ibérique",
         "sel"
-      ],
-      "slug": "jamon-iberico"
+      ]
     },
     {
       "id": 237,
@@ -3023,8 +2787,7 @@
         "jambon",
         "chapelure",
         "oeuf"
-      ],
-      "slug": "croquetas-de-jamon"
+      ]
     },
     {
       "id": 238,
@@ -3036,8 +2799,7 @@
         "boudin",
         "lard",
         "safran"
-      ],
-      "slug": "fabada-asturiana"
+      ]
     },
     {
       "id": 239,
@@ -3049,8 +2811,7 @@
         "chorizo",
         "chou",
         "pommes de terre"
-      ],
-      "slug": "cocido-madrileno"
+      ]
     },
     {
       "id": 240,
@@ -3062,8 +2823,7 @@
         "tomate",
         "oignon",
         "oeuf"
-      ],
-      "slug": "pisto-manchego"
+      ]
     },
     {
       "id": 241,
@@ -3075,8 +2835,7 @@
         "oeuf",
         "citron",
         "huile"
-      ],
-      "slug": "calamares-a-la-romana"
+      ]
     },
     {
       "id": 242,
@@ -3086,8 +2845,7 @@
         "petits poivrons",
         "huile d'olive",
         "gros sel"
-      ],
-      "slug": "pimientos-de-padron"
+      ]
     },
     {
       "id": 243,
@@ -3098,8 +2856,7 @@
         "calamars frits",
         "citron",
         "mayonnaise"
-      ],
-      "slug": "bocadillo-de-calamares"
+      ]
     },
     {
       "id": 244,
@@ -3111,8 +2868,7 @@
         "oignon",
         "huile d'olive",
         "ail"
-      ],
-      "slug": "escalivada"
+      ]
     },
     {
       "id": 245,
@@ -3124,8 +2880,7 @@
         "ail",
         "huile d'olive",
         "sel"
-      ],
-      "slug": "pan-con-tomate"
+      ]
     },
     {
       "id": 246,
@@ -3136,8 +2891,7 @@
         "vin rouge",
         "laurier",
         "ail"
-      ],
-      "slug": "chorizo-al-vino"
+      ]
     },
     {
       "id": 247,
@@ -3149,8 +2903,7 @@
         "carottes",
         "oignons",
         "laurier"
-      ],
-      "slug": "rabo-de-toro"
+      ]
     },
     {
       "id": 248,
@@ -3162,8 +2915,7 @@
         "huile",
         "sucre",
         "chocolat chaud"
-      ],
-      "slug": "churros-con-chocolate"
+      ]
     },
     {
       "id": 249,
@@ -3175,8 +2927,7 @@
         "cannelle",
         "zeste de citron",
         "sucre"
-      ],
-      "slug": "crema-catalana"
+      ]
     },
     {
       "id": 250,
@@ -3187,8 +2938,7 @@
         "miel",
         "blanc d'oeuf",
         "sucre"
-      ],
-      "slug": "turron"
+      ]
     },
     {
       "id": 251,
@@ -3199,8 +2949,7 @@
         "oeufs",
         "sucre",
         "zeste de citron"
-      ],
-      "slug": "tarta-de-santiago"
+      ]
     },
     {
       "id": 252,
@@ -3212,8 +2961,7 @@
         "oeufs",
         "oignon",
         "olives"
-      ],
-      "slug": "bacalhau-a-bras"
+      ]
     },
     {
       "id": 253,
@@ -3225,8 +2973,7 @@
         "pommes de terre",
         "oignon",
         "fromage"
-      ],
-      "slug": "bacalhau-com-natas"
+      ]
     },
     {
       "id": 254,
@@ -3237,8 +2984,7 @@
         "pommes de terre",
         "chorizo",
         "huile d'olive"
-      ],
-      "slug": "caldo-verde"
+      ]
     },
     {
       "id": 255,
@@ -3250,8 +2996,7 @@
         "saucisse",
         "fromage",
         "sauce bière"
-      ],
-      "slug": "francesinha"
+      ]
     },
     {
       "id": 256,
@@ -3263,8 +3008,7 @@
         "chorizo",
         "tomate",
         "coriandre"
-      ],
-      "slug": "cataplana-de-marisco"
+      ]
     },
     {
       "id": 257,
@@ -3276,8 +3020,7 @@
         "chorizo",
         "laurier",
         "bacon"
-      ],
-      "slug": "arroz-de-pato"
+      ]
     },
     {
       "id": 258,
@@ -3289,8 +3032,7 @@
         "chorizo",
         "chou",
         "carottes"
-      ],
-      "slug": "feijoada-portugaise"
+      ]
     },
     {
       "id": 259,
@@ -3302,8 +3044,7 @@
         "huile d'olive",
         "poivron",
         "pain"
-      ],
-      "slug": "sardinhas-assadas"
+      ]
     },
     {
       "id": 260,
@@ -3315,8 +3056,7 @@
         "jaunes d'oeufs",
         "cannelle",
         "sucre"
-      ],
-      "slug": "pasteis-de-nata"
+      ]
     },
     {
       "id": 261,
@@ -3328,8 +3068,7 @@
         "vin blanc",
         "pain",
         "moutarde"
-      ],
-      "slug": "bifana"
+      ]
     },
     {
       "id": 262,
@@ -3341,8 +3080,7 @@
         "paprika",
         "oeuf",
         "frites"
-      ],
-      "slug": "alheira"
+      ]
     },
     {
       "id": 263,
@@ -3354,8 +3092,7 @@
         "béchamel",
         "tomate",
         "cannelle"
-      ],
-      "slug": "moussaka"
+      ]
     },
     {
       "id": 264,
@@ -3367,8 +3104,7 @@
         "origan",
         "huile d'olive",
         "pita"
-      ],
-      "slug": "souvlaki"
+      ]
     },
     {
       "id": 265,
@@ -3381,8 +3117,7 @@
         "tomate",
         "oignon",
         "frites"
-      ],
-      "slug": "gyros"
+      ]
     },
     {
       "id": 266,
@@ -3394,8 +3129,7 @@
         "ail",
         "aneth",
         "huile d'olive"
-      ],
-      "slug": "tzatziki"
+      ]
     },
     {
       "id": 267,
@@ -3408,8 +3142,7 @@
         "olives",
         "oignon rouge",
         "origan"
-      ],
-      "slug": "horiatiki"
+      ]
     },
     {
       "id": 268,
@@ -3421,8 +3154,7 @@
         "pâte filo",
         "oeufs",
         "aneth"
-      ],
-      "slug": "spanakopita"
+      ]
     },
     {
       "id": 269,
@@ -3433,8 +3165,7 @@
         "pâte filo",
         "oeufs",
         "beurre"
-      ],
-      "slug": "tiropita"
+      ]
     },
     {
       "id": 270,
@@ -3446,8 +3177,7 @@
         "aneth",
         "citron",
         "oignon"
-      ],
-      "slug": "dolmades"
+      ]
     },
     {
       "id": 271,
@@ -3459,8 +3189,7 @@
         "béchamel",
         "tomate",
         "cannelle"
-      ],
-      "slug": "pastitsio"
+      ]
     },
     {
       "id": 272,
@@ -3472,8 +3201,7 @@
         "oignon",
         "chapelure",
         "origan"
-      ],
-      "slug": "keftedes"
+      ]
     },
     {
       "id": 273,
@@ -3484,8 +3212,7 @@
         "farine",
         "citron",
         "huile d'olive"
-      ],
-      "slug": "saganaki"
+      ]
     },
     {
       "id": 274,
@@ -3497,8 +3224,7 @@
         "carottes",
         "céleri",
         "huile d'olive"
-      ],
-      "slug": "fasolada"
+      ]
     },
     {
       "id": 275,
@@ -3510,8 +3236,7 @@
         "citron",
         "origan",
         "pommes de terre"
-      ],
-      "slug": "kleftiko"
+      ]
     },
     {
       "id": 276,
@@ -3523,8 +3248,7 @@
         "miel",
         "beurre",
         "cannelle"
-      ],
-      "slug": "baklava-grec"
+      ]
     },
     {
       "id": 277,
@@ -3535,8 +3259,7 @@
         "miel",
         "cannelle",
         "noix"
-      ],
-      "slug": "loukoumades"
+      ]
     },
     {
       "id": 278,
@@ -3548,8 +3271,7 @@
         "pâte filo",
         "sirop",
         "citron"
-      ],
-      "slug": "galaktoboureko"
+      ]
     },
     {
       "id": 279,
@@ -3561,8 +3283,7 @@
         "ail",
         "oignon",
         "pain somun"
-      ],
-      "slug": "cevapi"
+      ]
     },
     {
       "id": 280,
@@ -3574,8 +3295,7 @@
         "riz",
         "paprika",
         "lard"
-      ],
-      "slug": "sarma"
+      ]
     },
     {
       "id": 281,
@@ -3587,8 +3307,7 @@
         "paprika",
         "kajmak",
         "pain"
-      ],
-      "slug": "pljeskavica"
+      ]
     },
     {
       "id": 282,
@@ -3600,8 +3319,7 @@
         "oignon",
         "huile",
         "yaourt"
-      ],
-      "slug": "burek"
+      ]
     },
     {
       "id": 283,
@@ -3613,8 +3331,7 @@
         "ail",
         "huile",
         "vinaigre"
-      ],
-      "slug": "ajvar"
+      ]
     },
     {
       "id": 284,
@@ -3626,8 +3343,7 @@
         "romarin",
         "huile d'olive",
         "oignons"
-      ],
-      "slug": "peka"
+      ]
     },
     {
       "id": 285,
@@ -3639,8 +3355,7 @@
         "encre",
         "ail",
         "vin blanc"
-      ],
-      "slug": "crni-rizot"
+      ]
     },
     {
       "id": 286,
@@ -3651,8 +3366,7 @@
         "fromage frais",
         "crème",
         "oeufs"
-      ],
-      "slug": "strukli"
+      ]
     },
     {
       "id": 287,
@@ -3664,8 +3378,7 @@
         "pommes de terre",
         "carottes",
         "paprika"
-      ],
-      "slug": "bosanski-lonac"
+      ]
     },
     {
       "id": 288,
@@ -3677,8 +3390,7 @@
         "riz",
         "oeufs",
         "beurre"
-      ],
-      "slug": "tave-kosi"
+      ]
     },
     {
       "id": 289,
@@ -3690,8 +3402,7 @@
         "épinards",
         "oeufs",
         "huile"
-      ],
-      "slug": "byrek"
+      ]
     },
     {
       "id": 290,
@@ -3703,8 +3414,7 @@
         "oeufs",
         "yaourt",
         "beurre"
-      ],
-      "slug": "banitsa"
+      ]
     },
     {
       "id": 291,
@@ -3716,8 +3426,7 @@
         "poivron",
         "fromage blanc",
         "oignon"
-      ],
-      "slug": "shopska-salata"
+      ]
     },
     {
       "id": 292,
@@ -3729,8 +3438,7 @@
         "ail",
         "aneth",
         "noix"
-      ],
-      "slug": "tarator"
+      ]
     },
     {
       "id": 293,
@@ -3742,8 +3450,7 @@
         "tomate",
         "oignon",
         "paprika"
-      ],
-      "slug": "kavarma"
+      ]
     },
     {
       "id": 294,
@@ -3754,8 +3461,7 @@
         "fromage",
         "crème",
         "beurre"
-      ],
-      "slug": "mamaliga"
+      ]
     },
     {
       "id": 295,
@@ -3767,8 +3473,7 @@
         "riz",
         "aneth",
         "tomate"
-      ],
-      "slug": "sarmale"
+      ]
     },
     {
       "id": 296,
@@ -3780,8 +3485,7 @@
         "bicarbonate",
         "moutarde",
         "thym"
-      ],
-      "slug": "mici"
+      ]
     },
     {
       "id": 297,
@@ -3793,8 +3497,7 @@
         "ail",
         "vinaigre",
         "carottes"
-      ],
-      "slug": "ciorba-de-burta"
+      ]
     },
     {
       "id": 298,
@@ -3806,8 +3509,7 @@
         "confiture",
         "crème",
         "farine"
-      ],
-      "slug": "papanasi"
+      ]
     },
     {
       "id": 299,
@@ -3820,8 +3522,7 @@
         "pommes de terre",
         "smetana",
         "aneth"
-      ],
-      "slug": "bortsch"
+      ]
     },
     {
       "id": 300,
@@ -3833,8 +3534,7 @@
         "fromage blanc",
         "oignon",
         "crème"
-      ],
-      "slug": "varenyky"
+      ]
     },
     {
       "id": 301,
@@ -3845,8 +3545,7 @@
         "ail",
         "poivre",
         "pain de seigle"
-      ],
-      "slug": "salo"
+      ]
     },
     {
       "id": 302,
@@ -3858,8 +3557,7 @@
         "chapelure",
         "persil",
         "oeuf"
-      ],
-      "slug": "chicken-kiev"
+      ]
     },
     {
       "id": 303,
@@ -3871,8 +3569,7 @@
         "viande hachée",
         "tomate",
         "carottes"
-      ],
-      "slug": "holubtsi"
+      ]
     },
     {
       "id": 304,
@@ -3884,8 +3581,7 @@
         "porc haché",
         "oignon",
         "smetana"
-      ],
-      "slug": "pelmeni"
+      ]
     },
     {
       "id": 305,
@@ -3897,8 +3593,7 @@
         "crème",
         "oignon",
         "moutarde"
-      ],
-      "slug": "b-uf-stroganoff"
+      ]
     },
     {
       "id": 306,
@@ -3910,8 +3605,7 @@
         "levure",
         "oeufs",
         "beurre"
-      ],
-      "slug": "blinis"
+      ]
     },
     {
       "id": 307,
@@ -3924,8 +3618,7 @@
         "mayonnaise",
         "jambon",
         "cornichons"
-      ],
-      "slug": "salade-olivier"
+      ]
     },
     {
       "id": 308,
@@ -3937,8 +3630,7 @@
         "pommes de terre",
         "carottes",
         "smetana"
-      ],
-      "slug": "chtchi"
+      ]
     },
     {
       "id": 309,
@@ -3951,8 +3643,7 @@
         "oeuf",
         "pommes de terre",
         "aneth"
-      ],
-      "slug": "okrochka"
+      ]
     },
     {
       "id": 310,
@@ -3964,8 +3655,7 @@
         "oeufs durs",
         "champignons",
         "pâte"
-      ],
-      "slug": "koulibiac"
+      ]
     },
     {
       "id": 311,
@@ -3977,8 +3667,7 @@
         "farine",
         "sucre",
         "raisins secs"
-      ],
-      "slug": "syrniki"
+      ]
     },
     {
       "id": 312,
@@ -3990,8 +3679,7 @@
         "crème aigre",
         "sucre",
         "beurre"
-      ],
-      "slug": "medovik"
+      ]
     },
     {
       "id": 313,
@@ -4003,8 +3691,7 @@
         "chou",
         "oeuf",
         "oignon"
-      ],
-      "slug": "pirojki"
+      ]
     },
     {
       "id": 314,
@@ -4016,8 +3703,7 @@
         "saucisse",
         "pruneaux",
         "champignons"
-      ],
-      "slug": "bigos"
+      ]
     },
     {
       "id": 315,
@@ -4029,8 +3715,7 @@
         "fromage blanc",
         "oignon",
         "beurre"
-      ],
-      "slug": "pierogi-ruskie"
+      ]
     },
     {
       "id": 316,
@@ -4042,8 +3727,7 @@
         "oeuf dur",
         "marjolaine",
         "pommes de terre"
-      ],
-      "slug": "zurek"
+      ]
     },
     {
       "id": 317,
@@ -4055,8 +3739,7 @@
         "oeuf",
         "farine",
         "saindoux"
-      ],
-      "slug": "kotlet-schabowy"
+      ]
     },
     {
       "id": 318,
@@ -4068,8 +3751,7 @@
         "viande hachée",
         "tomate",
         "oignon"
-      ],
-      "slug": "go-abki"
+      ]
     },
     {
       "id": 319,
@@ -4081,8 +3763,7 @@
         "ail",
         "marjolaine",
         "vinaigre"
-      ],
-      "slug": "barszcz-czerwony"
+      ]
     },
     {
       "id": 320,
@@ -4094,8 +3775,7 @@
         "farine",
         "oignon",
         "crème"
-      ],
-      "slug": "placki-ziemniaczane"
+      ]
     },
     {
       "id": 321,
@@ -4107,8 +3787,7 @@
         "sucre",
         "vanille",
         "biscuits"
-      ],
-      "slug": "sernik"
+      ]
     },
     {
       "id": 322,
@@ -4119,8 +3798,7 @@
         "graines de pavot",
         "miel",
         "raisins secs"
-      ],
-      "slug": "makowiec"
+      ]
     },
     {
       "id": 323,
@@ -4133,8 +3811,7 @@
         "pommes de terre",
         "carottes",
         "cumin"
-      ],
-      "slug": "goulash"
+      ]
     },
     {
       "id": 324,
@@ -4146,8 +3823,7 @@
         "oignon",
         "tomate",
         "poivron"
-      ],
-      "slug": "porkolt"
+      ]
     },
     {
       "id": 325,
@@ -4159,8 +3835,7 @@
         "oignon",
         "poivron",
         "tomate"
-      ],
-      "slug": "halaszle"
+      ]
     },
     {
       "id": 326,
@@ -4172,8 +3847,7 @@
         "crème aigre",
         "fromage râpé",
         "huile"
-      ],
-      "slug": "langos"
+      ]
     },
     {
       "id": 327,
@@ -4185,8 +3859,7 @@
         "riz",
         "paprika",
         "crème"
-      ],
-      "slug": "toltott-kaposzta"
+      ]
     },
     {
       "id": 328,
@@ -4197,8 +3870,7 @@
         "crème au beurre chocolat",
         "caramel",
         "oeufs"
-      ],
-      "slug": "dobos-torta"
+      ]
     },
     {
       "id": 329,
@@ -4211,8 +3883,7 @@
         "céleri",
         "airelles",
         "knedlíky"
-      ],
-      "slug": "svickova"
+      ]
     },
     {
       "id": 330,
@@ -4223,8 +3894,7 @@
         "knedlíky",
         "chou fermenté",
         "cumin"
-      ],
-      "slug": "vepro-knedlo-zelo"
+      ]
     },
     {
       "id": 331,
@@ -4236,8 +3906,7 @@
         "oeuf",
         "farine",
         "sauce tartare"
-      ],
-      "slug": "smazeny-syr"
+      ]
     },
     {
       "id": 332,
@@ -4249,8 +3918,7 @@
         "marjolaine",
         "farine",
         "oeuf"
-      ],
-      "slug": "bramboraky"
+      ]
     },
     {
       "id": 333,
@@ -4261,8 +3929,7 @@
         "sucre",
         "cannelle",
         "noix"
-      ],
-      "slug": "trdelnik"
+      ]
     },
     {
       "id": 334,
@@ -4273,8 +3940,7 @@
         "farine",
         "bryndza",
         "lard fumé"
-      ],
-      "slug": "bryndzove-halusky"
+      ]
     },
     {
       "id": 335,
@@ -4286,8 +3952,7 @@
         "chapelure",
         "crème",
         "confiture d'airelles"
-      ],
-      "slug": "kottbullar"
+      ]
     },
     {
       "id": 336,
@@ -4299,8 +3964,7 @@
         "sel",
         "sucre",
         "moutarde"
-      ],
-      "slug": "gravlax"
+      ]
     },
     {
       "id": 337,
@@ -4312,8 +3976,7 @@
         "crème",
         "oignon",
         "chapelure"
-      ],
-      "slug": "janssons-frestelse"
+      ]
     },
     {
       "id": 338,
@@ -4325,8 +3988,7 @@
         "aneth",
         "pain",
         "oeufs de lump"
-      ],
-      "slug": "toast-skagen"
+      ]
     },
     {
       "id": 339,
@@ -4338,8 +4000,7 @@
         "farine",
         "lard",
         "airelles"
-      ],
-      "slug": "raggmunk"
+      ]
     },
     {
       "id": 340,
@@ -4350,8 +4011,7 @@
         "pâte d'amande",
         "chantilly",
         "cardamome"
-      ],
-      "slug": "semla"
+      ]
     },
     {
       "id": 341,
@@ -4363,8 +4023,7 @@
         "beurre",
         "sucre perlé",
         "cardamome"
-      ],
-      "slug": "kanelbullar"
+      ]
     },
     {
       "id": 342,
@@ -4376,8 +4035,7 @@
         "oeuf",
         "crevettes",
         "aneth"
-      ],
-      "slug": "sm-rrebr-d"
+      ]
     },
     {
       "id": 343,
@@ -4389,8 +4047,7 @@
         "oeuf",
         "lait",
         "chapelure"
-      ],
-      "slug": "frikadeller"
+      ]
     },
     {
       "id": 344,
@@ -4401,8 +4058,7 @@
         "pommes de terre",
         "sauce persil",
         "lait"
-      ],
-      "slug": "stegt-fl-sk"
+      ]
     },
     {
       "id": 345,
@@ -4413,8 +4069,7 @@
         "sucre",
         "fécule",
         "crème"
-      ],
-      "slug": "r-dgr-d-med-fl-de"
+      ]
     },
     {
       "id": 346,
@@ -4425,8 +4080,7 @@
         "chou",
         "poivre en grains",
         "pommes de terre"
-      ],
-      "slug": "farikal"
+      ]
     },
     {
       "id": 347,
@@ -4438,8 +4092,7 @@
         "crème",
         "oignon rouge",
         "galette"
-      ],
-      "slug": "rakfisk"
+      ]
     },
     {
       "id": 348,
@@ -4451,8 +4104,7 @@
         "beurre",
         "bacon",
         "pommes de terre"
-      ],
-      "slug": "lutefisk"
+      ]
     },
     {
       "id": 349,
@@ -4464,8 +4116,7 @@
         "sauce brune",
         "petits pois",
         "airelles"
-      ],
-      "slug": "kj-ttkaker"
+      ]
     },
     {
       "id": 350,
@@ -4476,8 +4127,7 @@
         "riz au lait",
         "beurre",
         "oeuf"
-      ],
-      "slug": "karjalanpiirakka"
+      ]
     },
     {
       "id": 351,
@@ -4489,8 +4139,7 @@
         "poireau",
         "crème",
         "aneth"
-      ],
-      "slug": "lohikeitto"
+      ]
     },
     {
       "id": 352,
@@ -4502,8 +4151,7 @@
         "riz",
         "sirop",
         "beurre"
-      ],
-      "slug": "kaalilaatikko"
+      ]
     },
     {
       "id": 353,
@@ -4512,8 +4160,7 @@
       "ingredients": [
         "requin fermenté",
         "sel"
-      ],
-      "slug": "hakarl"
+      ]
     },
     {
       "id": 354,
@@ -4525,8 +4172,7 @@
         "oignon",
         "béchamel",
         "pain de seigle"
-      ],
-      "slug": "plokkfiskur"
+      ]
     },
     {
       "id": 355,
@@ -4538,8 +4184,7 @@
         "carottes",
         "rutabaga",
         "thym"
-      ],
-      "slug": "kjotsupa"
+      ]
     },
     {
       "id": 356,
@@ -4551,8 +4196,7 @@
         "hareng",
         "mayonnaise",
         "oeuf"
-      ],
-      "slug": "kartulisalat"
+      ]
     },
     {
       "id": 357,
@@ -4564,8 +4208,7 @@
         "concombre",
         "aneth",
         "oeuf"
-      ],
-      "slug": "saltibarsciai"
+      ]
     },
     {
       "id": 358,
@@ -4577,8 +4220,7 @@
         "lard",
         "crème",
         "oignon"
-      ],
-      "slug": "cepelinai"
+      ]
     },
     {
       "id": 359,
@@ -4590,8 +4232,7 @@
         "oeuf",
         "farine",
         "crème aigre"
-      ],
-      "slug": "draniki"
+      ]
     },
     {
       "id": 360,
@@ -4603,8 +4244,7 @@
         "farine",
         "oignon",
         "crêpes"
-      ],
-      "slug": "machanka"
+      ]
     },
     {
       "id": 361,
@@ -4615,8 +4255,7 @@
         "fromage sulguni",
         "oeuf",
         "beurre"
-      ],
-      "slug": "khachapuri"
+      ]
     },
     {
       "id": 362,
@@ -4628,8 +4267,7 @@
         "coriandre",
         "oignon",
         "bouillon"
-      ],
-      "slug": "khinkali"
+      ]
     },
     {
       "id": 363,
@@ -4641,8 +4279,7 @@
         "ail",
         "coriandre",
         "épices"
-      ],
-      "slug": "satsivi"
+      ]
     },
     {
       "id": 364,
@@ -4654,8 +4291,7 @@
         "noix",
         "ail",
         "oignon"
-      ],
-      "slug": "lobio"
+      ]
     },
     {
       "id": 365,
@@ -4667,8 +4303,7 @@
         "vin blanc",
         "prunes vertes",
         "oignon nouveau"
-      ],
-      "slug": "chakapuli"
+      ]
     },
     {
       "id": 366,
@@ -4680,8 +4315,7 @@
         "riz",
         "menthe",
         "oignon"
-      ],
-      "slug": "dolma-armenienne"
+      ]
     },
     {
       "id": 367,
@@ -4692,8 +4326,7 @@
         "poulet",
         "beurre",
         "sel"
-      ],
-      "slug": "harissa-armenienne"
+      ]
     },
     {
       "id": 368,
@@ -4704,8 +4337,7 @@
         "eau",
         "sel",
         "levure"
-      ],
-      "slug": "lavash"
+      ]
     },
     {
       "id": 369,
@@ -4718,8 +4350,7 @@
         "oignon",
         "cumin",
         "ail"
-      ],
-      "slug": "plov"
+      ]
     },
     {
       "id": 370,
@@ -4731,8 +4362,7 @@
         "poivron",
         "tomate",
         "oignon"
-      ],
-      "slug": "lagman"
+      ]
     },
     {
       "id": 371,
@@ -4744,8 +4374,7 @@
         "oignon",
         "courge",
         "beurre"
-      ],
-      "slug": "manti"
+      ]
     },
     {
       "id": 372,
@@ -4756,8 +4385,7 @@
         "agneau",
         "oignon",
         "cumin"
-      ],
-      "slug": "samsa"
+      ]
     },
     {
       "id": 373,
@@ -4769,8 +4397,7 @@
         "oignon",
         "bouillon",
         "persil"
-      ],
-      "slug": "beshbarmak"
+      ]
     },
     {
       "id": 374,
@@ -4783,8 +4410,7 @@
         "concombre",
         "sauce hoisin",
         "oignon nouveau"
-      ],
-      "slug": "canard-laque-de-pekin"
+      ]
     },
     {
       "id": 375,
@@ -4796,8 +4422,7 @@
         "sauce soja",
         "gingembre",
         "anis étoilé"
-      ],
-      "slug": "porc-au-caramel"
+      ]
     },
     {
       "id": 376,
@@ -4809,8 +4434,7 @@
         "piments séchés",
         "poivre du Sichuan",
         "sauce soja"
-      ],
-      "slug": "poulet-kung-pao"
+      ]
     },
     {
       "id": 377,
@@ -4822,8 +4446,7 @@
         "pâte de fèves",
         "poivre du Sichuan",
         "ail"
-      ],
-      "slug": "mapo-tofu"
+      ]
     },
     {
       "id": 378,
@@ -4836,8 +4459,7 @@
         "vinaigre",
         "sucre",
         "ketchup"
-      ],
-      "slug": "porc-aigre-doux"
+      ]
     },
     {
       "id": 379,
@@ -4849,8 +4471,7 @@
         "sauce soja",
         "gingembre",
         "huile de sésame"
-      ],
-      "slug": "boeuf-aux-oignons"
+      ]
     },
     {
       "id": 380,
@@ -4862,8 +4483,7 @@
         "jambon",
         "petits pois",
         "oignon nouveau"
-      ],
-      "slug": "riz-cantonais"
+      ]
     },
     {
       "id": 381,
@@ -4876,8 +4496,7 @@
         "poulet",
         "sauce soja",
         "germes de soja"
-      ],
-      "slug": "nouilles-sautees-chow-mein"
+      ]
     },
     {
       "id": 382,
@@ -4888,8 +4507,7 @@
         "farine de blé",
         "pousses de bambou",
         "huile de sésame"
-      ],
-      "slug": "dim-sum-har-gow"
+      ]
     },
     {
       "id": 383,
@@ -4901,8 +4519,7 @@
         "pâte à wonton",
         "champignons noirs",
         "gingembre"
-      ],
-      "slug": "siu-mai"
+      ]
     },
     {
       "id": 384,
@@ -4914,8 +4531,7 @@
         "chou",
         "gingembre",
         "oignon nouveau"
-      ],
-      "slug": "baozi"
+      ]
     },
     {
       "id": 385,
@@ -4927,8 +4543,7 @@
         "chou chinois",
         "ciboule",
         "gingembre"
-      ],
-      "slug": "jiaozi"
+      ]
     },
     {
       "id": 386,
@@ -4940,8 +4555,7 @@
         "crevettes",
         "porc",
         "ciboule"
-      ],
-      "slug": "wonton-soup"
+      ]
     },
     {
       "id": 387,
@@ -4953,8 +4567,7 @@
         "pâte de sésame",
         "piment",
         "poivre du Sichuan"
-      ],
-      "slug": "nouilles-dan-dan"
+      ]
     },
     {
       "id": 388,
@@ -4966,8 +4579,7 @@
         "poivron",
         "sauce soja",
         "vinaigre"
-      ],
-      "slug": "poulet-gong-bao-aux-noix-de-cajou"
+      ]
     },
     {
       "id": 389,
@@ -4979,8 +4591,7 @@
         "sauce hoisin",
         "cinq-épices",
         "sauce soja"
-      ],
-      "slug": "char-siu"
+      ]
     },
     {
       "id": 390,
@@ -4992,8 +4603,7 @@
         "tofu",
         "légumes",
         "nouilles"
-      ],
-      "slug": "fondue-chinoise-huoguo"
+      ]
     },
     {
       "id": 391,
@@ -5005,8 +4615,7 @@
         "ciboule",
         "sauce soja",
         "huile"
-      ],
-      "slug": "poisson-a-la-vapeur-au-gingembre"
+      ]
     },
     {
       "id": 392,
@@ -5018,8 +4627,7 @@
         "gingembre",
         "vinaigre",
         "pâte de piment"
-      ],
-      "slug": "aubergines-au-poisson-parfume"
+      ]
     },
     {
       "id": 393,
@@ -5031,8 +4639,7 @@
         "radis blanc",
         "coriandre",
         "piment"
-      ],
-      "slug": "nouilles-au-boeuf-de-lanzhou"
+      ]
     },
     {
       "id": 394,
@@ -5044,8 +4651,7 @@
         "chou",
         "carotte",
         "porc"
-      ],
-      "slug": "rouleaux-de-printemps"
+      ]
     },
     {
       "id": 395,
@@ -5057,8 +4663,7 @@
         "gelée de bouillon",
         "gingembre",
         "vinaigre noir"
-      ],
-      "slug": "xiao-long-bao"
+      ]
     },
     {
       "id": 396,
@@ -5071,8 +4676,7 @@
         "sauce soja",
         "piments",
         "maïzena"
-      ],
-      "slug": "poulet-du-general-tso"
+      ]
     },
     {
       "id": 397,
@@ -5084,8 +4688,7 @@
         "oeuf",
         "oignon",
         "sauce d'huître"
-      ],
-      "slug": "riz-saute-au-boeuf"
+      ]
     },
     {
       "id": 398,
@@ -5097,8 +4700,7 @@
         "sauce soja",
         "ail",
         "huile de sésame"
-      ],
-      "slug": "tofu-aux-champignons-noirs"
+      ]
     },
     {
       "id": 399,
@@ -5110,8 +4712,7 @@
         "gingembre",
         "oeuf de cent ans",
         "ciboule"
-      ],
-      "slug": "congee"
+      ]
     },
     {
       "id": 400,
@@ -5123,8 +4724,7 @@
         "saumon",
         "wasabi",
         "algue nori"
-      ],
-      "slug": "sushi-nigiri"
+      ]
     },
     {
       "id": 401,
@@ -5137,8 +4737,7 @@
         "concombre",
         "nori",
         "sésame"
-      ],
-      "slug": "maki-california"
+      ]
     },
     {
       "id": 402,
@@ -5149,8 +4748,7 @@
         "wasabi",
         "sauce soja",
         "radis daikon"
-      ],
-      "slug": "sashimi-de-saumon"
+      ]
     },
     {
       "id": 403,
@@ -5162,8 +4760,7 @@
         "chashu",
         "oeuf mollet",
         "oignon nouveau"
-      ],
-      "slug": "ramen-tonkotsu"
+      ]
     },
     {
       "id": 404,
@@ -5176,8 +4773,7 @@
         "chashu",
         "nori",
         "pousses de bambou"
-      ],
-      "slug": "ramen-shoyu"
+      ]
     },
     {
       "id": 405,
@@ -5190,8 +4786,7 @@
         "maïs",
         "beurre",
         "porc"
-      ],
-      "slug": "ramen-miso"
+      ]
     },
     {
       "id": 406,
@@ -5203,8 +4798,7 @@
         "tempura",
         "oignon nouveau",
         "gingembre"
-      ],
-      "slug": "udon-bukkake"
+      ]
     },
     {
       "id": 407,
@@ -5215,8 +4809,7 @@
         "sauce tsuyu",
         "wasabi",
         "ciboule"
-      ],
-      "slug": "soba-au-sarrasin"
+      ]
     },
     {
       "id": 408,
@@ -5228,8 +4821,7 @@
         "eau glacée",
         "huile",
         "sauce tentsuyu"
-      ],
-      "slug": "tempura-de-crevettes"
+      ]
     },
     {
       "id": 409,
@@ -5241,8 +4833,7 @@
         "oignon",
         "riz",
         "dashi"
-      ],
-      "slug": "katsudon"
+      ]
     },
     {
       "id": 410,
@@ -5254,8 +4845,7 @@
         "chou",
         "sauce tonkatsu",
         "moutarde"
-      ],
-      "slug": "tonkatsu"
+      ]
     },
     {
       "id": 411,
@@ -5267,8 +4857,7 @@
         "riz",
         "carotte",
         "pomme de terre"
-      ],
-      "slug": "chicken-katsu-curry"
+      ]
     },
     {
       "id": 412,
@@ -5280,8 +4869,7 @@
         "chou",
         "ail",
         "huile de sésame"
-      ],
-      "slug": "gyoza"
+      ]
     },
     {
       "id": 413,
@@ -5294,8 +4882,7 @@
         "bacon",
         "sauce okonomiyaki",
         "mayonnaise"
-      ],
-      "slug": "okonomiyaki"
+      ]
     },
     {
       "id": 414,
@@ -5307,8 +4894,7 @@
         "gingembre",
         "bonite séchée",
         "sauce"
-      ],
-      "slug": "takoyaki"
+      ]
     },
     {
       "id": 415,
@@ -5320,8 +4906,7 @@
         "oignon nouveau",
         "mirin",
         "sauce soja"
-      ],
-      "slug": "yakitori"
+      ]
     },
     {
       "id": 416,
@@ -5334,8 +4919,7 @@
         "shiitake",
         "sauce soja",
         "sucre"
-      ],
-      "slug": "sukiyaki"
+      ]
     },
     {
       "id": 417,
@@ -5347,8 +4931,7 @@
         "tofu",
         "nouilles",
         "sauce sésame"
-      ],
-      "slug": "shabu-shabu"
+      ]
     },
     {
       "id": 418,
@@ -5360,8 +4943,7 @@
         "oignon",
         "riz",
         "dashi"
-      ],
-      "slug": "oyakodon"
+      ]
     },
     {
       "id": 419,
@@ -5373,8 +4955,7 @@
         "riz",
         "sauce soja",
         "mirin"
-      ],
-      "slug": "gyudon"
+      ]
     },
     {
       "id": 420,
@@ -5386,8 +4967,7 @@
         "saumon",
         "umeboshi",
         "sel"
-      ],
-      "slug": "onigiri"
+      ]
     },
     {
       "id": 421,
@@ -5399,8 +4979,7 @@
         "tofu",
         "wakame",
         "ciboule"
-      ],
-      "slug": "miso-soup"
+      ]
     },
     {
       "id": 422,
@@ -5412,8 +4991,7 @@
         "crevette",
         "shiitake",
         "ginkgo"
-      ],
-      "slug": "chawanmushi"
+      ]
     },
     {
       "id": 423,
@@ -5425,8 +5003,7 @@
         "sauce soja",
         "fécule",
         "citron"
-      ],
-      "slug": "karaage"
+      ]
     },
     {
       "id": 424,
@@ -5437,8 +5014,7 @@
         "riz",
         "sauce kabayaki",
         "sansho"
-      ],
-      "slug": "unagi-don"
+      ]
     },
     {
       "id": 425,
@@ -5448,8 +5024,7 @@
         "riz gluant",
         "sucre",
         "pâte de haricot rouge"
-      ],
-      "slug": "mochi"
+      ]
     },
     {
       "id": 426,
@@ -5460,8 +5035,7 @@
         "pâte de haricot rouge",
         "miel",
         "oeufs"
-      ],
-      "slug": "dorayaki"
+      ]
     },
     {
       "id": 427,
@@ -5472,8 +5046,7 @@
         "lait",
         "sucre",
         "eau"
-      ],
-      "slug": "matcha-latte"
+      ]
     },
     {
       "id": 428,
@@ -5486,8 +5059,7 @@
         "oeuf",
         "gochujang",
         "huile de sésame"
-      ],
-      "slug": "bibimbap"
+      ]
     },
     {
       "id": 429,
@@ -5500,8 +5072,7 @@
         "ail",
         "sucre",
         "huile de sésame"
-      ],
-      "slug": "bulgogi"
+      ]
     },
     {
       "id": 430,
@@ -5513,8 +5084,7 @@
         "ail",
         "gingembre",
         "sauce de poisson"
-      ],
-      "slug": "kimchi"
+      ]
     },
     {
       "id": 431,
@@ -5526,8 +5096,7 @@
         "tofu",
         "oignon nouveau",
         "gochujang"
-      ],
-      "slug": "kimchi-jjigae"
+      ]
     },
     {
       "id": 432,
@@ -5539,8 +5108,7 @@
         "fish cake",
         "oignon nouveau",
         "sucre"
-      ],
-      "slug": "tteokbokki"
+      ]
     },
     {
       "id": 433,
@@ -5552,8 +5120,7 @@
         "épinards",
         "carottes",
         "sauce soja"
-      ],
-      "slug": "japchae"
+      ]
     },
     {
       "id": 434,
@@ -5565,8 +5132,7 @@
         "ail",
         "ssamjang",
         "kimchi"
-      ],
-      "slug": "samgyeopsal"
+      ]
     },
     {
       "id": 435,
@@ -5578,8 +5144,7 @@
         "gochugaru",
         "oeuf",
         "bouillon"
-      ],
-      "slug": "sundubu-jjigae"
+      ]
     },
     {
       "id": 436,
@@ -5591,8 +5156,7 @@
         "poire",
         "ail",
         "sésame"
-      ],
-      "slug": "galbi"
+      ]
     },
     {
       "id": 437,
@@ -5604,8 +5168,7 @@
         "riz gluant",
         "jujube",
         "ail"
-      ],
-      "slug": "samgyetang"
+      ]
     },
     {
       "id": 438,
@@ -5617,8 +5180,7 @@
         "oignon nouveau",
         "oeuf",
         "sauce soja"
-      ],
-      "slug": "haemul-pajeon"
+      ]
     },
     {
       "id": 439,
@@ -5631,8 +5193,7 @@
         "épinards",
         "oeuf",
         "surimi"
-      ],
-      "slug": "kimbap"
+      ]
     },
     {
       "id": 440,
@@ -5644,8 +5205,7 @@
         "miel",
         "ail",
         "piment"
-      ],
-      "slug": "dakgangjeong"
+      ]
     },
     {
       "id": 441,
@@ -5657,8 +5217,7 @@
         "concombre",
         "poire",
         "oeuf"
-      ],
-      "slug": "naengmyeon"
+      ]
     },
     {
       "id": 442,
@@ -5670,8 +5229,7 @@
         "gingembre",
         "oignon nouveau",
         "sucre"
-      ],
-      "slug": "mongolian-beef"
+      ]
     },
     {
       "id": 443,
@@ -5683,8 +5241,7 @@
         "oignon",
         "ail",
         "cumin"
-      ],
-      "slug": "buuz"
+      ]
     },
     {
       "id": 444,
@@ -5696,8 +5253,7 @@
         "oignon",
         "sel",
         "huile"
-      ],
-      "slug": "khuushuur"
+      ]
     },
     {
       "id": 445,
@@ -5709,8 +5265,7 @@
         "carotte",
         "chou",
         "oignon"
-      ],
-      "slug": "tsuivan"
+      ]
     },
     {
       "id": 446,
@@ -5722,8 +5277,7 @@
         "oignon",
         "coriandre",
         "gingembre"
-      ],
-      "slug": "momo-tibetain"
+      ]
     },
     {
       "id": 447,
@@ -5735,8 +5289,7 @@
         "légumes",
         "viande",
         "gingembre"
-      ],
-      "slug": "thukpa"
+      ]
     },
     {
       "id": 448,
@@ -5748,8 +5301,7 @@
         "anis étoilé",
         "pâte de fèves",
         "chou chinois"
-      ],
-      "slug": "beef-noodle-soup"
+      ]
     },
     {
       "id": 449,
@@ -5761,8 +5313,7 @@
         "sauce soja",
         "échalote frite",
         "oeuf"
-      ],
-      "slug": "lu-rou-fan"
+      ]
     },
     {
       "id": 450,
@@ -5774,8 +5325,7 @@
         "poudre de cinq-épices",
         "fécule",
         "ail"
-      ],
-      "slug": "poulet-frit-taiwanais"
+      ]
     },
     {
       "id": 451,
@@ -5786,8 +5336,7 @@
         "lait",
         "perles de tapioca",
         "sucre"
-      ],
-      "slug": "bubble-tea"
+      ]
     },
     {
       "id": 452,
@@ -5799,8 +5348,7 @@
         "lait",
         "sucre",
         "vanille"
-      ],
-      "slug": "egg-tart"
+      ]
     },
     {
       "id": 453,
@@ -5811,8 +5359,7 @@
         "wontons aux crevettes",
         "bouillon",
         "ciboule"
-      ],
-      "slug": "wonton-noodles"
+      ]
     },
     {
       "id": 454,
@@ -5824,8 +5371,7 @@
         "sucre",
         "ketchup",
         "ananas"
-      ],
-      "slug": "poulet-aigre-doux-hongkongais"
+      ]
     },
     {
       "id": 455,
@@ -5838,8 +5384,7 @@
         "crème",
         "garam masala",
         "gingembre"
-      ],
-      "slug": "poulet-tikka-masala"
+      ]
     },
     {
       "id": 456,
@@ -5852,8 +5397,7 @@
         "crème",
         "fenugrec",
         "garam masala"
-      ],
-      "slug": "butter-chicken"
+      ]
     },
     {
       "id": 457,
@@ -5866,8 +5410,7 @@
         "safran",
         "oignons frits",
         "épices"
-      ],
-      "slug": "biryani-de-mouton"
+      ]
     },
     {
       "id": 458,
@@ -5879,8 +5422,7 @@
         "piment du Cachemire",
         "fenouil",
         "gingembre"
-      ],
-      "slug": "rogan-josh"
+      ]
     },
     {
       "id": 459,
@@ -5892,8 +5434,7 @@
         "beurre",
         "crème",
         "tomate"
-      ],
-      "slug": "dal-makhani"
+      ]
     },
     {
       "id": 460,
@@ -5905,8 +5446,7 @@
         "oignon",
         "garam masala",
         "coriandre"
-      ],
-      "slug": "chana-masala"
+      ]
     },
     {
       "id": 461,
@@ -5918,8 +5458,7 @@
         "crème",
         "ail",
         "cumin"
-      ],
-      "slug": "palak-paneer"
+      ]
     },
     {
       "id": 462,
@@ -5931,8 +5470,7 @@
         "curcuma",
         "cumin",
         "coriandre"
-      ],
-      "slug": "aloo-gobi"
+      ]
     },
     {
       "id": 463,
@@ -5944,8 +5482,7 @@
         "petits pois",
         "cumin",
         "coriandre"
-      ],
-      "slug": "samosa"
+      ]
     },
     {
       "id": 464,
@@ -5957,8 +5494,7 @@
         "pomme de terre",
         "épices",
         "huile"
-      ],
-      "slug": "pakora"
+      ]
     },
     {
       "id": 465,
@@ -5970,8 +5506,7 @@
         "levure",
         "ail",
         "beurre clarifié"
-      ],
-      "slug": "naan-a-l-ail"
+      ]
     },
     {
       "id": 466,
@@ -5982,8 +5517,7 @@
         "eau",
         "sel",
         "ghee"
-      ],
-      "slug": "roti"
+      ]
     },
     {
       "id": 467,
@@ -5995,8 +5529,7 @@
         "pommes de terre",
         "curcuma",
         "moutarde"
-      ],
-      "slug": "dosa-masala"
+      ]
     },
     {
       "id": 468,
@@ -6008,8 +5541,7 @@
         "tamarin",
         "légumes",
         "épices"
-      ],
-      "slug": "idli-sambar"
+      ]
     },
     {
       "id": 469,
@@ -6021,8 +5553,7 @@
         "piment",
         "ail",
         "cumin"
-      ],
-      "slug": "vindaloo"
+      ]
     },
     {
       "id": 470,
@@ -6034,8 +5565,7 @@
         "crème",
         "cardamome",
         "oignon"
-      ],
-      "slug": "korma"
+      ]
     },
     {
       "id": 471,
@@ -6047,8 +5577,7 @@
         "paprika",
         "garam masala",
         "citron"
-      ],
-      "slug": "tandoori-chicken"
+      ]
     },
     {
       "id": 472,
@@ -6060,8 +5589,7 @@
         "cumin",
         "menthe",
         "sel"
-      ],
-      "slug": "raita"
+      ]
     },
     {
       "id": 473,
@@ -6072,8 +5600,7 @@
         "mangue",
         "sucre",
         "cardamome"
-      ],
-      "slug": "lassi-a-la-mangue"
+      ]
     },
     {
       "id": 474,
@@ -6084,8 +5611,7 @@
         "sirop de sucre",
         "cardamome",
         "eau de rose"
-      ],
-      "slug": "gulab-jamun"
+      ]
     },
     {
       "id": 475,
@@ -6097,8 +5623,7 @@
         "cardamome",
         "pistaches",
         "sucre"
-      ],
-      "slug": "kheer"
+      ]
     },
     {
       "id": 476,
@@ -6110,8 +5635,7 @@
         "sirop de sucre",
         "safran",
         "huile"
-      ],
-      "slug": "jalebi"
+      ]
     },
     {
       "id": 477,
@@ -6123,8 +5647,7 @@
         "gingembre",
         "cardamome",
         "cannelle"
-      ],
-      "slug": "chai-masala"
+      ]
     },
     {
       "id": 478,
@@ -6136,8 +5659,7 @@
         "pain",
         "tomate",
         "épices pav bhaji"
-      ],
-      "slug": "pav-bhaji"
+      ]
     },
     {
       "id": 479,
@@ -6149,8 +5671,7 @@
         "pain",
         "chutney",
         "piment"
-      ],
-      "slug": "vada-pav"
+      ]
     },
     {
       "id": 480,
@@ -6163,8 +5684,7 @@
         "menthe",
         "safran",
         "oignons frits"
-      ],
-      "slug": "biryani-hyderabadi"
+      ]
     },
     {
       "id": 481,
@@ -6176,8 +5696,7 @@
         "gingembre",
         "piment",
         "épices"
-      ],
-      "slug": "nihari"
+      ]
     },
     {
       "id": 482,
@@ -6189,8 +5708,7 @@
         "boeuf",
         "gingembre",
         "épices"
-      ],
-      "slug": "haleem"
+      ]
     },
     {
       "id": 483,
@@ -6202,8 +5720,7 @@
         "coriandre",
         "piment",
         "garam masala"
-      ],
-      "slug": "seekh-kebab"
+      ]
     },
     {
       "id": 484,
@@ -6215,8 +5732,7 @@
         "gingembre",
         "piment vert",
         "coriandre"
-      ],
-      "slug": "karahi-gosht"
+      ]
     },
     {
       "id": 485,
@@ -6228,8 +5744,7 @@
         "coriandre",
         "graines de grenade",
         "oeuf"
-      ],
-      "slug": "chapli-kebab"
+      ]
     },
     {
       "id": 486,
@@ -6241,8 +5756,7 @@
         "yaourt",
         "pommes de terre",
         "safran"
-      ],
-      "slug": "kacchi-biryani"
+      ]
     },
     {
       "id": 487,
@@ -6254,8 +5768,7 @@
         "huile de moutarde",
         "piment vert",
         "curcuma"
-      ],
-      "slug": "ilish-bhapa"
+      ]
     },
     {
       "id": 488,
@@ -6267,8 +5780,7 @@
         "oignon",
         "piment",
         "sel"
-      ],
-      "slug": "panta-bhat"
+      ]
     },
     {
       "id": 489,
@@ -6280,8 +5792,7 @@
         "légumes",
         "curcuma",
         "ghee"
-      ],
-      "slug": "dal-bhat"
+      ]
     },
     {
       "id": 490,
@@ -6293,8 +5804,7 @@
         "oignon",
         "coriandre",
         "cumin"
-      ],
-      "slug": "momo-nepalais"
+      ]
     },
     {
       "id": 491,
@@ -6306,8 +5816,7 @@
         "ail",
         "gingembre",
         "huile"
-      ],
-      "slug": "kothey-momo"
+      ]
     },
     {
       "id": 492,
@@ -6319,8 +5828,7 @@
         "lait de coco",
         "curry",
         "piment"
-      ],
-      "slug": "rice-and-curry"
+      ]
     },
     {
       "id": 493,
@@ -6331,8 +5839,7 @@
         "lait de coco",
         "levure",
         "oeuf"
-      ],
-      "slug": "hoppers"
+      ]
     },
     {
       "id": 494,
@@ -6344,8 +5851,7 @@
         "oeuf",
         "poulet",
         "curry"
-      ],
-      "slug": "kottu-roti"
+      ]
     },
     {
       "id": 495,
@@ -6358,8 +5864,7 @@
         "cacahuètes",
         "germes de soja",
         "oeuf"
-      ],
-      "slug": "pad-thai"
+      ]
     },
     {
       "id": 496,
@@ -6372,8 +5877,7 @@
         "feuilles de combava",
         "piment",
         "champignons"
-      ],
-      "slug": "tom-yum-goong"
+      ]
     },
     {
       "id": 497,
@@ -6385,8 +5889,7 @@
         "galanga",
         "citronnelle",
         "champignons"
-      ],
-      "slug": "tom-kha-kai"
+      ]
     },
     {
       "id": 498,
@@ -6398,8 +5901,7 @@
         "poulet",
         "aubergines thaï",
         "basilic"
-      ],
-      "slug": "curry-vert"
+      ]
     },
     {
       "id": 499,
@@ -6411,8 +5913,7 @@
         "boeuf",
         "bambou",
         "basilic"
-      ],
-      "slug": "curry-rouge"
+      ]
     },
     {
       "id": 500,
@@ -6424,8 +5925,7 @@
         "cacahuètes",
         "pommes de terre",
         "cardamome"
-      ],
-      "slug": "massaman-curry"
+      ]
     },
     {
       "id": 501,
@@ -6438,8 +5938,7 @@
         "citron vert",
         "sauce de poisson",
         "piment"
-      ],
-      "slug": "som-tam"
+      ]
     },
     {
       "id": 502,
@@ -6451,8 +5950,7 @@
         "menthe",
         "citron vert",
         "sauce de poisson"
-      ],
-      "slug": "larb"
+      ]
     },
     {
       "id": 503,
@@ -6464,8 +5962,7 @@
         "poulet",
         "oignon nouveau",
         "sauce de poisson"
-      ],
-      "slug": "khao-pad"
+      ]
     },
     {
       "id": 504,
@@ -6477,8 +5974,7 @@
         "piment",
         "ail",
         "oeuf au plat"
-      ],
-      "slug": "pad-krapow"
+      ]
     },
     {
       "id": 505,
@@ -6490,8 +5986,7 @@
         "lait de coco",
         "sucre",
         "sésame"
-      ],
-      "slug": "mango-sticky-rice"
+      ]
     },
     {
       "id": 506,
@@ -6503,8 +5998,7 @@
         "lait de coco",
         "sauce cacahuète",
         "citronnelle"
-      ],
-      "slug": "satay-de-poulet"
+      ]
     },
     {
       "id": 507,
@@ -6517,8 +6011,7 @@
         "cannelle",
         "coriandre",
         "oignon"
-      ],
-      "slug": "pho-bo"
+      ]
     },
     {
       "id": 508,
@@ -6530,8 +6023,7 @@
         "gingembre",
         "coriandre",
         "oignon nouveau"
-      ],
-      "slug": "pho-ga"
+      ]
     },
     {
       "id": 509,
@@ -6544,8 +6036,7 @@
         "carotte marinée",
         "coriandre",
         "concombre"
-      ],
-      "slug": "banh-mi"
+      ]
     },
     {
       "id": 510,
@@ -6557,8 +6048,7 @@
         "citronnelle",
         "pâte de crevette",
         "piment"
-      ],
-      "slug": "bun-bo-hue"
+      ]
     },
     {
       "id": 511,
@@ -6570,8 +6060,7 @@
         "nuoc-mâm",
         "herbes",
         "papaye verte"
-      ],
-      "slug": "bun-cha"
+      ]
     },
     {
       "id": 512,
@@ -6583,8 +6072,7 @@
         "champignons noirs",
         "vermicelles",
         "carotte"
-      ],
-      "slug": "nem-ran"
+      ]
     },
     {
       "id": 513,
@@ -6596,8 +6084,7 @@
         "vermicelles",
         "menthe",
         "salade"
-      ],
-      "slug": "goi-cuon"
+      ]
     },
     {
       "id": 514,
@@ -6609,8 +6096,7 @@
         "oeuf",
         "concombre",
         "nuoc-mâm"
-      ],
-      "slug": "com-tam"
+      ]
     },
     {
       "id": 515,
@@ -6622,8 +6108,7 @@
         "carottes",
         "anis étoilé",
         "lait de coco"
-      ],
-      "slug": "bo-kho"
+      ]
     },
     {
       "id": 516,
@@ -6633,8 +6118,7 @@
         "café",
         "lait concentré",
         "glace"
-      ],
-      "slug": "ca-phe-sua-a"
+      ]
     },
     {
       "id": 517,
@@ -6646,8 +6130,7 @@
         "pâte kroeung",
         "oeuf",
         "feuilles de bananier"
-      ],
-      "slug": "amok-trey"
+      ]
     },
     {
       "id": 518,
@@ -6659,8 +6142,7 @@
         "poivre de Kampot",
         "citron",
         "riz"
-      ],
-      "slug": "lok-lak"
+      ]
     },
     {
       "id": 519,
@@ -6672,8 +6154,7 @@
         "citronnelle",
         "curcuma",
         "herbes"
-      ],
-      "slug": "nom-banh-chok"
+      ]
     },
     {
       "id": 520,
@@ -6685,8 +6166,7 @@
         "menthe",
         "citron",
         "sauce de poisson"
-      ],
-      "slug": "laap"
+      ]
     },
     {
       "id": 521,
@@ -6696,8 +6176,7 @@
         "riz gluant",
         "eau",
         "sel"
-      ],
-      "slug": "khao-niaow"
+      ]
     },
     {
       "id": 522,
@@ -6709,8 +6188,7 @@
         "padaek",
         "citron",
         "piment"
-      ],
-      "slug": "tam-mak-hoong"
+      ]
     },
     {
       "id": 523,
@@ -6722,8 +6200,7 @@
         "tige de bananier",
         "citronnelle",
         "farine de pois chiche"
-      ],
-      "slug": "mohinga"
+      ]
     },
     {
       "id": 524,
@@ -6735,8 +6212,7 @@
         "ail",
         "sésame",
         "tomate"
-      ],
-      "slug": "the-de-feuilles-de-the-lahpet"
+      ]
     },
     {
       "id": 525,
@@ -6749,8 +6225,7 @@
         "poulet",
         "échalote",
         "piment"
-      ],
-      "slug": "nasi-goreng"
+      ]
     },
     {
       "id": 526,
@@ -6763,8 +6238,7 @@
         "citronnelle",
         "piment",
         "curcuma"
-      ],
-      "slug": "rendang"
+      ]
     },
     {
       "id": 527,
@@ -6776,8 +6250,7 @@
         "kecap manis",
         "citronnelle",
         "citron vert"
-      ],
-      "slug": "satay-ayam"
+      ]
     },
     {
       "id": 528,
@@ -6789,8 +6262,7 @@
         "oeuf",
         "sauce cacahuète",
         "tempeh"
-      ],
-      "slug": "gado-gado"
+      ]
     },
     {
       "id": 529,
@@ -6802,8 +6274,7 @@
         "citronnelle",
         "vermicelles",
         "oeuf"
-      ],
-      "slug": "soto-ayam"
+      ]
     },
     {
       "id": 530,
@@ -6815,8 +6286,7 @@
         "bouillon",
         "céleri",
         "échalote frite"
-      ],
-      "slug": "bakso"
+      ]
     },
     {
       "id": 531,
@@ -6828,8 +6298,7 @@
         "chou",
         "poulet",
         "oeuf"
-      ],
-      "slug": "mie-goreng"
+      ]
     },
     {
       "id": 532,
@@ -6841,8 +6310,7 @@
         "piment",
         "feuille de kaffir",
         "gingembre"
-      ],
-      "slug": "beef-rendang-padang"
+      ]
     },
     {
       "id": 533,
@@ -6855,8 +6323,7 @@
         "cacahuètes",
         "oeuf",
         "concombre"
-      ],
-      "slug": "nasi-lemak"
+      ]
     },
     {
       "id": 534,
@@ -6868,8 +6335,7 @@
         "crevettes",
         "pâte de curry",
         "tofu"
-      ],
-      "slug": "laksa"
+      ]
     },
     {
       "id": 535,
@@ -6881,8 +6347,7 @@
         "saucisse chinoise",
         "oeuf",
         "germes de soja"
-      ],
-      "slug": "char-kway-teow"
+      ]
     },
     {
       "id": 536,
@@ -6894,8 +6359,7 @@
         "dal",
         "oeuf",
         "lait"
-      ],
-      "slug": "roti-canai"
+      ]
     },
     {
       "id": 537,
@@ -6907,8 +6371,7 @@
         "épices",
         "citronnelle",
         "piment"
-      ],
-      "slug": "rendang-malaisien"
+      ]
     },
     {
       "id": 538,
@@ -6920,8 +6383,7 @@
         "gingembre",
         "sauce piment",
         "concombre"
-      ],
-      "slug": "hainanese-chicken-rice"
+      ]
     },
     {
       "id": 539,
@@ -6933,8 +6395,7 @@
         "tomate",
         "oeuf",
         "ail"
-      ],
-      "slug": "chili-crab"
+      ]
     },
     {
       "id": 540,
@@ -6946,8 +6407,7 @@
         "poivre",
         "herbes chinoises",
         "sauce soja"
-      ],
-      "slug": "bak-kut-teh"
+      ]
     },
     {
       "id": 541,
@@ -6960,8 +6420,7 @@
         "ail",
         "laurier",
         "poivre"
-      ],
-      "slug": "adobo"
+      ]
     },
     {
       "id": 542,
@@ -6973,8 +6432,7 @@
         "radis",
         "haricots longs",
         "tomate"
-      ],
-      "slug": "sinigang"
+      ]
     },
     {
       "id": 543,
@@ -6986,8 +6444,7 @@
         "laurier",
         "sel",
         "huile"
-      ],
-      "slug": "lechon-kawali"
+      ]
     },
     {
       "id": 544,
@@ -7000,8 +6457,7 @@
         "chou",
         "carotte",
         "sauce soja"
-      ],
-      "slug": "pancit-canton"
+      ]
     },
     {
       "id": 545,
@@ -7013,8 +6469,7 @@
         "haricots sucrés",
         "flan",
         "ube"
-      ],
-      "slug": "halo-halo"
+      ]
     },
     {
       "id": 546,
@@ -7026,8 +6481,7 @@
         "aubergine",
         "haricots",
         "bagoong"
-      ],
-      "slug": "kare-kare"
+      ]
     },
     {
       "id": 547,
@@ -7039,8 +6493,7 @@
         "citron",
         "ail",
         "huile d'olive"
-      ],
-      "slug": "houmous"
+      ]
     },
     {
       "id": 548,
@@ -7053,8 +6506,7 @@
         "menthe",
         "citron",
         "huile d'olive"
-      ],
-      "slug": "taboule-libanais"
+      ]
     },
     {
       "id": 549,
@@ -7066,8 +6518,7 @@
         "cumin",
         "ail",
         "persil"
-      ],
-      "slug": "falafel"
+      ]
     },
     {
       "id": 550,
@@ -7079,8 +6530,7 @@
         "citron",
         "ail",
         "huile d'olive"
-      ],
-      "slug": "moutabal"
+      ]
     },
     {
       "id": 551,
@@ -7093,8 +6543,7 @@
         "sumac",
         "menthe",
         "radis"
-      ],
-      "slug": "fattouche"
+      ]
     },
     {
       "id": 552,
@@ -7106,8 +6555,7 @@
         "oignon",
         "pignons",
         "cannelle"
-      ],
-      "slug": "kebbe"
+      ]
     },
     {
       "id": 553,
@@ -7119,8 +6567,7 @@
         "ail",
         "citron",
         "paprika"
-      ],
-      "slug": "chich-taouk"
+      ]
     },
     {
       "id": 554,
@@ -7131,8 +6578,7 @@
         "zaatar",
         "huile d'olive",
         "sésame"
-      ],
-      "slug": "manakich"
+      ]
     },
     {
       "id": 555,
@@ -7144,8 +6590,7 @@
         "oignons frits",
         "cumin",
         "huile d'olive"
-      ],
-      "slug": "mujaddara"
+      ]
     },
     {
       "id": 556,
@@ -7157,8 +6602,7 @@
         "tomate",
         "citron",
         "menthe"
-      ],
-      "slug": "warak-enab"
+      ]
     },
     {
       "id": 557,
@@ -7171,8 +6615,7 @@
         "oignon",
         "épices",
         "tomate"
-      ],
-      "slug": "shawarma"
+      ]
     },
     {
       "id": 558,
@@ -7184,8 +6627,7 @@
         "pain",
         "pignons",
         "ail"
-      ],
-      "slug": "fatteh"
+      ]
     },
     {
       "id": 559,
@@ -7197,8 +6639,7 @@
         "menthe",
         "oignon",
         "épices"
-      ],
-      "slug": "kibbeh-nayyeh"
+      ]
     },
     {
       "id": 560,
@@ -7210,8 +6651,7 @@
         "poulet",
         "chou-fleur",
         "pignons"
-      ],
-      "slug": "maqluba"
+      ]
     },
     {
       "id": 561,
@@ -7223,8 +6663,7 @@
         "oignons",
         "pain taboon",
         "pignons"
-      ],
-      "slug": "musakhan"
+      ]
     },
     {
       "id": 562,
@@ -7236,8 +6675,7 @@
         "pois chiches",
         "oignon",
         "cumin"
-      ],
-      "slug": "maftoul"
+      ]
     },
     {
       "id": 563,
@@ -7249,8 +6687,7 @@
         "cumin",
         "pita",
         "tahini"
-      ],
-      "slug": "falafel-israelien"
+      ]
     },
     {
       "id": 564,
@@ -7263,8 +6700,7 @@
         "cumin",
         "paprika",
         "ail"
-      ],
-      "slug": "shakshuka"
+      ]
     },
     {
       "id": 565,
@@ -7276,8 +6712,7 @@
         "oeuf dur",
         "tahini",
         "amba"
-      ],
-      "slug": "sabich"
+      ]
     },
     {
       "id": 566,
@@ -7289,8 +6724,7 @@
         "eau de rose",
         "sirop",
         "pistaches"
-      ],
-      "slug": "malabi"
+      ]
     },
     {
       "id": 567,
@@ -7302,8 +6736,7 @@
         "riz",
         "pain",
         "amandes"
-      ],
-      "slug": "mansaf"
+      ]
     },
     {
       "id": 568,
@@ -7315,8 +6748,7 @@
         "tomate",
         "raisins secs",
         "épices loomi"
-      ],
-      "slug": "kabsa"
+      ]
     },
     {
       "id": 569,
@@ -7328,8 +6760,7 @@
         "citron noir",
         "oignon",
         "curcuma"
-      ],
-      "slug": "machboos"
+      ]
     },
     {
       "id": 570,
@@ -7341,8 +6772,7 @@
         "ghee",
         "cannelle",
         "sel"
-      ],
-      "slug": "harees"
+      ]
     },
     {
       "id": 571,
@@ -7354,8 +6784,7 @@
         "feuilles de bananier",
         "ail",
         "vinaigre"
-      ],
-      "slug": "shuwa"
+      ]
     },
     {
       "id": 572,
@@ -7367,8 +6796,7 @@
         "tomate",
         "riz",
         "pain"
-      ],
-      "slug": "saltah"
+      ]
     },
     {
       "id": 573,
@@ -7380,8 +6808,7 @@
         "cardamome",
         "clou de girofle",
         "safran"
-      ],
-      "slug": "mandi"
+      ]
     },
     {
       "id": 574,
@@ -7393,8 +6820,7 @@
         "safran",
         "beurre",
         "sumac"
-      ],
-      "slug": "tchelo-kebab"
+      ]
     },
     {
       "id": 575,
@@ -7406,8 +6832,7 @@
         "agneau",
         "citron noir",
         "fenugrec"
-      ],
-      "slug": "ghormeh-sabzi"
+      ]
     },
     {
       "id": 576,
@@ -7419,8 +6844,7 @@
         "mélasse de grenade",
         "oignon",
         "curcuma"
-      ],
-      "slug": "fesenjan"
+      ]
     },
     {
       "id": 577,
@@ -7432,8 +6856,7 @@
         "herbes",
         "kashk",
         "menthe séchée"
-      ],
-      "slug": "ash-e-reshteh"
+      ]
     },
     {
       "id": 578,
@@ -7445,8 +6868,7 @@
         "safran",
         "poulet",
         "jaunes d'oeufs"
-      ],
-      "slug": "tahchin"
+      ]
     },
     {
       "id": 579,
@@ -7458,8 +6880,7 @@
         "pois cassés",
         "herbes",
         "citron"
-      ],
-      "slug": "dolmeh"
+      ]
     },
     {
       "id": 580,
@@ -7471,8 +6892,7 @@
         "curcuma",
         "huile",
         "citron"
-      ],
-      "slug": "masgouf"
+      ]
     },
     {
       "id": 581,
@@ -7484,8 +6904,7 @@
         "viande hachée",
         "tomate",
         "citron"
-      ],
-      "slug": "dolma-irakienne"
+      ]
     },
     {
       "id": 582,
@@ -7497,8 +6916,7 @@
         "persil",
         "oignon",
         "sumac"
-      ],
-      "slug": "kebab-adana"
+      ]
     },
     {
       "id": 583,
@@ -7510,8 +6928,7 @@
         "sauce tomate",
         "yaourt",
         "beurre"
-      ],
-      "slug": "iskender-kebab"
+      ]
     },
     {
       "id": 584,
@@ -7523,8 +6940,7 @@
         "tomate",
         "persil",
         "piment"
-      ],
-      "slug": "lahmacun"
+      ]
     },
     {
       "id": 585,
@@ -7536,8 +6952,7 @@
         "viande hachée",
         "oeuf",
         "poivron"
-      ],
-      "slug": "pide"
+      ]
     },
     {
       "id": 586,
@@ -7549,8 +6964,7 @@
         "poivron vert",
         "huile d'olive",
         "oignon"
-      ],
-      "slug": "menemen"
+      ]
     },
     {
       "id": 587,
@@ -7562,8 +6976,7 @@
         "oignon",
         "cumin",
         "citron"
-      ],
-      "slug": "mercimek-corbas"
+      ]
     },
     {
       "id": 588,
@@ -7575,8 +6988,7 @@
         "yaourt",
         "ail",
         "beurre au paprika"
-      ],
-      "slug": "manti-turc"
+      ]
     },
     {
       "id": 589,
@@ -7588,8 +7000,7 @@
         "tomate",
         "ail",
         "huile d'olive"
-      ],
-      "slug": "imam-bay-ld"
+      ]
     },
     {
       "id": 590,
@@ -7601,8 +7012,7 @@
         "oignon",
         "cumin",
         "persil"
-      ],
-      "slug": "kofte"
+      ]
     },
     {
       "id": 591,
@@ -7614,8 +7024,7 @@
         "épinards",
         "oeufs",
         "beurre"
-      ],
-      "slug": "borek"
+      ]
     },
     {
       "id": 592,
@@ -7626,8 +7035,7 @@
         "pistaches",
         "sirop de sucre",
         "beurre"
-      ],
-      "slug": "baklava"
+      ]
     },
     {
       "id": 593,
@@ -7639,8 +7047,7 @@
         "sirop",
         "pistaches",
         "beurre"
-      ],
-      "slug": "kunefe"
+      ]
     },
     {
       "id": 594,
@@ -7651,8 +7058,7 @@
         "amidon",
         "eau de rose",
         "pistaches"
-      ],
-      "slug": "lokum"
+      ]
     },
     {
       "id": 595,
@@ -7664,8 +7070,7 @@
         "sucre",
         "vanille",
         "cannelle"
-      ],
-      "slug": "sutlac"
+      ]
     },
     {
       "id": 596,
@@ -7678,8 +7083,7 @@
         "merguez",
         "pois chiches",
         "légumes"
-      ],
-      "slug": "couscous-royal"
+      ]
     },
     {
       "id": 597,
@@ -7692,8 +7096,7 @@
         "gingembre",
         "safran",
         "oignon"
-      ],
-      "slug": "tajine-de-poulet-aux-olives"
+      ]
     },
     {
       "id": 598,
@@ -7706,8 +7109,7 @@
         "cannelle",
         "miel",
         "oignon"
-      ],
-      "slug": "tajine-d-agneau-aux-pruneaux"
+      ]
     },
     {
       "id": 599,
@@ -7720,8 +7122,7 @@
         "cannelle",
         "sucre glace",
         "oeufs"
-      ],
-      "slug": "pastilla-au-pigeon"
+      ]
     },
     {
       "id": 600,
@@ -7734,8 +7135,7 @@
         "coriandre",
         "agneau",
         "vermicelles"
-      ],
-      "slug": "harira"
+      ]
     },
     {
       "id": 601,
@@ -7747,8 +7147,7 @@
         "ail",
         "cumin",
         "paprika"
-      ],
-      "slug": "zaalouk"
+      ]
     },
     {
       "id": 602,
@@ -7760,8 +7159,7 @@
         "beurre",
         "miel",
         "sel"
-      ],
-      "slug": "msemen"
+      ]
     },
     {
       "id": 603,
@@ -7773,8 +7171,7 @@
         "lentilles",
         "fenugrec",
         "ras el hanout"
-      ],
-      "slug": "rfissa"
+      ]
     },
     {
       "id": 604,
@@ -7786,8 +7183,7 @@
         "beurre",
         "ail",
         "sel"
-      ],
-      "slug": "mechoui"
+      ]
     },
     {
       "id": 605,
@@ -7799,8 +7195,7 @@
         "sésame",
         "anis",
         "eau de fleur d'oranger"
-      ],
-      "slug": "chebakia"
+      ]
     },
     {
       "id": 606,
@@ -7813,8 +7208,7 @@
         "carottes",
         "pois chiches",
         "navets"
-      ],
-      "slug": "couscous-algerien"
+      ]
     },
     {
       "id": 607,
@@ -7826,8 +7220,7 @@
         "tomate",
         "coriandre",
         "pois chiches"
-      ],
-      "slug": "chorba-frik"
+      ]
     },
     {
       "id": 608,
@@ -7839,8 +7232,7 @@
         "pois chiches",
         "tomate",
         "épices"
-      ],
-      "slug": "chakhchoukha"
+      ]
     },
     {
       "id": 609,
@@ -7852,8 +7244,7 @@
         "poivron",
         "oignon",
         "huile"
-      ],
-      "slug": "mhadjeb"
+      ]
     },
     {
       "id": 610,
@@ -7865,8 +7256,7 @@
         "miel",
         "cannelle",
         "huile"
-      ],
-      "slug": "makroud"
+      ]
     },
     {
       "id": 611,
@@ -7878,8 +7268,7 @@
         "thon",
         "persil",
         "câpres"
-      ],
-      "slug": "brik-a-l-oeuf"
+      ]
     },
     {
       "id": 612,
@@ -7891,8 +7280,7 @@
         "harissa",
         "carottes",
         "pois chiches"
-      ],
-      "slug": "couscous-tunisien-au-poisson"
+      ]
     },
     {
       "id": 613,
@@ -7905,8 +7293,7 @@
         "cumin",
         "oeuf",
         "huile d'olive"
-      ],
-      "slug": "lablabi"
+      ]
     },
     {
       "id": 614,
@@ -7918,8 +7305,7 @@
         "tomate",
         "poivron",
         "harissa"
-      ],
-      "slug": "ojja-merguez"
+      ]
     },
     {
       "id": 615,
@@ -7931,8 +7317,7 @@
         "huile d'olive",
         "ail",
         "laurier"
-      ],
-      "slug": "mloukhia"
+      ]
     },
     {
       "id": 616,
@@ -7944,8 +7329,7 @@
         "macaronis",
         "sauce tomate",
         "oignons frits"
-      ],
-      "slug": "koshari"
+      ]
     },
     {
       "id": 617,
@@ -7957,8 +7341,7 @@
         "citron",
         "huile d'olive",
         "ail"
-      ],
-      "slug": "ful-medames"
+      ]
     },
     {
       "id": 618,
@@ -7970,8 +7353,7 @@
         "ail",
         "coriandre",
         "bouillon"
-      ],
-      "slug": "molokheya"
+      ]
     },
     {
       "id": 619,
@@ -7983,8 +7365,7 @@
         "tomate",
         "aneth",
         "persil"
-      ],
-      "slug": "mahshi"
+      ]
     },
     {
       "id": 620,
@@ -7996,8 +7377,7 @@
         "noix",
         "raisins secs",
         "coco"
-      ],
-      "slug": "om-ali"
+      ]
     },
     {
       "id": 621,
@@ -8009,8 +7389,7 @@
         "oignons",
         "beurre épicé",
         "oeuf dur"
-      ],
-      "slug": "doro-wat"
+      ]
     },
     {
       "id": 622,
@@ -8020,8 +7399,7 @@
         "farine de teff",
         "eau",
         "levain"
-      ],
-      "slug": "injera"
+      ]
     },
     {
       "id": 623,
@@ -8032,8 +7410,7 @@
         "mitmita",
         "beurre clarifié",
         "ail"
-      ],
-      "slug": "kitfo"
+      ]
     },
     {
       "id": 624,
@@ -8045,8 +7422,7 @@
         "ail",
         "oignon",
         "huile"
-      ],
-      "slug": "shiro"
+      ]
     },
     {
       "id": 625,
@@ -8058,8 +7434,7 @@
         "piment",
         "romarin",
         "beurre"
-      ],
-      "slug": "tibs"
+      ]
     },
     {
       "id": 626,
@@ -8071,8 +7446,7 @@
         "piment",
         "gingembre",
         "oignon"
-      ],
-      "slug": "suya"
+      ]
     },
     {
       "id": 627,
@@ -8085,8 +7459,7 @@
         "oignon",
         "piment",
         "bouillon"
-      ],
-      "slug": "jollof-rice"
+      ]
     },
     {
       "id": 628,
@@ -8098,8 +7471,7 @@
         "viande",
         "huile de palme",
         "piment"
-      ],
-      "slug": "egusi-soup"
+      ]
     },
     {
       "id": 629,
@@ -8109,8 +7481,7 @@
         "igname",
         "eau",
         "sel"
-      ],
-      "slug": "pounded-yam"
+      ]
     },
     {
       "id": 630,
@@ -8122,8 +7493,7 @@
         "oignon",
         "oeuf",
         "huile"
-      ],
-      "slug": "moin-moin"
+      ]
     },
     {
       "id": 631,
@@ -8135,8 +7505,7 @@
         "feuilles de sorgho",
         "piment",
         "spaghetti"
-      ],
-      "slug": "waakye"
+      ]
     },
     {
       "id": 632,
@@ -8147,8 +7516,7 @@
         "manioc",
         "eau",
         "sel"
-      ],
-      "slug": "banku"
+      ]
     },
     {
       "id": 633,
@@ -8159,8 +7527,7 @@
         "plantain",
         "eau",
         "sel"
-      ],
-      "slug": "fufu"
+      ]
     },
     {
       "id": 634,
@@ -8172,8 +7539,7 @@
         "piment",
         "anis",
         "huile"
-      ],
-      "slug": "kelewele"
+      ]
     },
     {
       "id": 635,
@@ -8186,8 +7552,7 @@
         "chou",
         "carottes",
         "manioc"
-      ],
-      "slug": "thieboudienne"
+      ]
     },
     {
       "id": 636,
@@ -8199,8 +7564,7 @@
         "citron",
         "moutarde",
         "piment"
-      ],
-      "slug": "yassa-poulet"
+      ]
     },
     {
       "id": 637,
@@ -8212,8 +7576,7 @@
         "tomate",
         "carottes",
         "patate douce"
-      ],
-      "slug": "mafe"
+      ]
     },
     {
       "id": 638,
@@ -8225,8 +7588,7 @@
         "oignon",
         "persil",
         "piment"
-      ],
-      "slug": "pastels"
+      ]
     },
     {
       "id": 639,
@@ -8238,8 +7600,7 @@
         "oignon",
         "tomate",
         "piment"
-      ],
-      "slug": "attieke-poisson"
+      ]
     },
     {
       "id": 640,
@@ -8251,8 +7612,7 @@
         "aubergine",
         "gingembre",
         "piment"
-      ],
-      "slug": "kedjenou"
+      ]
     },
     {
       "id": 641,
@@ -8264,8 +7624,7 @@
         "carottes",
         "haricots verts",
         "poivron"
-      ],
-      "slug": "poulet-dg"
+      ]
     },
     {
       "id": 642,
@@ -8277,8 +7636,7 @@
         "crevettes",
         "boeuf",
         "huile"
-      ],
-      "slug": "ndole"
+      ]
     },
     {
       "id": 643,
@@ -8290,8 +7648,7 @@
         "tomate",
         "oignon",
         "piment"
-      ],
-      "slug": "moambe-de-poulet"
+      ]
     },
     {
       "id": 644,
@@ -8303,8 +7660,7 @@
         "citron",
         "kachumbari",
         "piment"
-      ],
-      "slug": "nyama-choma"
+      ]
     },
     {
       "id": 645,
@@ -8314,8 +7670,7 @@
         "farine de maïs",
         "eau",
         "sel"
-      ],
-      "slug": "ugali"
+      ]
     },
     {
       "id": 646,
@@ -8327,8 +7682,7 @@
         "oignon",
         "huile",
         "citron"
-      ],
-      "slug": "sukuma-wiki"
+      ]
     },
     {
       "id": 647,
@@ -8340,8 +7694,7 @@
         "cardamome",
         "cannelle",
         "cumin"
-      ],
-      "slug": "zanzibar-pilau"
+      ]
     },
     {
       "id": 648,
@@ -8353,8 +7706,7 @@
         "pommes de terre",
         "oignon",
         "épices"
-      ],
-      "slug": "bunny-chow"
+      ]
     },
     {
       "id": 649,
@@ -8367,8 +7719,7 @@
         "oeuf",
         "lait",
         "pain"
-      ],
-      "slug": "bobotie"
+      ]
     },
     {
       "id": 650,
@@ -8379,8 +7730,7 @@
         "coriandre",
         "vinaigre",
         "épices"
-      ],
-      "slug": "braai-boerewors"
+      ]
     },
     {
       "id": 651,
@@ -8391,8 +7741,7 @@
         "vinaigre",
         "coriandre",
         "sel"
-      ],
-      "slug": "biltong"
+      ]
     },
     {
       "id": 652,
@@ -8404,8 +7753,7 @@
         "crème",
         "beurre",
         "farine"
-      ],
-      "slug": "malva-pudding"
+      ]
     },
     {
       "id": 653,
@@ -8417,8 +7765,7 @@
         "gingembre",
         "tomate",
         "oignon"
-      ],
-      "slug": "romazava"
+      ]
     },
     {
       "id": 654,
@@ -8429,8 +7776,7 @@
         "porc",
         "lait de coco",
         "ail"
-      ],
-      "slug": "ravitoto"
+      ]
     },
     {
       "id": 655,
@@ -8442,8 +7788,7 @@
         "oignon",
         "gingembre",
         "piment"
-      ],
-      "slug": "rougail-saucisse"
+      ]
     },
     {
       "id": 656,
@@ -8456,8 +7801,7 @@
         "oignon",
         "thym",
         "gingembre"
-      ],
-      "slug": "cari-poulet-reunionnais"
+      ]
     },
     {
       "id": 657,
@@ -8470,8 +7814,7 @@
         "salade",
         "tomate",
         "oignon"
-      ],
-      "slug": "hamburger-classique"
+      ]
     },
     {
       "id": 658,
@@ -8483,8 +7826,7 @@
         "bacon",
         "cheddar",
         "sauce barbecue"
-      ],
-      "slug": "cheeseburger-bacon"
+      ]
     },
     {
       "id": 659,
@@ -8496,8 +7838,7 @@
         "moutarde",
         "oignons",
         "choucroute"
-      ],
-      "slug": "hot-dog-new-york"
+      ]
     },
     {
       "id": 660,
@@ -8509,8 +7850,7 @@
         "lait",
         "beurre",
         "farine"
-      ],
-      "slug": "mac-and-cheese"
+      ]
     },
     {
       "id": 661,
@@ -8522,8 +7862,7 @@
         "beurre",
         "céleri",
         "sauce bleu"
-      ],
-      "slug": "buffalo-wings"
+      ]
     },
     {
       "id": 662,
@@ -8535,8 +7874,7 @@
         "crème",
         "bacon",
         "oignon"
-      ],
-      "slug": "clam-chowder"
+      ]
     },
     {
       "id": 663,
@@ -8549,8 +7887,7 @@
         "crevettes",
         "céleri",
         "poivron"
-      ],
-      "slug": "gumbo"
+      ]
     },
     {
       "id": 664,
@@ -8563,8 +7900,7 @@
         "poulet",
         "poivron",
         "céleri"
-      ],
-      "slug": "jambalaya"
+      ]
     },
     {
       "id": 665,
@@ -8576,8 +7912,7 @@
         "laitue",
         "tomate",
         "rémoulade"
-      ],
-      "slug": "po-boy-aux-crevettes"
+      ]
     },
     {
       "id": 666,
@@ -8589,8 +7924,7 @@
         "paprika",
         "cassonade",
         "pain"
-      ],
-      "slug": "pulled-pork"
+      ]
     },
     {
       "id": 667,
@@ -8601,8 +7935,7 @@
         "sel",
         "poivre",
         "bois de fumage"
-      ],
-      "slug": "brisket-fume"
+      ]
     },
     {
       "id": 668,
@@ -8614,8 +7947,7 @@
         "farine",
         "paprika",
         "huile"
-      ],
-      "slug": "fried-chicken"
+      ]
     },
     {
       "id": 669,
@@ -8627,8 +7959,7 @@
         "lait",
         "oeufs",
         "levure"
-      ],
-      "slug": "cornbread"
+      ]
     },
     {
       "id": 670,
@@ -8638,8 +7969,7 @@
         "pain de mie",
         "cheddar",
         "beurre"
-      ],
-      "slug": "grilled-cheese"
+      ]
     },
     {
       "id": 671,
@@ -8652,8 +7982,7 @@
         "anchois",
         "oeuf",
         "citron"
-      ],
-      "slug": "caesar-salad"
+      ]
     },
     {
       "id": 672,
@@ -8666,8 +7995,7 @@
         "oeuf",
         "roquefort",
         "laitue"
-      ],
-      "slug": "cobb-salad"
+      ]
     },
     {
       "id": 673,
@@ -8679,8 +8007,7 @@
         "choucroute",
         "emmental",
         "sauce russe"
-      ],
-      "slug": "reuben-sandwich"
+      ]
     },
     {
       "id": 674,
@@ -8692,8 +8019,7 @@
         "oignons",
         "provolone",
         "poivron"
-      ],
-      "slug": "philly-cheesesteak"
+      ]
     },
     {
       "id": 675,
@@ -8705,8 +8031,7 @@
         "tomate",
         "cumin",
         "piment"
-      ],
-      "slug": "chili-con-carne"
+      ]
     },
     {
       "id": 676,
@@ -8718,8 +8043,7 @@
         "lait",
         "levure",
         "sirop d'érable"
-      ],
-      "slug": "pancakes-au-sirop-d-erable"
+      ]
     },
     {
       "id": 677,
@@ -8731,8 +8055,7 @@
         "fromage frais",
         "câpres",
         "oignon rouge"
-      ],
-      "slug": "bagel-saumon-cream-cheese"
+      ]
     },
     {
       "id": 678,
@@ -8744,8 +8067,7 @@
         "cannelle",
         "sucre",
         "beurre"
-      ],
-      "slug": "apple-pie"
+      ]
     },
     {
       "id": 679,
@@ -8757,8 +8079,7 @@
         "oeufs",
         "sucre",
         "vanille"
-      ],
-      "slug": "cheesecake-new-york"
+      ]
     },
     {
       "id": 680,
@@ -8770,8 +8091,7 @@
         "oeufs",
         "sucre",
         "noix"
-      ],
-      "slug": "brownies"
+      ]
     },
     {
       "id": 681,
@@ -8783,8 +8103,7 @@
         "cassonade",
         "pépites de chocolat",
         "oeuf"
-      ],
-      "slug": "cookies-aux-pepites-de-chocolat"
+      ]
     },
     {
       "id": 682,
@@ -8796,8 +8115,7 @@
         "biscuits",
         "jaunes d'oeufs",
         "chantilly"
-      ],
-      "slug": "key-lime-pie"
+      ]
     },
     {
       "id": 683,
@@ -8809,8 +8127,7 @@
         "oeufs",
         "beurre",
         "pâte"
-      ],
-      "slug": "pecan-pie"
+      ]
     },
     {
       "id": 684,
@@ -8820,8 +8137,7 @@
         "frites",
         "fromage en grains",
         "sauce brune"
-      ],
-      "slug": "poutine"
+      ]
     },
     {
       "id": 685,
@@ -8833,8 +8149,7 @@
         "pommes de terre",
         "cannelle",
         "oignon"
-      ],
-      "slug": "tourtiere"
+      ]
     },
     {
       "id": 686,
@@ -8845,8 +8160,7 @@
         "sucre",
         "cannelle",
         "citron"
-      ],
-      "slug": "beavertail"
+      ]
     },
     {
       "id": 687,
@@ -8857,8 +8171,7 @@
         "sirop d'érable",
         "sel",
         "fumée"
-      ],
-      "slug": "saumon-fume-erable"
+      ]
     },
     {
       "id": 688,
@@ -8869,8 +8182,7 @@
         "maïs",
         "purée de pommes de terre",
         "oignon"
-      ],
-      "slug": "pate-chinois"
+      ]
     },
     {
       "id": 689,
@@ -8882,8 +8194,7 @@
         "pâte",
         "beurre",
         "oeufs"
-      ],
-      "slug": "tarte-au-sucre"
+      ]
     },
     {
       "id": 690,
@@ -8896,8 +8207,7 @@
         "coriandre",
         "oignon",
         "achiote"
-      ],
-      "slug": "tacos-al-pastor"
+      ]
     },
     {
       "id": 691,
@@ -8909,8 +8219,7 @@
         "coriandre",
         "oignon",
         "citron vert"
-      ],
-      "slug": "tacos-de-carnitas"
+      ]
     },
     {
       "id": 692,
@@ -8922,8 +8231,7 @@
         "oignon",
         "coriandre",
         "piment"
-      ],
-      "slug": "guacamole"
+      ]
     },
     {
       "id": 693,
@@ -8935,8 +8243,7 @@
         "poulet",
         "piment",
         "coriandre"
-      ],
-      "slug": "quesadilla"
+      ]
     },
     {
       "id": 694,
@@ -8948,8 +8255,7 @@
         "tomatillo",
         "crème",
         "fromage"
-      ],
-      "slug": "enchiladas-verdes"
+      ]
     },
     {
       "id": 695,
@@ -8961,8 +8267,7 @@
         "grenade",
         "sauce aux noix",
         "fruits"
-      ],
-      "slug": "chiles-en-nogada"
+      ]
     },
     {
       "id": 696,
@@ -8974,8 +8279,7 @@
         "piments",
         "sésame",
         "épices"
-      ],
-      "slug": "mole-poblano"
+      ]
     },
     {
       "id": 697,
@@ -8987,8 +8291,7 @@
         "piment guajillo",
         "radis",
         "laitue"
-      ],
-      "slug": "pozole-rojo"
+      ]
     },
     {
       "id": 698,
@@ -9000,8 +8303,7 @@
         "feuilles de maïs",
         "piment",
         "saindoux"
-      ],
-      "slug": "tamales"
+      ]
     },
     {
       "id": 699,
@@ -9013,8 +8315,7 @@
         "orange amère",
         "feuilles de bananier",
         "oignon rouge"
-      ],
-      "slug": "cochinita-pibil"
+      ]
     },
     {
       "id": 700,
@@ -9026,8 +8327,7 @@
         "tomate",
         "coriandre",
         "oignon"
-      ],
-      "slug": "ceviche-mexicain"
+      ]
     },
     {
       "id": 701,
@@ -9039,8 +8339,7 @@
         "cotija",
         "piment en poudre",
         "citron vert"
-      ],
-      "slug": "elote"
+      ]
     },
     {
       "id": 702,
@@ -9052,8 +8351,7 @@
         "oeuf",
         "crème",
         "fromage"
-      ],
-      "slug": "chilaquiles"
+      ]
     },
     {
       "id": 703,
@@ -9066,8 +8364,7 @@
         "boeuf",
         "fromage",
         "guacamole"
-      ],
-      "slug": "burrito"
+      ]
     },
     {
       "id": 704,
@@ -9079,8 +8376,7 @@
         "sucre",
         "chocolat",
         "huile"
-      ],
-      "slug": "churros-mexicains"
+      ]
     },
     {
       "id": 705,
@@ -9091,8 +8387,7 @@
         "oeufs",
         "caramel",
         "vanille"
-      ],
-      "slug": "flan-mexicain"
+      ]
     },
     {
       "id": 706,
@@ -9104,8 +8399,7 @@
         "haricots",
         "chicharrón",
         "curtido"
-      ],
-      "slug": "pupusa"
+      ]
     },
     {
       "id": 707,
@@ -9117,8 +8411,7 @@
         "oignon",
         "poivron",
         "coriandre"
-      ],
-      "slug": "gallo-pinto"
+      ]
     },
     {
       "id": 708,
@@ -9130,8 +8423,7 @@
         "crème",
         "fromage",
         "oeuf"
-      ],
-      "slug": "baleada"
+      ]
     },
     {
       "id": 709,
@@ -9143,8 +8435,7 @@
         "tomate",
         "oignon",
         "cumin"
-      ],
-      "slug": "ropa-vieja"
+      ]
     },
     {
       "id": 710,
@@ -9156,8 +8447,7 @@
         "ail",
         "oignon",
         "laurier"
-      ],
-      "slug": "moros-y-cristianos"
+      ]
     },
     {
       "id": 711,
@@ -9170,8 +8460,7 @@
         "fromage suisse",
         "cornichons",
         "moutarde"
-      ],
-      "slug": "cubano-sandwich"
+      ]
     },
     {
       "id": 712,
@@ -9183,8 +8472,7 @@
         "chicharrón",
         "huile d'olive",
         "bouillon"
-      ],
-      "slug": "mofongo"
+      ]
     },
     {
       "id": 713,
@@ -9196,8 +8484,7 @@
         "sofrito",
         "porc",
         "olives"
-      ],
-      "slug": "arroz-con-gandules"
+      ]
     },
     {
       "id": 714,
@@ -9209,8 +8496,7 @@
         "piment de la Jamaïque",
         "thym",
         "oignon nouveau"
-      ],
-      "slug": "jerk-chicken"
+      ]
     },
     {
       "id": 715,
@@ -9222,8 +8508,7 @@
         "oignon",
         "poivron",
         "thym"
-      ],
-      "slug": "ackee-and-saltfish"
+      ]
     },
     {
       "id": 716,
@@ -9235,8 +8520,7 @@
         "pois chiches",
         "pommes de terre",
         "curcuma"
-      ],
-      "slug": "roti-trinidadien"
+      ]
     },
     {
       "id": 717,
@@ -9248,8 +8532,7 @@
         "plantain",
         "maïs",
         "coriandre"
-      ],
-      "slug": "sancocho"
+      ]
     },
     {
       "id": 718,
@@ -9261,8 +8544,7 @@
         "vinaigre",
         "beurre",
         "salami"
-      ],
-      "slug": "mangu"
+      ]
     },
     {
       "id": 719,
@@ -9275,8 +8557,7 @@
         "saucisse",
         "orange",
         "farofa"
-      ],
-      "slug": "feijoada"
+      ]
     },
     {
       "id": 720,
@@ -9289,8 +8570,7 @@
         "tomate",
         "coriandre",
         "poivron"
-      ],
-      "slug": "moqueca-de-peixe"
+      ]
     },
     {
       "id": 721,
@@ -9302,8 +8582,7 @@
         "oeufs",
         "lait",
         "huile"
-      ],
-      "slug": "pao-de-queijo"
+      ]
     },
     {
       "id": 722,
@@ -9315,8 +8594,7 @@
         "bouillon",
         "chapelure",
         "fromage frais"
-      ],
-      "slug": "coxinha"
+      ]
     },
     {
       "id": 723,
@@ -9326,8 +8604,7 @@
         "picanha",
         "gros sel",
         "chimichurri"
-      ],
-      "slug": "churrasco-picanha"
+      ]
     },
     {
       "id": 724,
@@ -9339,8 +8616,7 @@
         "crevettes",
         "oignon",
         "piment"
-      ],
-      "slug": "acaraje"
+      ]
     },
     {
       "id": 725,
@@ -9351,8 +8627,7 @@
         "cacao",
         "beurre",
         "vermicelles de chocolat"
-      ],
-      "slug": "brigadeiro"
+      ]
     },
     {
       "id": 726,
@@ -9364,8 +8639,7 @@
         "oeuf dur",
         "olives",
         "cumin"
-      ],
-      "slug": "empanadas-argentinas"
+      ]
     },
     {
       "id": 727,
@@ -9376,8 +8650,7 @@
         "gros sel",
         "chimichurri",
         "charbon"
-      ],
-      "slug": "asado"
+      ]
     },
     {
       "id": 728,
@@ -9389,8 +8662,7 @@
         "fromage",
         "sauce tomate",
         "origan"
-      ],
-      "slug": "milanesa-napolitana"
+      ]
     },
     {
       "id": 729,
@@ -9402,8 +8674,7 @@
         "courge",
         "porc",
         "chorizo"
-      ],
-      "slug": "locro"
+      ]
     },
     {
       "id": 730,
@@ -9414,8 +8685,7 @@
         "sucre",
         "vanille",
         "bicarbonate"
-      ],
-      "slug": "dulce-de-leche"
+      ]
     },
     {
       "id": 731,
@@ -9426,8 +8696,7 @@
         "dulce de leche",
         "maïzena",
         "noix de coco"
-      ],
-      "slug": "alfajores"
+      ]
     },
     {
       "id": 732,
@@ -9438,8 +8707,7 @@
         "pain",
         "chimichurri",
         "oignon"
-      ],
-      "slug": "choripan"
+      ]
     },
     {
       "id": 733,
@@ -9452,8 +8720,7 @@
         "piment",
         "patate douce",
         "maïs"
-      ],
-      "slug": "ceviche-peruvien"
+      ]
     },
     {
       "id": 734,
@@ -9466,8 +8733,7 @@
         "frites",
         "sauce soja",
         "riz"
-      ],
-      "slug": "lomo-saltado"
+      ]
     },
     {
       "id": 735,
@@ -9479,8 +8745,7 @@
         "pain",
         "lait",
         "noix"
-      ],
-      "slug": "aji-de-gallina"
+      ]
     },
     {
       "id": 736,
@@ -9492,8 +8757,7 @@
         "ají amarillo",
         "lait",
         "oeuf"
-      ],
-      "slug": "papa-a-la-huancaina"
+      ]
     },
     {
       "id": 737,
@@ -9505,8 +8769,7 @@
         "vinaigre",
         "cumin",
         "ail"
-      ],
-      "slug": "anticuchos"
+      ]
     },
     {
       "id": 738,
@@ -9518,8 +8781,7 @@
         "avocat",
         "citron",
         "ají"
-      ],
-      "slug": "causa-limena"
+      ]
     },
     {
       "id": 739,
@@ -9531,8 +8793,7 @@
         "cumin",
         "romarin",
         "bière"
-      ],
-      "slug": "pollo-a-la-brasa"
+      ]
     },
     {
       "id": 740,
@@ -9544,8 +8805,7 @@
         "beurre",
         "eau",
         "sel"
-      ],
-      "slug": "arepas"
+      ]
     },
     {
       "id": 741,
@@ -9556,8 +8816,7 @@
         "haricots noirs",
         "riz",
         "plantain"
-      ],
-      "slug": "pabellon-criollo"
+      ]
     },
     {
       "id": 742,
@@ -9571,8 +8830,7 @@
         "avocat",
         "oeuf",
         "plantain"
-      ],
-      "slug": "bandeja-paisa"
+      ]
     },
     {
       "id": 743,
@@ -9585,8 +8843,7 @@
         "guascas",
         "crème",
         "câpres"
-      ],
-      "slug": "ajiaco"
+      ]
     },
     {
       "id": 744,
@@ -9598,8 +8855,7 @@
         "pommes de terre",
         "cumin",
         "ají"
-      ],
-      "slug": "empanada-colombienne"
+      ]
     },
     {
       "id": 745,
@@ -9611,8 +8867,7 @@
         "poulet",
         "olives",
         "oeuf dur"
-      ],
-      "slug": "pastel-de-choclo"
+      ]
     },
     {
       "id": 746,
@@ -9624,8 +8879,7 @@
         "poulet",
         "pommes de terre",
         "pierres chaudes"
-      ],
-      "slug": "curanto"
+      ]
     },
     {
       "id": 747,
@@ -9637,8 +8891,7 @@
         "avocat",
         "tomate",
         "mayonnaise"
-      ],
-      "slug": "completo"
+      ]
     },
     {
       "id": 748,
@@ -9651,8 +8904,7 @@
         "fromage",
         "bacon",
         "oeuf"
-      ],
-      "slug": "chivito"
+      ]
     },
     {
       "id": 749,
@@ -9664,8 +8916,7 @@
         "oignon",
         "lait",
         "oeufs"
-      ],
-      "slug": "sopa-paraguaya"
+      ]
     },
     {
       "id": 750,
@@ -9677,8 +8928,7 @@
         "pommes de terre",
         "olives",
         "bouillon gélifié"
-      ],
-      "slug": "saltenas"
+      ]
     },
     {
       "id": 751,
@@ -9690,8 +8940,7 @@
         "pommes de terre",
         "oeuf",
         "tomate"
-      ],
-      "slug": "silpancho"
+      ]
     },
     {
       "id": 752,
@@ -9703,8 +8952,7 @@
         "sauce brune",
         "oignon",
         "ketchup"
-      ],
-      "slug": "meat-pie-australienne"
+      ]
     },
     {
       "id": 753,
@@ -9715,8 +8963,7 @@
         "chantilly",
         "fruits de la passion",
         "fraises"
-      ],
-      "slug": "pavlova"
+      ]
     },
     {
       "id": 754,
@@ -9727,8 +8974,7 @@
         "chocolat",
         "noix de coco",
         "confiture"
-      ],
-      "slug": "lamington"
+      ]
     },
     {
       "id": 755,
@@ -9738,8 +8984,7 @@
         "pain",
         "vegemite",
         "beurre"
-      ],
-      "slug": "vegemite-toast"
+      ]
     },
     {
       "id": 756,
@@ -9750,8 +8995,7 @@
         "citron",
         "huile d'olive",
         "herbes"
-      ],
-      "slug": "barramundi-grille"
+      ]
     },
     {
       "id": 757,
@@ -9763,8 +9007,7 @@
         "pommes de terre",
         "chou",
         "pierres chaudes"
-      ],
-      "slug": "hangi"
+      ]
     },
     {
       "id": 758,
@@ -9775,8 +9018,7 @@
         "caramel",
         "sucre",
         "bicarbonate"
-      ],
-      "slug": "poulet-hokey-pokey"
+      ]
     },
     {
       "id": 759,
@@ -9788,8 +9030,7 @@
         "farine",
         "citron",
         "beurre"
-      ],
-      "slug": "whitebait-fritters"
+      ]
     },
     {
       "id": 760,
@@ -9802,8 +9043,7 @@
         "avocat",
         "algues",
         "sésame"
-      ],
-      "slug": "poke-bowl"
+      ]
     },
     {
       "id": 761,
@@ -9814,8 +9054,7 @@
         "sel de mer",
         "feuilles de bananier",
         "fumée"
-      ],
-      "slug": "kalua-pig"
+      ]
     },
     {
       "id": 762,
@@ -9827,8 +9066,7 @@
         "oeuf",
         "sauce brune",
         "oignon"
-      ],
-      "slug": "loco-moco"
+      ]
     },
     {
       "id": 763,
@@ -9840,8 +9078,7 @@
         "citron vert",
         "concombre",
         "carotte"
-      ],
-      "slug": "poisson-cru-au-lait-de-coco"
+      ]
     },
     {
       "id": 764,
@@ -9853,8 +9090,7 @@
         "citron vert",
         "oignon",
         "piment"
-      ],
-      "slug": "kokoda"
+      ]
     },
     {
       "id": 765,
@@ -9866,8 +9102,7 @@
         "oignons",
         "vin blanc",
         "bouquet garni"
-      ],
-      "slug": "b-uf-carottes"
+      ]
     },
     {
       "id": 766,
@@ -9879,8 +9114,7 @@
         "riz",
         "oignon",
         "bouillon"
-      ],
-      "slug": "chou-farci"
+      ]
     },
     {
       "id": 767,
@@ -9892,8 +9126,7 @@
         "moutarde",
         "huile",
         "échalote"
-      ],
-      "slug": "poireaux-vinaigrette"
+      ]
     },
     {
       "id": 768,
@@ -9904,8 +9137,7 @@
         "mayonnaise",
         "moutarde",
         "citron"
-      ],
-      "slug": "celeri-remoulade"
+      ]
     },
     {
       "id": 769,
@@ -9916,8 +9148,7 @@
         "citron",
         "huile",
         "persil"
-      ],
-      "slug": "carottes-rapees"
+      ]
     },
     {
       "id": 770,
@@ -9928,8 +9159,7 @@
         "mayonnaise",
         "moutarde",
         "ciboulette"
-      ],
-      "slug": "oeufs-mimosa"
+      ]
     },
     {
       "id": 771,
@@ -9941,8 +9171,7 @@
         "salade",
         "miel",
         "noix"
-      ],
-      "slug": "salade-de-chevre-chaud"
+      ]
     },
     {
       "id": 772,
@@ -9954,8 +9183,7 @@
         "fromage",
         "béchamel",
         "oeuf"
-      ],
-      "slug": "croque-madame"
+      ]
     },
     {
       "id": 773,
@@ -9967,8 +9195,7 @@
         "ciboulette",
         "estragon",
         "beurre"
-      ],
-      "slug": "omelette-aux-fines-herbes"
+      ]
     },
     {
       "id": 774,
@@ -9979,8 +9206,7 @@
         "purée de pommes de terre",
         "muscade",
         "huile"
-      ],
-      "slug": "pommes-dauphine"
+      ]
     },
     {
       "id": 775,
@@ -9991,8 +9217,7 @@
         "graisse de canard",
         "ail",
         "persil"
-      ],
-      "slug": "pommes-de-terre-sarladaises"
+      ]
     },
     {
       "id": 776,
@@ -10003,8 +9228,7 @@
         "beurre",
         "lait",
         "muscade"
-      ],
-      "slug": "puree-maison"
+      ]
     },
     {
       "id": 777,
@@ -10016,8 +9240,7 @@
         "oeufs",
         "gruyère",
         "ail"
-      ],
-      "slug": "gratin-de-courgettes"
+      ]
     },
     {
       "id": 778,
@@ -10029,8 +9252,7 @@
         "riz",
         "oignon",
         "persil"
-      ],
-      "slug": "tomates-farcies"
+      ]
     },
     {
       "id": 779,
@@ -10042,8 +9264,7 @@
         "riz",
         "tomate",
         "herbes"
-      ],
-      "slug": "courgettes-farcies"
+      ]
     },
     {
       "id": 780,
@@ -10055,8 +9276,7 @@
         "safran",
         "rouille",
         "croûtons"
-      ],
-      "slug": "soupe-de-poisson"
+      ]
     },
     {
       "id": 781,
@@ -10068,8 +9288,7 @@
         "bouillon",
         "beurre",
         "échalote"
-      ],
-      "slug": "veloute-d-asperges"
+      ]
     },
     {
       "id": 782,
@@ -10081,8 +9300,7 @@
         "vinaigrette",
         "lardons",
         "persil"
-      ],
-      "slug": "salade-de-lentilles"
+      ]
     },
     {
       "id": 783,
@@ -10094,8 +9312,7 @@
         "carottes",
         "oignon",
         "clou de girofle"
-      ],
-      "slug": "petit-sale-aux-lentilles"
+      ]
     },
     {
       "id": 784,
@@ -10106,8 +9323,7 @@
         "purée",
         "moutarde",
         "beurre"
-      ],
-      "slug": "saucisse-puree"
+      ]
     },
     {
       "id": 785,
@@ -10119,8 +9335,7 @@
         "champignons",
         "carottes",
         "citron"
-      ],
-      "slug": "blanquette-de-dinde"
+      ]
     },
     {
       "id": 786,
@@ -10132,8 +9347,7 @@
         "romarin",
         "beurre",
         "ail"
-      ],
-      "slug": "poulet-roti-aux-herbes"
+      ]
     },
     {
       "id": 787,
@@ -10144,8 +9358,7 @@
         "pâte feuilletée",
         "moutarde",
         "champignons"
-      ],
-      "slug": "filet-mignon-en-croute"
+      ]
     },
     {
       "id": 788,
@@ -10157,8 +9370,7 @@
         "vin blanc",
         "crème",
         "oignon"
-      ],
-      "slug": "roti-de-porc-aux-pruneaux"
+      ]
     },
     {
       "id": 789,
@@ -10170,8 +9382,7 @@
         "tomate",
         "vin blanc",
         "champignons"
-      ],
-      "slug": "paupiettes-de-veau"
+      ]
     },
     {
       "id": 790,
@@ -10183,8 +9394,7 @@
         "vinaigre",
         "tomate",
         "échalote"
-      ],
-      "slug": "langue-de-boeuf-sauce-piquante"
+      ]
     },
     {
       "id": 791,
@@ -10196,8 +9406,7 @@
         "échalote",
         "ciboulette",
         "huile"
-      ],
-      "slug": "cervelle-de-canut"
+      ]
     },
     {
       "id": 792,
@@ -10208,8 +9417,7 @@
         "lardons",
         "oignon",
         "beurre"
-      ],
-      "slug": "rosti-aux-lardons"
+      ]
     },
     {
       "id": 793,
@@ -10221,8 +9429,7 @@
         "vin blanc",
         "ail",
         "oeuf"
-      ],
-      "slug": "malakoff"
+      ]
     },
     {
       "id": 794,
@@ -10233,8 +9440,7 @@
         "beurre",
         "parmesan",
         "lait"
-      ],
-      "slug": "polenta-au-fromage"
+      ]
     },
     {
       "id": 795,
@@ -10246,8 +9452,7 @@
         "anchois",
         "câpres",
         "mayonnaise"
-      ],
-      "slug": "vitel-tonne-piemontais"
+      ]
     },
     {
       "id": 796,
@@ -10259,8 +9464,7 @@
         "parmesan",
         "oignon",
         "basilic"
-      ],
-      "slug": "frittata"
+      ]
     },
     {
       "id": 797,
@@ -10273,8 +9477,7 @@
         "citron",
         "persil",
         "huile d'olive"
-      ],
-      "slug": "insalata-di-mare"
+      ]
     },
     {
       "id": 798,
@@ -10286,8 +9489,7 @@
         "tomate",
         "ricotta salée",
         "basilic"
-      ],
-      "slug": "pasta-alla-norma"
+      ]
     },
     {
       "id": 799,
@@ -10300,8 +9502,7 @@
         "parmesan",
         "huile d'olive",
         "ail"
-      ],
-      "slug": "pasta-al-pesto"
+      ]
     },
     {
       "id": 800,
@@ -10314,8 +9515,7 @@
         "vin blanc",
         "persil",
         "piment"
-      ],
-      "slug": "pasta-alle-vongole"
+      ]
     },
     {
       "id": 801,
@@ -10328,8 +9528,7 @@
         "anchois",
         "tomate",
         "ail"
-      ],
-      "slug": "spaghetti-alla-puttanesca"
+      ]
     },
     {
       "id": 802,
@@ -10341,8 +9540,7 @@
         "ail",
         "anchois",
         "piment"
-      ],
-      "slug": "orecchiette-cime-di-rapa"
+      ]
     },
     {
       "id": 803,
@@ -10354,8 +9552,7 @@
         "crème",
         "noix",
         "parmesan"
-      ],
-      "slug": "gnocchi-au-gorgonzola"
+      ]
     },
     {
       "id": 804,
@@ -10367,8 +9564,7 @@
         "jambon",
         "mozzarella",
         "tomate"
-      ],
-      "slug": "pizza-calzone"
+      ]
     },
     {
       "id": 805,
@@ -10380,8 +9576,7 @@
         "mozzarella",
         "salami piquant",
         "origan"
-      ],
-      "slug": "pizza-diavola"
+      ]
     },
     {
       "id": 806,
@@ -10393,8 +9588,7 @@
         "jambon cru",
         "vin blanc",
         "beurre"
-      ],
-      "slug": "saltimbocca-de-poulet"
+      ]
     },
     {
       "id": 807,
@@ -10406,8 +9600,7 @@
         "saucisse",
         "pommes de terre",
         "crème"
-      ],
-      "slug": "zuppa-toscana"
+      ]
     },
     {
       "id": 808,
@@ -10419,8 +9612,7 @@
         "parmesan",
         "huile d'olive",
         "balsamique"
-      ],
-      "slug": "tagliata-di-manzo"
+      ]
     },
     {
       "id": 809,
@@ -10432,8 +9624,7 @@
         "roquette",
         "citron",
         "huile d'olive"
-      ],
-      "slug": "carpaccio-de-boeuf"
+      ]
     },
     {
       "id": 810,
@@ -10445,8 +9636,7 @@
         "crème",
         "vin blanc",
         "persil"
-      ],
-      "slug": "vitello-con-funghi"
+      ]
     },
     {
       "id": 811,
@@ -10458,8 +9648,7 @@
         "safran",
         "aïoli",
         "poivron"
-      ],
-      "slug": "fideua"
+      ]
     },
     {
       "id": 812,
@@ -10471,8 +9660,7 @@
         "ail",
         "paprika",
         "raisin"
-      ],
-      "slug": "migas"
+      ]
     },
     {
       "id": 813,
@@ -10484,8 +9672,7 @@
         "pois chiches",
         "paprika",
         "boudin"
-      ],
-      "slug": "callos-a-la-madrilena"
+      ]
     },
     {
       "id": 814,
@@ -10497,8 +9684,7 @@
         "poivron",
         "tomate",
         "oignon"
-      ],
-      "slug": "marmitako"
+      ]
     },
     {
       "id": 815,
@@ -10509,8 +9695,7 @@
         "paprika fumé",
         "huile d'olive",
         "pommes de terre"
-      ],
-      "slug": "pulpo-a-feira"
+      ]
     },
     {
       "id": 816,
@@ -10521,8 +9706,7 @@
         "crevettes",
         "oignon nouveau",
         "persil"
-      ],
-      "slug": "tortilla-de-camarones"
+      ]
     },
     {
       "id": 817,
@@ -10534,8 +9718,7 @@
         "poivron",
         "oignon",
         "tomate"
-      ],
-      "slug": "empanada-gallega"
+      ]
     },
     {
       "id": 818,
@@ -10547,8 +9730,7 @@
         "seiche",
         "aïoli",
         "ail"
-      ],
-      "slug": "arroz-negro"
+      ]
     },
     {
       "id": 819,
@@ -10560,8 +9742,7 @@
         "tomate",
         "oignon",
         "poivron"
-      ],
-      "slug": "caldeirada"
+      ]
     },
     {
       "id": 820,
@@ -10573,8 +9754,7 @@
         "coriandre",
         "oeuf",
         "huile d'olive"
-      ],
-      "slug": "acorda"
+      ]
     },
     {
       "id": 821,
@@ -10586,8 +9766,7 @@
         "ail",
         "citron",
         "huile d'olive"
-      ],
-      "slug": "frango-piri-piri"
+      ]
     },
     {
       "id": 822,
@@ -10599,8 +9778,7 @@
         "tomate",
         "coriandre",
         "piment"
-      ],
-      "slug": "arroz-de-marisco"
+      ]
     },
     {
       "id": 823,
@@ -10612,8 +9790,7 @@
         "origan",
         "yaourt",
         "pita"
-      ],
-      "slug": "souvlaki-de-poulet"
+      ]
     },
     {
       "id": 824,
@@ -10625,8 +9802,7 @@
         "tomate",
         "oignon",
         "huile d'olive"
-      ],
-      "slug": "briam"
+      ]
     },
     {
       "id": 825,
@@ -10638,8 +9814,7 @@
         "riz",
         "herbes",
         "huile d'olive"
-      ],
-      "slug": "gemista"
+      ]
     },
     {
       "id": 826,
@@ -10650,8 +9825,7 @@
         "riz",
         "oeufs",
         "citron"
-      ],
-      "slug": "avgolemono"
+      ]
     },
     {
       "id": 827,
@@ -10663,8 +9837,7 @@
         "pommes de terre",
         "huile d'olive",
         "vinaigre"
-      ],
-      "slug": "bakaliaros-skordalia"
+      ]
     },
     {
       "id": 828,
@@ -10676,8 +9849,7 @@
         "porc",
         "oeuf",
         "bambou"
-      ],
-      "slug": "ramen-tsukemen"
+      ]
     },
     {
       "id": 829,
@@ -10689,8 +9861,7 @@
         "pomme de terre",
         "roux de curry",
         "oignon"
-      ],
-      "slug": "curry-japonais-au-boeuf"
+      ]
     },
     {
       "id": 830,
@@ -10702,8 +9873,7 @@
         "oeuf",
         "poulet",
         "oignon"
-      ],
-      "slug": "omurice"
+      ]
     },
     {
       "id": 831,
@@ -10715,8 +9885,7 @@
         "oignon",
         "sauce soja",
         "mirin"
-      ],
-      "slug": "nikujaga"
+      ]
     },
     {
       "id": 832,
@@ -10727,8 +9896,7 @@
         "sauce tsuyu",
         "nori",
         "wasabi"
-      ],
-      "slug": "zaru-soba"
+      ]
     },
     {
       "id": 833,
@@ -10739,8 +9907,7 @@
         "dashi",
         "sucre",
         "sauce soja"
-      ],
-      "slug": "tamagoyaki"
+      ]
     },
     {
       "id": 834,
@@ -10752,8 +9919,7 @@
         "dashi",
         "radis",
         "ciboule"
-      ],
-      "slug": "agedashi-tofu"
+      ]
     },
     {
       "id": 835,
@@ -10765,8 +9931,7 @@
         "concombre",
         "oeuf",
         "sauce vinaigrée"
-      ],
-      "slug": "hiyashi-chuka"
+      ]
     },
     {
       "id": 836,
@@ -10778,8 +9943,7 @@
         "porc",
         "sauce yakisoba",
         "gingembre rouge"
-      ],
-      "slug": "yakisoba"
+      ]
     },
     {
       "id": 837,
@@ -10791,8 +9955,7 @@
         "avocat",
         "concombre",
         "nori"
-      ],
-      "slug": "chirashi"
+      ]
     },
     {
       "id": 838,
@@ -10804,8 +9967,7 @@
         "kimchi",
         "ail",
         "ssamjang"
-      ],
-      "slug": "bossam"
+      ]
     },
     {
       "id": 839,
@@ -10817,8 +9979,7 @@
         "gochujang",
         "carotte",
         "oignon"
-      ],
-      "slug": "dakbokkeumtang"
+      ]
     },
     {
       "id": 840,
@@ -10830,8 +9991,7 @@
         "thon",
         "mayonnaise",
         "concombre"
-      ],
-      "slug": "gimbap-au-thon"
+      ]
     },
     {
       "id": 841,
@@ -10843,8 +10003,7 @@
         "cannelle",
         "noix",
         "huile"
-      ],
-      "slug": "hotteok"
+      ]
     },
     {
       "id": 842,
@@ -10856,8 +10015,7 @@
         "miel",
         "ail",
         "sésame"
-      ],
-      "slug": "yangnyeom-chicken"
+      ]
     },
     {
       "id": 843,
@@ -10869,8 +10027,7 @@
         "porc",
         "oignon",
         "courgette"
-      ],
-      "slug": "jjajangmyeon"
+      ]
     },
     {
       "id": 844,
@@ -10882,8 +10039,7 @@
         "courgette",
         "pomme de terre",
         "anchois"
-      ],
-      "slug": "kalguksu"
+      ]
     },
     {
       "id": 845,
@@ -10895,8 +10051,7 @@
         "germes de soja",
         "sauce soja",
         "ciboule"
-      ],
-      "slug": "chow-fun-au-boeuf"
+      ]
     },
     {
       "id": 846,
@@ -10908,8 +10063,7 @@
         "poivron",
         "sauce soja",
         "maïzena"
-      ],
-      "slug": "poulet-aux-amandes"
+      ]
     },
     {
       "id": 847,
@@ -10921,8 +10075,7 @@
         "sel",
         "piment",
         "ail"
-      ],
-      "slug": "crevettes-sel-et-poivre"
+      ]
     },
     {
       "id": 848,
@@ -10934,8 +10087,7 @@
         "champignons",
         "saucisse chinoise",
         "feuille de lotus"
-      ],
-      "slug": "riz-gluant-aux-feuilles-de-lotus"
+      ]
     },
     {
       "id": 849,
@@ -10947,8 +10099,7 @@
         "oignon",
         "poivron",
         "sauce soja"
-      ],
-      "slug": "b-uf-au-satay"
+      ]
     },
     {
       "id": 850,
@@ -10960,8 +10111,7 @@
         "crevettes",
         "porc",
         "poivron"
-      ],
-      "slug": "nouilles-sautees-singapouriennes"
+      ]
     },
     {
       "id": 851,
@@ -10973,8 +10123,7 @@
         "lait de coco",
         "gombo",
         "tamarin"
-      ],
-      "slug": "curry-fish-head"
+      ]
     },
     {
       "id": 852,
@@ -10986,8 +10135,7 @@
         "crevettes",
         "tofu",
         "sauce sucrée"
-      ],
-      "slug": "popiah"
+      ]
     },
     {
       "id": 853,
@@ -10999,8 +10147,7 @@
         "viande hachée",
         "oignon",
         "mayonnaise"
-      ],
-      "slug": "roti-john"
+      ]
     },
     {
       "id": 854,
@@ -11012,8 +10159,7 @@
         "citronnelle",
         "piment",
         "curcuma"
-      ],
-      "slug": "ayam-percik"
+      ]
     },
     {
       "id": 855,
@@ -11025,8 +10171,7 @@
         "tamarin",
         "menthe",
         "ananas"
-      ],
-      "slug": "curry-laksa-penang"
+      ]
     },
     {
       "id": 856,
@@ -11038,8 +10183,7 @@
         "galanga",
         "citronnelle",
         "curcuma"
-      ],
-      "slug": "rendang-ayam"
+      ]
     },
     {
       "id": 857,
@@ -11051,8 +10195,7 @@
         "riz",
         "citronnelle",
         "curcuma"
-      ],
-      "slug": "sate-padang"
+      ]
     },
     {
       "id": 858,
@@ -11064,8 +10207,7 @@
         "ail",
         "coriandre",
         "huile"
-      ],
-      "slug": "ayam-goreng"
+      ]
     },
     {
       "id": 859,
@@ -11077,8 +10219,7 @@
         "carottes",
         "muscade",
         "céleri"
-      ],
-      "slug": "sop-buntut"
+      ]
     },
     {
       "id": 860,
@@ -11090,8 +10231,7 @@
         "lait de coco",
         "poulet",
         "échalote"
-      ],
-      "slug": "khao-soi"
+      ]
     },
     {
       "id": 861,
@@ -11103,8 +10243,7 @@
         "boeuf",
         "cacahuètes",
         "basilic"
-      ],
-      "slug": "panang-curry"
+      ]
     },
     {
       "id": 862,
@@ -11116,8 +10255,7 @@
         "menthe",
         "piment",
         "échalote"
-      ],
-      "slug": "yam-nua"
+      ]
     },
     {
       "id": 863,
@@ -11129,8 +10267,7 @@
         "ail",
         "tamarin",
         "sucre de palme"
-      ],
-      "slug": "pla-rad-prik"
+      ]
     },
     {
       "id": 864,
@@ -11142,8 +10279,7 @@
         "oignon nouveau",
         "riz",
         "huile"
-      ],
-      "slug": "kai-jeow"
+      ]
     },
     {
       "id": 865,
@@ -11155,8 +10291,7 @@
         "crevettes",
         "porc",
         "germes de soja"
-      ],
-      "slug": "banh-xeo"
+      ]
     },
     {
       "id": 866,
@@ -11168,8 +10303,7 @@
         "gingembre",
         "oignon nouveau",
         "poivre"
-      ],
-      "slug": "chao-ga"
+      ]
     },
     {
       "id": 867,
@@ -11181,8 +10315,7 @@
         "aneth",
         "vermicelles",
         "cacahuètes"
-      ],
-      "slug": "cha-ca"
+      ]
     },
     {
       "id": 868,
@@ -11194,8 +10327,7 @@
         "champignons noirs",
         "échalote frite",
         "nuoc-mâm"
-      ],
-      "slug": "banh-cuon"
+      ]
     },
     {
       "id": 869,
@@ -11207,8 +10339,7 @@
         "curry",
         "patate douce",
         "citronnelle"
-      ],
-      "slug": "ca-ri-ga"
+      ]
     },
     {
       "id": 870,
@@ -11220,8 +10351,7 @@
         "coriandre",
         "cumin",
         "ghee"
-      ],
-      "slug": "aloo-paratha"
+      ]
     },
     {
       "id": 871,
@@ -11233,8 +10363,7 @@
         "tomate",
         "curcuma",
         "coriandre"
-      ],
-      "slug": "bhindi-masala"
+      ]
     },
     {
       "id": 872,
@@ -11246,8 +10375,7 @@
         "crème",
         "noix de cajou",
         "tomate"
-      ],
-      "slug": "malai-kofta"
+      ]
     },
     {
       "id": 873,
@@ -11259,8 +10387,7 @@
         "oignon",
         "gingembre",
         "coriandre"
-      ],
-      "slug": "baingan-bharta"
+      ]
     },
     {
       "id": 874,
@@ -11272,8 +10399,7 @@
         "piment",
         "feuilles de curry",
         "gingembre"
-      ],
-      "slug": "chicken-65"
+      ]
     },
     {
       "id": 875,
@@ -11285,8 +10411,7 @@
         "tamarin",
         "piment",
         "curcuma"
-      ],
-      "slug": "fish-curry-de-goa"
+      ]
     },
     {
       "id": 876,
@@ -11298,8 +10423,7 @@
         "oignon",
         "gingembre",
         "garam masala"
-      ],
-      "slug": "rajma"
+      ]
     },
     {
       "id": 877,
@@ -11311,8 +10435,7 @@
         "curry",
         "oignon",
         "gingembre"
-      ],
-      "slug": "upma"
+      ]
     },
     {
       "id": 878,
@@ -11324,8 +10447,7 @@
         "cacahuètes",
         "oignon",
         "citron"
-      ],
-      "slug": "poha"
+      ]
     },
     {
       "id": 879,
@@ -11337,8 +10459,7 @@
         "fenouil",
         "noix de coco",
         "piment"
-      ],
-      "slug": "chicken-chettinad"
+      ]
     },
     {
       "id": 880,
@@ -11350,8 +10471,7 @@
         "poivron",
         "garam masala",
         "citron"
-      ],
-      "slug": "paneer-tikka"
+      ]
     },
     {
       "id": 881,
@@ -11363,8 +10483,7 @@
         "yaourt",
         "garam masala",
         "gingembre"
-      ],
-      "slug": "mutton-curry"
+      ]
     },
     {
       "id": 882,
@@ -11376,8 +10495,7 @@
         "dattes",
         "pistaches",
         "cardamome"
-      ],
-      "slug": "sheer-khurma"
+      ]
     },
     {
       "id": 883,
@@ -11388,8 +10506,7 @@
         "sucre",
         "cardamome",
         "pistaches"
-      ],
-      "slug": "barfi"
+      ]
     },
     {
       "id": 884,
@@ -11401,8 +10518,7 @@
         "jalapeños",
         "haricots",
         "crème"
-      ],
-      "slug": "nachos"
+      ]
     },
     {
       "id": 885,
@@ -11414,8 +10530,7 @@
         "oignon",
         "tortillas",
         "paprika"
-      ],
-      "slug": "fajitas-de-poulet"
+      ]
     },
     {
       "id": 886,
@@ -11427,8 +10542,7 @@
         "piment",
         "avocat",
         "fromage"
-      ],
-      "slug": "sopa-de-tortilla"
+      ]
     },
     {
       "id": 887,
@@ -11440,8 +10554,7 @@
         "salsa",
         "haricots",
         "coriandre"
-      ],
-      "slug": "huevos-rancheros"
+      ]
     },
     {
       "id": 888,
@@ -11453,8 +10566,7 @@
         "poulet",
         "laitue",
         "crème"
-      ],
-      "slug": "tostada"
+      ]
     },
     {
       "id": 889,
@@ -11466,8 +10578,7 @@
         "laurier",
         "cumin",
         "tortillas"
-      ],
-      "slug": "birria"
+      ]
     },
     {
       "id": 890,
@@ -11479,8 +10590,7 @@
         "piment",
         "oignon",
         "citron vert"
-      ],
-      "slug": "salsa-verde"
+      ]
     },
     {
       "id": 891,
@@ -11492,8 +10602,7 @@
         "coriandre",
         "citron vert",
         "piment"
-      ],
-      "slug": "pico-de-gallo"
+      ]
     },
     {
       "id": 892,
@@ -11505,8 +10614,7 @@
         "tortillas",
         "crème",
         "citron vert"
-      ],
-      "slug": "tacos-de-pescado"
+      ]
     },
     {
       "id": 893,
@@ -11518,8 +10626,7 @@
         "sucre",
         "lait",
         "vanille"
-      ],
-      "slug": "horchata"
+      ]
     },
     {
       "id": 894,
@@ -11531,8 +10638,7 @@
         "pain",
         "laitue",
         "sauce ranch"
-      ],
-      "slug": "buffalo-chicken-sandwich"
+      ]
     },
     {
       "id": 895,
@@ -11544,8 +10650,7 @@
         "oignon",
         "pain burger",
         "worcestershire"
-      ],
-      "slug": "sloppy-joe"
+      ]
     },
     {
       "id": 896,
@@ -11556,8 +10661,7 @@
         "pâte de maïs",
         "huile",
         "moutarde"
-      ],
-      "slug": "corn-dog"
+      ]
     },
     {
       "id": 897,
@@ -11569,8 +10673,7 @@
         "lait",
         "farine",
         "poivre"
-      ],
-      "slug": "biscuits-and-gravy"
+      ]
     },
     {
       "id": 898,
@@ -11582,8 +10685,7 @@
         "oeuf",
         "ketchup",
         "oignon"
-      ],
-      "slug": "meatloaf"
+      ]
     },
     {
       "id": 899,
@@ -11595,8 +10697,7 @@
         "mayonnaise",
         "vinaigre",
         "sucre"
-      ],
-      "slug": "coleslaw"
+      ]
     },
     {
       "id": 900,
@@ -11608,8 +10709,7 @@
         "moutarde",
         "paprika",
         "vinaigre"
-      ],
-      "slug": "deviled-eggs"
+      ]
     },
     {
       "id": 901,
@@ -11621,8 +10721,7 @@
         "bacon",
         "moutarde",
         "oignon"
-      ],
-      "slug": "baked-beans"
+      ]
     },
     {
       "id": 902,
@@ -11634,8 +10733,7 @@
         "mayonnaise",
         "céleri",
         "citron"
-      ],
-      "slug": "lobster-roll"
+      ]
     },
     {
       "id": 903,
@@ -11647,8 +10745,7 @@
         "mayonnaise",
         "moutarde",
         "oeuf"
-      ],
-      "slug": "crab-cakes"
+      ]
     },
     {
       "id": 904,
@@ -11660,8 +10757,7 @@
         "sauce piquante",
         "cheddar",
         "crème"
-      ],
-      "slug": "buffalo-mac"
+      ]
     },
     {
       "id": 905,
@@ -11672,8 +10768,7 @@
         "poulet frit",
         "sirop d'érable",
         "beurre"
-      ],
-      "slug": "waffles-au-poulet"
+      ]
     },
     {
       "id": 906,
@@ -11685,8 +10780,7 @@
         "sucre glace",
         "lait",
         "beurre"
-      ],
-      "slug": "donuts-glaces"
+      ]
     },
     {
       "id": 907,
@@ -11698,8 +10792,7 @@
         "cannelle",
         "fromage frais",
         "noix"
-      ],
-      "slug": "carrot-cake"
+      ]
     },
     {
       "id": 908,
@@ -11711,8 +10804,7 @@
         "colorant",
         "babeurre",
         "fromage frais"
-      ],
-      "slug": "red-velvet-cake"
+      ]
     },
     {
       "id": 909,
@@ -11722,8 +10814,7 @@
         "biscuits",
         "chocolat",
         "guimauve"
-      ],
-      "slug": "smores"
+      ]
     },
     {
       "id": 910,
@@ -11735,8 +10826,7 @@
         "crème",
         "bacon",
         "oignon"
-      ],
-      "slug": "chowder-de-mais"
+      ]
     },
     {
       "id": 911,
@@ -11748,8 +10838,7 @@
         "farine",
         "beurre",
         "ail"
-      ],
-      "slug": "buffalo-cauliflower"
+      ]
     },
     {
       "id": 912,
@@ -11761,8 +10850,7 @@
         "carottes",
         "petits pois",
         "crème"
-      ],
-      "slug": "tourte-au-poulet"
+      ]
     },
     {
       "id": 913,
@@ -11774,8 +10862,7 @@
         "crème au beurre",
         "chocolat",
         "custard"
-      ],
-      "slug": "nanaimo-bar"
+      ]
     },
     {
       "id": 914,
@@ -11787,8 +10874,7 @@
         "sirop d'érable",
         "moutarde",
         "oignon"
-      ],
-      "slug": "feves-au-lard"
+      ]
     },
     {
       "id": 915,
@@ -11800,8 +10886,7 @@
         "lait",
         "cannelle",
         "clou de girofle"
-      ],
-      "slug": "cretons"
+      ]
     },
     {
       "id": 916,
@@ -11813,8 +10898,7 @@
         "carotte",
         "oignon",
         "laurier"
-      ],
-      "slug": "soupe-aux-pois"
+      ]
     },
     {
       "id": 917,
@@ -11826,8 +10910,7 @@
         "mayonnaise",
         "laitue",
         "céleri"
-      ],
-      "slug": "guedille"
+      ]
     },
     {
       "id": 918,
@@ -11839,8 +10922,7 @@
         "olives",
         "oeuf dur",
         "oignon"
-      ],
-      "slug": "pastel-de-papa"
+      ]
     },
     {
       "id": 919,
@@ -11851,8 +10933,7 @@
         "origan",
         "huile d'olive",
         "piment"
-      ],
-      "slug": "provoleta"
+      ]
     },
     {
       "id": 920,
@@ -11864,8 +10945,7 @@
         "lait",
         "fromage",
         "basilic"
-      ],
-      "slug": "humita"
+      ]
     },
     {
       "id": 921,
@@ -11877,8 +10957,7 @@
         "oeufs",
         "épinards",
         "épices"
-      ],
-      "slug": "matambre-arrollado"
+      ]
     },
     {
       "id": 922,
@@ -11890,8 +10969,7 @@
         "lard",
         "saucisse",
         "oeuf"
-      ],
-      "slug": "feijao-tropeiro"
+      ]
     },
     {
       "id": 923,
@@ -11903,8 +10981,7 @@
         "lait de coco",
         "huile de dendê",
         "cacahuètes"
-      ],
-      "slug": "vatapa"
+      ]
     },
     {
       "id": 924,
@@ -11916,8 +10993,7 @@
         "lait de coco",
         "huile de dendê",
         "coriandre"
-      ],
-      "slug": "bobo-de-camarao"
+      ]
     },
     {
       "id": 925,
@@ -11929,8 +11005,7 @@
         "fromage",
         "beurre",
         "lait"
-      ],
-      "slug": "escondidinho"
+      ]
     },
     {
       "id": 926,
@@ -11941,8 +11016,7 @@
         "noix de coco",
         "sucre",
         "beurre"
-      ],
-      "slug": "quindim"
+      ]
     },
     {
       "id": 927,
@@ -11954,8 +11028,7 @@
         "pommes de terre",
         "maïs",
         "ají"
-      ],
-      "slug": "chupe-de-camarones"
+      ]
     },
     {
       "id": 928,
@@ -11967,8 +11040,7 @@
         "fromage",
         "olives",
         "lait"
-      ],
-      "slug": "rocoto-relleno"
+      ]
     },
     {
       "id": 929,
@@ -11980,8 +11052,7 @@
         "ají",
         "oignon",
         "ail"
-      ],
-      "slug": "tacu-tacu"
+      ]
     },
     {
       "id": 930,
@@ -11993,8 +11064,7 @@
         "oeuf",
         "sauce soja",
         "oignon nouveau"
-      ],
-      "slug": "arroz-chaufa"
+      ]
     },
     {
       "id": 931,
@@ -12006,8 +11076,7 @@
         "courge",
         "pommes de terre",
         "riz"
-      ],
-      "slug": "cazuela"
+      ]
     },
     {
       "id": 932,
@@ -12019,8 +11088,7 @@
         "oignon",
         "olives",
         "oeuf dur"
-      ],
-      "slug": "empanada-de-pino"
+      ]
     },
     {
       "id": 933,
@@ -12031,8 +11099,7 @@
         "ail",
         "huile",
         "sel"
-      ],
-      "slug": "patacones"
+      ]
     },
     {
       "id": 934,
@@ -12044,8 +11111,7 @@
         "maïs",
         "plantain",
         "coriandre"
-      ],
-      "slug": "sancocho-de-gallina"
+      ]
     },
     {
       "id": 935,
@@ -12057,8 +11123,7 @@
         "lait",
         "beurre",
         "sucre"
-      ],
-      "slug": "cachapa"
+      ]
     },
     {
       "id": 936,
@@ -12069,8 +11134,7 @@
         "fromage blanc",
         "oeuf",
         "huile"
-      ],
-      "slug": "tequenos"
+      ]
     },
     {
       "id": 937,
@@ -12082,8 +11146,7 @@
         "oignon",
         "achiote",
         "sauce cacahuète"
-      ],
-      "slug": "llapingachos"
+      ]
     },
     {
       "id": 938,
@@ -12095,8 +11158,7 @@
         "oignon rouge",
         "tomate",
         "coriandre"
-      ],
-      "slug": "encebollado"
+      ]
     },
     {
       "id": 939,
@@ -12108,8 +11170,7 @@
         "pommes de terre",
         "ail",
         "citron"
-      ],
-      "slug": "chicharron-bolivien"
+      ]
     },
     {
       "id": 940,
@@ -12120,8 +11181,7 @@
         "chorizo",
         "gros sel",
         "chimichurri"
-      ],
-      "slug": "asado-uruguayo"
+      ]
     },
     {
       "id": 941,
@@ -12133,8 +11193,7 @@
         "curry",
         "chutney",
         "piment"
-      ],
-      "slug": "doubles"
+      ]
     },
     {
       "id": 942,
@@ -12146,8 +11205,7 @@
         "oignon",
         "piment",
         "ail"
-      ],
-      "slug": "callaloo"
+      ]
     },
     {
       "id": 943,
@@ -12159,8 +11217,7 @@
         "piment",
         "thym",
         "pomme de terre"
-      ],
-      "slug": "curry-goat"
+      ]
     },
     {
       "id": 944,
@@ -12172,8 +11229,7 @@
         "poivron",
         "oignon",
         "piment"
-      ],
-      "slug": "conch-fritters"
+      ]
     },
     {
       "id": 945,
@@ -12185,8 +11241,7 @@
         "courgette",
         "citron vert",
         "ail"
-      ],
-      "slug": "colombo-de-poulet"
+      ]
     },
     {
       "id": 946,
@@ -12198,8 +11253,7 @@
         "ciboule",
         "piment",
         "persil"
-      ],
-      "slug": "accras-de-morue"
+      ]
     },
     {
       "id": 947,
@@ -12211,8 +11265,7 @@
         "ciboule",
         "piment",
         "thym"
-      ],
-      "slug": "boudin-creole"
+      ]
     },
     {
       "id": 948,
@@ -12224,8 +11277,7 @@
         "piment",
         "ail",
         "thym"
-      ],
-      "slug": "blaff-de-poissons"
+      ]
     },
     {
       "id": 949,
@@ -12237,8 +11289,7 @@
         "avocat",
         "crudités",
         "sauce piquante"
-      ],
-      "slug": "bokit"
+      ]
     },
     {
       "id": 950,
@@ -12250,8 +11301,7 @@
         "oeuf",
         "cumin",
         "persil"
-      ],
-      "slug": "kefta-tajine"
+      ]
     },
     {
       "id": 951,
@@ -12263,8 +11313,7 @@
         "cumin",
         "huile d'olive",
         "paprika"
-      ],
-      "slug": "bissara"
+      ]
     },
     {
       "id": 952,
@@ -12276,8 +11325,7 @@
         "sucre glace",
         "amandes",
         "raisins secs"
-      ],
-      "slug": "seffa"
+      ]
     },
     {
       "id": 953,
@@ -12289,8 +11337,7 @@
         "amandes",
         "cannelle",
         "miel"
-      ],
-      "slug": "briouates"
+      ]
     },
     {
       "id": 954,
@@ -12302,8 +11349,7 @@
         "cumin",
         "citron",
         "tomate"
-      ],
-      "slug": "tajine-de-poisson-chermoula"
+      ]
     },
     {
       "id": 955,
@@ -12315,8 +11361,7 @@
         "pois chiches",
         "cannelle",
         "amandes"
-      ],
-      "slug": "mtewem"
+      ]
     },
     {
       "id": 956,
@@ -12328,8 +11373,7 @@
         "navets",
         "pois chiches",
         "cannelle"
-      ],
-      "slug": "rechta"
+      ]
     },
     {
       "id": 957,
@@ -12341,8 +11385,7 @@
         "oeuf",
         "persil",
         "oignon"
-      ],
-      "slug": "bourek"
+      ]
     },
     {
       "id": 958,
@@ -12353,8 +11396,7 @@
         "huile",
         "levure",
         "sel"
-      ],
-      "slug": "kesra"
+      ]
     },
     {
       "id": 959,
@@ -12366,8 +11408,7 @@
         "ail",
         "thon",
         "huile d'olive"
-      ],
-      "slug": "slata-mechouia"
+      ]
     },
     {
       "id": 960,
@@ -12379,8 +11420,7 @@
         "pommes de terre",
         "oeufs",
         "harissa"
-      ],
-      "slug": "kafteji"
+      ]
     },
     {
       "id": 961,
@@ -12392,8 +11432,7 @@
         "tomate",
         "harissa",
         "menthe"
-      ],
-      "slug": "chorba-tunisienne"
+      ]
     },
     {
       "id": 962,
@@ -12405,8 +11444,7 @@
         "viande hachée",
         "tomate",
         "menthe"
-      ],
-      "slug": "mahshi-koussa"
+      ]
     },
     {
       "id": 963,
@@ -12418,8 +11456,7 @@
         "oignon",
         "poivron",
         "épices"
-      ],
-      "slug": "hawawshi"
+      ]
     },
     {
       "id": 964,
@@ -12431,8 +11468,7 @@
         "miel",
         "fromage",
         "farine"
-      ],
-      "slug": "feteer-meshaltet"
+      ]
     },
     {
       "id": 965,
@@ -12444,8 +11480,7 @@
         "citron",
         "oignon",
         "bouillon"
-      ],
-      "slug": "shorbat-adas"
+      ]
     },
     {
       "id": 966,
@@ -12457,8 +11492,7 @@
         "aubergines",
         "pignons",
         "épices"
-      ],
-      "slug": "maklouba-au-poulet"
+      ]
     },
     {
       "id": 967,
@@ -12470,8 +11504,7 @@
         "viande hachée",
         "tomate",
         "menthe"
-      ],
-      "slug": "kousa-mahshi"
+      ]
     },
     {
       "id": 968,
@@ -12483,8 +11516,7 @@
         "tomate",
         "pignons",
         "mélasse de grenade"
-      ],
-      "slug": "sfiha"
+      ]
     },
     {
       "id": 969,
@@ -12496,8 +11528,7 @@
         "ail",
         "piment",
         "citron"
-      ],
-      "slug": "batata-harra"
+      ]
     },
     {
       "id": 970,
@@ -12508,8 +11539,7 @@
         "huile d'olive",
         "zaatar",
         "sel"
-      ],
-      "slug": "labneh"
+      ]
     },
     {
       "id": 971,
@@ -12521,8 +11551,7 @@
         "tomate",
         "persil",
         "oignon"
-      ],
-      "slug": "kafta-bil-sanieh"
+      ]
     },
     {
       "id": 972,
@@ -12534,8 +11563,7 @@
         "citron",
         "ail",
         "grenade"
-      ],
-      "slug": "baba-ganoush"
+      ]
     },
     {
       "id": 973,
@@ -12547,8 +11575,7 @@
         "ail",
         "menthe",
         "huile d'olive"
-      ],
-      "slug": "mtabbal-el-kousa"
+      ]
     },
     {
       "id": 974,
@@ -12560,8 +11587,7 @@
         "tomate",
         "huile d'olive",
         "citron"
-      ],
-      "slug": "yalanji"
+      ]
     },
     {
       "id": 975,
@@ -12573,8 +11599,7 @@
         "poivron",
         "ail",
         "persil"
-      ],
-      "slug": "kebab-hindi"
+      ]
     },
     {
       "id": 976,
@@ -12586,8 +11611,7 @@
         "beurre",
         "paprika",
         "ail"
-      ],
-      "slug": "c-lb-r"
+      ]
     },
     {
       "id": 977,
@@ -12599,8 +11623,7 @@
         "oignon",
         "pastırma",
         "beurre"
-      ],
-      "slug": "kuru-fasulye"
+      ]
     },
     {
       "id": 978,
@@ -12612,8 +11635,7 @@
         "tomate",
         "poivron",
         "persil"
-      ],
-      "slug": "karn-yar-k"
+      ]
     },
     {
       "id": 979,
@@ -12625,8 +11647,7 @@
         "agneau haché",
         "ail",
         "beurre"
-      ],
-      "slug": "ali-nazik"
+      ]
     },
     {
       "id": 980,
@@ -12638,8 +11659,7 @@
         "yaourt",
         "citron",
         "oeufs"
-      ],
-      "slug": "revani"
+      ]
     },
     {
       "id": 981,
@@ -12651,8 +11671,7 @@
         "feta",
         "viande hachée",
         "beurre"
-      ],
-      "slug": "gozleme"
+      ]
     },
     {
       "id": 982,
@@ -12664,8 +11683,7 @@
         "menthe séchée",
         "oignon frit",
         "ail"
-      ],
-      "slug": "kashk-e-bademjan"
+      ]
     },
     {
       "id": 983,
@@ -12677,8 +11695,7 @@
         "poulet",
         "safran",
         "beurre"
-      ],
-      "slug": "zereshk-polo"
+      ]
     },
     {
       "id": 984,
@@ -12690,8 +11707,7 @@
         "haricots",
         "pommes de terre",
         "citron noir"
-      ],
-      "slug": "abgoosht"
+      ]
     },
     {
       "id": 985,
@@ -12703,8 +11719,7 @@
         "ail",
         "oeuf",
         "curcuma"
-      ],
-      "slug": "mirza-ghasemi"
+      ]
     },
     {
       "id": 986,
@@ -12716,8 +11731,7 @@
         "noix",
         "épine-vinette",
         "curcuma"
-      ],
-      "slug": "kuku-sabzi"
+      ]
     },
     {
       "id": 987,
@@ -12729,8 +11743,7 @@
         "safran",
         "eau de rose",
         "beurre"
-      ],
-      "slug": "halva"
+      ]
     },
     {
       "id": 988,
@@ -12742,8 +11755,7 @@
         "carottes",
         "raisins secs",
         "cumin"
-      ],
-      "slug": "pilaf-afghan"
+      ]
     },
     {
       "id": 989,
@@ -12755,8 +11767,7 @@
         "yaourt",
         "oignon",
         "pois cassés"
-      ],
-      "slug": "mantu-afghan"
+      ]
     },
     {
       "id": 990,
@@ -12768,8 +11779,7 @@
         "poireau",
         "coriandre",
         "huile"
-      ],
-      "slug": "bolani"
+      ]
     },
     {
       "id": 991,
@@ -12781,8 +11791,7 @@
         "oignon",
         "coriandre",
         "piment"
-      ],
-      "slug": "sambusa-somalienne"
+      ]
     },
     {
       "id": 992,
@@ -12794,8 +11803,7 @@
         "cardamome",
         "raisins secs",
         "tomate"
-      ],
-      "slug": "bariis-iskukaris"
+      ]
     },
     {
       "id": 993,
@@ -12806,8 +11814,7 @@
         "eau",
         "huile",
         "sel"
-      ],
-      "slug": "chapati-est-africain"
+      ]
     },
     {
       "id": 994,
@@ -12819,8 +11826,7 @@
         "oignon",
         "cacahuètes",
         "bouillon"
-      ],
-      "slug": "matoke"
+      ]
     },
     {
       "id": 995,
@@ -12832,8 +11838,7 @@
         "chou",
         "tomate",
         "oignon"
-      ],
-      "slug": "rolex-ougandais"
+      ]
     },
     {
       "id": 996,
@@ -12845,8 +11850,7 @@
         "gombo",
         "ail",
         "piment"
-      ],
-      "slug": "muamba-de-galinha"
+      ]
     },
     {
       "id": 997,
@@ -12858,8 +11862,7 @@
         "huile de palme",
         "épinards",
         "tomate"
-      ],
-      "slug": "calulu"
+      ]
     },
     {
       "id": 998,
@@ -12871,8 +11874,7 @@
         "citron",
         "ail",
         "huile"
-      ],
-      "slug": "piri-piri-chicken-mozambicain"
+      ]
     },
     {
       "id": 999,
@@ -12884,8 +11886,7 @@
         "lait de coco",
         "crevettes",
         "ail"
-      ],
-      "slug": "matapa"
+      ]
     },
     {
       "id": 1000,
@@ -12896,8 +11897,7 @@
         "farine de maïs",
         "tomate",
         "oignon"
-      ],
-      "slug": "kapenta-et-sadza"
+      ]
     }
   ]
 }

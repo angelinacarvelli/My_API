@@ -392,3 +392,59 @@ body {
 .btn-submit-recipe:hover {
     transform: scale(1.05);
 }
+.search-title-bar {
+    position: absolute;
+    top: 25px;
+    left: 120px;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.search-title-bar input {
+    width: 200px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 2px solid #6d5852;
+    outline: none;
+    font-size: 14px;
+}
+
+.action-buttons-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.btn-action {
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
+    color: white;
+}
+
+.btn-action:hover {
+    transform: scale(1.05);
+}
+
+.btn-load {
+    background-color: #6d5852;
+    padding: 8px 14px;
+}
+
+.btn-add-recipe {
+    background-color: #c0292b;
+}
+
+.btn-update-recipe {
+    background-color: #27ae60;
+}
+
+.btn-delete-recipe {
+    background-color: #e74c3c;
+}

@@ -11,20 +11,20 @@ Cache (redis)
 Documentation, but you can use swagger on your API. Example
 A postman Documentation (and you will provide the link inside your readme)
 Your project must be hosted in the cloud. (AWS/Google Cloud/Azure/IBM) Each of these providers have a free tier. You should be able to host it for 0$. :)
-You will provide the URL of your project inside the README
+You will provide the URL of your project inside the README 
 
 -------------------------------------------------------------------------------
 | Jour    | Objectif                              | Résultat attendu           |
 | ------- | ------------------------------------- | -------------------------- |
 | **J1**  | Vérifier `plats.json` + config projet | +1000 plats valides        | fait
 | **J2**  | `index.js` + première route GET       | API démarre                | fait
-| **J3**  | `GET /plats` + `GET /plats/:id`       | GET fonctionnel            | fait
+| **J3**  | `GET /plats` + `GE  T /plats/:id`       | GET fonctionnel            | fait
 | **J4**  | Pagination                            | max 20/page                | fait
 | **J5**  | POST                                  | création d'un plat         | fait
-| **J6**  | PUT + DELETE                          | CRUD terminé               |
-| **J7**  | Register/Login                        | authentification           |
-| **J8**  | JWT + `auth.js`                       | routes protégées           |
-| **J9**  | Tests auth + CRUD                     | sécurité vérifiée          |
+| **J6**  | PUT + DELETE                          | CRUD terminé               | fait
+| **J7**  | Register/Login                        | authentification           | fait
+| **J8**  | JWT + `auth.js`                       | routes protégées           | fait
+| **J9**  | Tests auth + CRUD                     | sécurité vérifiée          | fait
 | **J10** | Redis connexion                       | Redis fonctionne           |
 | **J11** | Redis cache GET                       | cache opérationnel         |
 | **J12** | Invalidation cache                    | POST/PUT/DELETE cohérents  |
@@ -64,3 +64,7 @@ j4 :
                     http://localhost:3000/api/plats/slug/pizza-margherita
 j5 : ajout de plat possible mm dans le plat.json + visible avec "open in a integrated browser" donc post possible
   !!!!  problème interface a régler mais bonus !!!!
+j6 : CRUD marche
+j7 : register /login crée mais sa met error undefined
+j8 : token et essayer de gerer le error undefined
+j9 : npm test pour tester + le problème régler (le port 3000 était occupé)

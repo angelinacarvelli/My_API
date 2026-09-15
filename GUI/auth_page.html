@@ -1,21 +1,80 @@
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>page auth</title>
+    <title>Connexion - Cuisine du Monde</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <div class="logo-container">
-            <img src="./images/logo.png" alt="Les Recettes - Cuisine du Monde" width="auto" height="200" style="margin-top: 50px;">
+    <a href="Home_page.html" class="back-button">➜</a>
+
+    <div class="actions">
+        <h2 style="color: #6d5852;">AUTHENTIFICATION</h2>
+        <input type="text" id="username" name="username" placeholder="Nom d'utilisateur" required>
+        <input type="password" id="password" name="password" placeholder="Mot de passe" required>
+
+        <div style="display: flex; gap: 10px; margin-top: 10px;">
+            <button type="button" id="btn-login" class="btnhome">Se connecter</button>
+            <button type="button" id="btn-register" class="btnhome" style="background-color: #6d5852;">S'inscrire</button>
         </div>
+    </div>
 
-        <div class="actions">
-            <input type="text" name="username" placeholder="username">
+    <script>
+        const API_URL = "http://localhost:3000/api/auth";
 
-            <input type="password" name="password" placeholder="password">
+        // Connexion
+        document.getElementById('btn-login').addEventListener('click', async () => {
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
 
-        </div>
+            if (!username || !password) return alert("Veuillez remplir tous les champs.");
+
+            try {
+                const response = await fetch(`${API_URL}/login`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ username, password })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    localStorage.setItem('token', data.token);
+                    alert("Connexion réussie !");
+                    window.location.href = "catalogue_exemple.html";
+                } else {
+                    alert("Erreur : " + data.message);
+                }
+            } catch (error) {
+                alert("Impossible de contacter le serveur.");
+            }
+        });
+
+        document.getElementById('btn-register').addEventListener('click', async () => {
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            if (!username || !password) return alert("Veuillez remplir tous les champs.");
+
+            try {
+                const response = await fetch(`${API_URL}/register`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ username, password })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    alert("Compte créé avec succès ! Vous pouvez maintenant vous connecter.");
+                } else {
+                    alert("Erreur : " + data.message);
+                }
+            } catch (error) {
+                alert("Impossible de contacter le serveur.");
+            }
+        });
+    </script>
 </body>
 </html>

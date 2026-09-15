@@ -3,82 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajout Recette - Cuisine du Monde</title>
+    <title>Gestion Recette - Cuisine du Monde</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="add-recipe-body">
-    <a href="catalogue_exemple.html" class="back-arrow">&#8592;</a>
-
+    <a href="catalogue_exemple.html" class="back-arrow">←</a>
     <div class="top-right-logo">
         <img src="./images/logo.png" alt="Les Recettes - Cuisine du Monde" class="logo-img">
     </div>
-
+    <div class="search-title-bar">
+        <input type="text" id="search-title" placeholder="Chercher un titre...">
+        <button type="button" id="btn-chercher" class="btn-action btn-load">Chercher Plat</button>
+    </div>
     <form id="form-ajout-plat" class="main-add-container">
-        
+        <input type="hidden" id="input-id">
         <section class="left-section-add">
-            
             <input type="text" id="input-nom" class="hidden-name-input" placeholder="Nom de la recette..." required>
-
             <div class="curved-text-container">
                 <svg viewBox="0 0 300 150">
                     <path id="curve" d="M 20,140 A 130,130 0 0,1 280,140" fill="transparent" />
                     <text class="curved-text">
-                        <textPath href="#curve" startOffset="50%" text-anchor="middle">AJOUT RECETTE</textPath>
+                        <textPath href="#curve" startOffset="50%" text-anchor="middle">GESTION RECETTE</textPath>
                     </text>
                 </svg>
             </div>
-
             <div class="image-circle-frame">
-                <img src="" alt="Image de la recette" id="image-preview">
+                <img src="./images/recipe.png" alt="Image de la recette" id="image-preview">
             </div>
-
             <input type="text" id="input-pays" class="badge-input" placeholder="PAYS..." required>
         </section>
-
         <section class="right-section-add">
             <div class="ingredients-box">
                 <h2 class="ingredients-title">INGRÉDIENTS</h2>
                 <textarea id="input-ingredients" class="ingredients-textarea" placeholder="... ?" required></textarea>
             </div>
-            
-            <button type="submit" class="btn-submit-recipe">Enregistrer la recette</button>
+            <div class="action-buttons-group">
+                <button type="submit" id="btn-submit" class="btn-action btn-add-recipe">Ajouter la recette</button>
+                <button type="button" id="btn-update" class="btn-action btn-update-recipe" style="display: none;">Modifier</button>
+                <button type="button" id="btn-delete" class="btn-action btn-delete-recipe" style="display: none;">Supprimer</button>
+            </div>
         </section>
     </form>
-
     <script>
-        document.getElementById('form-ajout-plat').addEventListener('submit', async (e) => {
-            e.preventDefault();
+        const API_URL = "http://localhost:3000/api/plats";
+        const form = document.getElementById('form-ajout-plat');
+        const inputId = document.getElementById('input-id');
+        const inputNom = document.getElementById('input-nom');
+        const inputPays = document.getElementById('input-pays');
+        const inputIngredients = document.getElementById('input-ingredients');
+        const searchInput = document.getElementById('search-title');
+        const btnSubmit = document.getElementById('btn-submit');
+        const btnUpdate = document.getElementById('btn-update');
+        const btnDelete = document.getElementById('btn-delete');
+        const btnChercher = document.getElementById('btn-chercher');
 
-            const nom = document.getElementById('input-nom').value;
-            const pays = document.getElementById('input-pays').value;
-            const ingredientsText = document.getElementById('input-ingredients').value;
-            
-            const ingredientsArray = ingredientsText.split('\n').filter(i => i.trim() !== '');
+        // Récupération du token JWT stocké lors de la connexion
+        const getToken = () => localStorage.getItem('token');
+
+        const slugify = text => text.toString().toLowerCase().trim()
+            .replace(/\s+/g, '-')
+            .replace(/[^\w\-]+/g, '')
+            .replace(/\-\-+/g, '-');
+
+        // Recherche d'un plat par son titre (Public)
+        btnChercher.addEventListener('click', async () => {
+            const titre = searchInput.value.trim();
+            if (!titre) return alert("Veuillez saisir un titre de plat.");
+            const slug = slugify(titre);
+            try {
+                const res = await fetch(`${API_URL}/slug/${slug}`);
+                if (!res.ok) throw new Error("Plat introuvable avec ce titre.");
+                const plat = await res.json();
+                inputId.value = plat.id;
+                inputNom.value = plat.nom || '';
+                inputPays.value = plat.pays || plat.origine || '';
+                inputIngredients.value = Array.isArray(plat.ingredients)
+                    ? plat.ingredients.join('\n')
+                    : (plat.ingredients || '');
+
+                btnSubmit.style.display = 'none';
+                btnUpdate.style.display = 'inline-block';
+                btnDelete.style.display = 'inline-block';
+                alert(`Plat "${plat.nom}" chargé avec succès !`);
+            } catch (err) {
+                alert(err.message);
+            }
+        });
+
+        // Ajouter un plat (Protégé)
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const token = getToken();
+            if (!token) return alert("Vous devez être connecté pour effectuer cette action.");
 
             const nouveauPlat = {
-                nom: nom,
-                pays: pays,
-                ingredients: ingredientsArray,
+                nom: inputNom.value,
+                pays: inputPays.value,
+                ingredients: inputIngredients.value.split('\n').filter(i => i.trim() !== ''),
                 image: "./images/recipe.png"
             };
-
             try {
-                const response = await fetch('http://localhost:3000/api/plats', {
+                const response = await fetch(API_URL, {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
+                    headers: { 
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    },
                     body: JSON.stringify(nouveauPlat)
                 });
-
                 if (response.ok) {
                     alert("Recette ajoutée avec succès !");
-                    window.location.href = "catalogue_exemple.html"
+                    window.location.href = "catalogue_exemple.html";
                 } else {
                     const err = await response.json();
-                    alert("Erreur lors de l'ajout : " + err.message);
+                    alert("Erreur : " + err.message);
                 }
             } catch (error) {
-                console.error("Erreur serveur :", error);
                 alert("Impossible de contacter le serveur.");
+            }
+        });
+
+        // Modifier un plat (Protégé)
+        btnUpdate.addEventListener('click', async () => {
+            const id = inputId.value;
+            const token = getToken();
+            if (!id) return;
+            if (!token) return alert("Vous devez être connecté pour effectuer cette action.");
+
+            const platModifie = {
+                nom: inputNom.value,
+                pays: inputPays.value,
+                ingredients: inputIngredients.value.split('\n').filter(i => i.trim() !== '')
+            };
+            try {
+                const response = await fetch(`${API_URL}/${id}`, {
+                    method: 'PUT',
+                    headers: { 
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    },
+                    body: JSON.stringify(platModifie)
+                });
+                if (response.ok) {
+                    alert("Recette modifiée avec succès !");
+                    window.location.href = "catalogue_exemple.html";
+                } else {
+                    const err = await response.json();
+                    alert("Erreur : " + err.message);
+                }
+            } catch (error) {
+                alert("Erreur serveur lors de la modification.");
+            }
+        });
+
+        // Supprimer un plat (Protégé)
+        btnDelete.addEventListener('click', async () => {
+            const id = inputId.value;
+            const token = getToken();
+            if (!id) return;
+            if (!token) return alert("Vous devez être connecté pour effectuer cette action.");
+
+            if (!confirm(`Voulez-vous vraiment supprimer "${inputNom.value}" ?`)) return;
+            try {
+                const response = await fetch(`${API_URL}/${id}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
+                });
+                if (response.ok) {
+                    alert("Recette supprimée avec succès !");
+                    window.location.href = "catalogue_exemple.html";
+                } else {
+                    const err = await response.json();
+                    alert("Erreur : " + err.message);
+                }
+            } catch (error) {
+                alert("Erreur serveur lors de la suppression.");
             }
         });
     </script>
