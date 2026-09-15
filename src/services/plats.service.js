@@ -59,7 +59,6 @@ async function getPlatBySlug(searchQuery) {
 
     if (!normalizedQuery) return null;
 
-    // Mots de liaison à ignorer lors du découpage
     const stopWords = ["et", "and", "avec", "de", "du", "la", "le", "des", "au", "aux", "with"];
     const queryKeywords = normalizedQuery
         .split(/\s+/)
@@ -69,17 +68,14 @@ async function getPlatBySlug(searchQuery) {
         const itemNom = normalizeString(item.nom || item.title || item.name);
         const itemSlug = normalizeString(item.slug);
 
-        // 1. Match exact nom ou slug
         if (itemNom === normalizedQuery || itemSlug === normalizedQuery) {
             return true;
         }
 
-        // 2. La chaîne complète est contenue dans le nom
         if (itemNom.includes(normalizedQuery)) {
             return true;
         }
 
-        // 3. Recherche si TOUS les mots-clés significatifs sont présents dans le titre/slug
         if (queryKeywords.length > 0) {
             return queryKeywords.every(keyword => itemNom.includes(keyword) || itemSlug.includes(keyword));
         }
@@ -87,7 +83,6 @@ async function getPlatBySlug(searchQuery) {
         return false;
     });
 
-    // 4. Fallback : si aucun résultat complet, trouver si au moins UN mot-clé principal correspond
     if (!found && queryKeywords.length > 0) {
         found = plats.find((item) => {
             const itemNom = normalizeString(item.nom || item.title || item.name);

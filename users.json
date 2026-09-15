@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": 1789463047548,
+      "username": "user_1789463047232",
+      "password": "$2a$10$iIrWlQRwIlA1zWAZNFKi0.wmbU7ReiE6jcbCdbwO5xAPbrA1lAD/."
+    },
+    {
+      "id": 1789463199369,
+      "username": "user_1789463199114",
+      "password": "$2a$10$pNSUUXu.NkgIrRM1wOTDKun4fVYZArL7GRcIpNDg1oslfJDwKNBku"
+    },
+    {
+      "id": 1789463227331,
+      "username": "user_1789463227068",
+      "password": "$2a$10$krATn56d4xjbtO1UVDfT5eBU9Z48TrPZi75xqBoWKWJHMBLIkTP4e"
+    },
+    {
+      "id": 1789463866498,
+      "username": "angie",
+      "password": "$2a$10$dQfqWcr3YyQiugD5q4AVbOG.89EzzlCPDuVat8U0AP2CKahWBReqa"
+    },
+    {
+      "id": 1789464355512,
+      "username": "admin",
+      "password": "$2a$10$mHvc2HkerTII8wd5L42I.uwwYOdqXXxISXhARgU5W.IhJZFVBklo."
+    },
+    {
+      "id": 1789472679576,
+      "username": "user_1789472679020",
+      "password": "$2a$10$cm/xxBBia3YEzZm7UuGT/uNLQg3rZYBNAccbQr96Ezzfy3YGh/vQe"
+    }
+  ]
+}
