@@ -11898,26 +11898,6 @@
         "tomate",
         "oignon"
       ]
-    },
-    {
-      "id": 1001,
-      "nom": "re",
-      "pays": "re",
-      "ingredients": [
-        "re"
-      ],
-      "image": "./images/recipe.png",
-      "slug": "re"
-    },
-    {
-      "id": 1002,
-      "nom": "rrecette",
-      "pays": "recetter",
-      "ingredients": [
-        "recette"
-      ],
-      "image": "./images/recipe.png",
-      "slug": "rrecette"
     }
   ]
 }
