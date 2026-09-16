@@ -11,7 +11,6 @@ const {
 
 const router = express.Router();
 
-// GET public (Accessibles sans être connecté)
 router.get('/', async (req, res, next) => {
     try {
         let page = Number(req.query.page) || 1;
@@ -19,7 +18,6 @@ router.get('/', async (req, res, next) => {
             return res.status(400).json({ message: "La page doit être un entier supérieur ou égal à 1" });
         }
 
-        // Utilisation du cache Redis si disponible
         const redis = req.app.locals.redis;
         const cacheKey = `plats:page:${page}`;
         if (redis) {
@@ -32,8 +30,10 @@ router.get('/', async (req, res, next) => {
         const result = await getAllPlats(page);
 
         if (redis) {
-            await redis.set(cacheKey, JSON.stringify(result), { EX: 60 }); // Cache 60 sec
+            await redis.flushall();
+            await redis.set(cacheKey, JSON.stringify(result), { EX: 60 });
         }
+
 
         return res.status(200).json(result);
     } catch (error) {
@@ -61,8 +61,6 @@ router.get('/:id', async (req, res, next) => {
     }
 });
 
-// --- ROUTES PROTÉGÉES (Nécessitent un token Bearer JWT) ---
-
 router.post('/', authMiddleware, async (req, res, next) => {
     try {
         const { nom } = req.body;
@@ -70,7 +68,6 @@ router.post('/', authMiddleware, async (req, res, next) => {
 
         const newPlat = await createPlat(req.body);
 
-        // Invalidation du cache
         if (req.app.locals.redis) {
             const keys = await req.app.locals.redis.keys('plats:page:*');
             if (keys.length) await req.app.locals.redis.del(keys);

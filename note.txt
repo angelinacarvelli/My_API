@@ -10,7 +10,8 @@ Cache (redis)
 (Optional) A Graphql interface
 Documentation, but you can use swagger on your API. Example
 A postman Documentation (and you will provide the link inside your readme)
-Your project must be hosted in the cloud. (AWS/Google Cloud/Azure/IBM) Each of these providers have a free tier. You should be able to host it for 0$. :)
+Your project must be hosted in the cloud. (AWS/Google Cloud/Azure/IBM)
+Each of these providers have a free tier. You should be able to host it for 0$.
 You will provide the URL of your project inside the README 
 
 -------------------------------------------------------------------------------
@@ -18,15 +19,16 @@ You will provide the URL of your project inside the README
 | ------- | ------------------------------------- | -------------------------- |
 | **J1**  | Vérifier `plats.json` + config projet | +1000 plats valides        | fait
 | **J2**  | `index.js` + première route GET       | API démarre                | fait
-| **J3**  | `GET /plats` + `GE  T /plats/:id`       | GET fonctionnel            | fait
+| **J3**  | `GET /plats` + `GE  T /plats/:id`       | GET fonctionnel          | fait
 | **J4**  | Pagination                            | max 20/page                | fait
 | **J5**  | POST                                  | création d'un plat         | fait
 | **J6**  | PUT + DELETE                          | CRUD terminé               | fait
 | **J7**  | Register/Login                        | authentification           | fait
 | **J8**  | JWT + `auth.js`                       | routes protégées           | fait
 | **J9**  | Tests auth + CRUD                     | sécurité vérifiée          | fait
-| **J10** | Redis connexion                       | Redis fonctionne           |
-| **J11** | Redis cache GET                       | cache opérationnel         |
+| **J10** | Redis connexion                       | Redis fonctionne           | fait
+| **J11** | Redis cache GET                       | cache opérationnel         | fait
+| *J11.5* | OAuth                                 | OAuth opérationnel         | problème pour demain
 | **J12** | Invalidation cache                    | POST/PUT/DELETE cohérents  |
 | **J13** | Swagger                               | documentation API          |
 | **J14** | Postman                               | collection + documentation |
@@ -68,3 +70,10 @@ j6 : CRUD marche
 j7 : register /login crée mais sa met error undefined
 j8 : token et essayer de gerer le error undefined
 j9 : npm test pour tester + le problème régler (le port 3000 était occupé)
+j10: redis est link avec mon API j'ai bien installer sur docker mon image redis
+j11: npm start + http://localhost:3000/api/plats?page=1 et apres sur autre terminal on fais docker exec -it redis redis-cli
+puis KEYS *
+sa return 1) "plats:page:1" car c'est ce que j'affiche dans localhost
+sa rturn 2)  "plats:page:2" et npm qu'elle page en dessous de 60sec
++ grace a giaccomo commande pour que sa supp cache quand on modifie ou supp donnée
++ npm test marche sa fais redis + plats.test

@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const swaggerUi = require('swagger-ui-express');
 const cors = require('cors');
-
+const { getRedisClient } = require('./config/redis');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -25,8 +25,6 @@ const loadRouter = (names) => {
 
 const authRouter = loadRouter(['./routes/auth.routes', './routes/auth']);
 const platsRouter = loadRouter(['./routes/plats.routes', './routes/plats']);
-app.use('/api/auth', authRouter);
-
 
 if (authRouter) app.use('/api/auth', authRouter);
 if (platsRouter) app.use('/api/plats', platsRouter);
@@ -49,13 +47,12 @@ app.use((err, req, res, next) => {
 
 const start = async () => {
     try {
-        if (process.env.REDIS_URL) {
-            const { createClient } = require('redis');
-            const redis = createClient({ url: process.env.REDIS_URL });
-            redis.on('error', (error) => console.error('Redis error:', error));
-            await redis.connect();
-            app.locals.redis = redis;
+        const redisClient = await getRedisClient();
+        if (redisClient) {
+            app.locals.redis = redisClient;
+            console.log(' Connecté à Redis avec succès !');
         }
+
         app.listen(PORT, () => console.log(`Serveur démarré sur le port ${PORT}`));
     } catch (error) {
         console.error('Erreur démarrage serveur:', error);
