@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 
-const JWT_SECRET = process.env.JWT_SECRET || '123456789AZERTY';
+const JWT_SECRET = process.env.JWT_SECRET || 'v123456789AZERTY';
 
 module.exports = (req, res, next) => {
     const authHeader = req.headers.authorization;

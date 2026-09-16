@@ -28,7 +28,7 @@ You will provide the URL of your project inside the README
 | **J9**  | Tests auth + CRUD                     | sécurité vérifiée          | fait
 | **J10** | Redis connexion                       | Redis fonctionne           | fait
 | **J11** | Redis cache GET                       | cache opérationnel         | fait
-| *J11.5* | OAuth                                 | OAuth opérationnel         | problème pour demain
+| *J11.5* | OAuth                                 | OAuth opérationnel         | fait 
 | **J12** | Invalidation cache                    | POST/PUT/DELETE cohérents  |
 | **J13** | Swagger                               | documentation API          |
 | **J14** | Postman                               | collection + documentation |
@@ -77,3 +77,5 @@ sa return 1) "plats:page:1" car c'est ce que j'affiche dans localhost
 sa rturn 2)  "plats:page:2" et npm qu'elle page en dessous de 60sec
 + grace a giaccomo commande pour que sa supp cache quand on modifie ou supp donnée
 + npm test marche sa fais redis + plats.test
+j11 : http://localhost:3000/Home_page.html + node src/index.js
+crée deconnection + retirer s'inscrire quand on est inscrit ?

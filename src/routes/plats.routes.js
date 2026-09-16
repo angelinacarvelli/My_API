@@ -30,7 +30,6 @@ router.get('/', async (req, res, next) => {
         const result = await getAllPlats(page);
 
         if (redis) {
-            await redis.flushall();
             await redis.set(cacheKey, JSON.stringify(result), { EX: 60 });
         }
 

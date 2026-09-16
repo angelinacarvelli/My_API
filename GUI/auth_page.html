@@ -18,12 +18,17 @@
             <button type="button" id="btn-login" class="btnhome">Se connecter</button>
             <button type="button" id="btn-register" class="btnhome" style="background-color: #6d5852;">S'inscrire</button>
         </div>
+
+<div style="margin-top: 15px;">
+    <a href="http://localhost:3000/api/auth/google" class="btnhome" style="background-color: #db4437; color: white; text-decoration: none; display: inline-block; padding: 10px 15px; border-radius: 5px;">
+        Se connecter avec Google
+    </a>
+</div>
     </div>
 
     <script>
         const API_URL = "http://localhost:3000/api/auth";
 
-        // Connexion
         document.getElementById('btn-login').addEventListener('click', async () => {
             const username = document.getElementById('username').value.trim();
             const password = document.getElementById('password').value.trim();

@@ -3,11 +3,15 @@ const express = require('express');
 const swaggerUi = require('swagger-ui-express');
 const cors = require('cors');
 const { getRedisClient } = require('./config/redis');
+const path = require('path');
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(cors());
+
+app.use(express.static(path.join(__dirname, '..', 'GUI')));
 
 const loadRouter = (names) => {
     for (const name of names) {
@@ -36,6 +40,7 @@ const swaggerDocument = {
 };
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
+// Route 404 (doit bien rester tout à la fin)
 app.use((req, res) => {
     res.status(404).json({ error: 'Route non trouvée' });
 });
@@ -50,7 +55,7 @@ const start = async () => {
         const redisClient = await getRedisClient();
         if (redisClient) {
             app.locals.redis = redisClient;
-            console.log(' Connecté à Redis avec succès !');
+            console.log('Connecté à Redis avec succès !');
         }
 
         app.listen(PORT, () => console.log(`Serveur démarré sur le port ${PORT}`));
