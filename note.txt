@@ -79,3 +79,4 @@ sa rturn 2)  "plats:page:2" et npm qu'elle page en dessous de 60sec
 j11 : http://localhost:3000/Home_page.html + node src/index.js
 crée deconnection + retirer s'inscrire quand on est inscrit ?
 j12 : AWS fait
+j13: rajoute pouvoir choisir la page ou on va + page exmple a un problème on vois plus les recettes

@@ -448,3 +448,16 @@ body {
 .btn-delete-recipe {
     background-color: #e74c3c;
 }
+button.btnhome {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn-logout {
+    background-color: #c0292b;
+}
+
+.btn-logout:hover {
+    background-color: #962123;
+}

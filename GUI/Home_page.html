@@ -15,8 +15,31 @@
         <a href="./catalogue_exemple.html" class="btnhome">Voir les recettes</a>
     </div>
 
-    <div class="actions">
-        <a href="./auth_page.html" class="btnhome">Se connecter / S'inscrire</a>
+    <div class="actions" id="auth-action-container">
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const authContainer = document.getElementById("auth-action-container");
+            const token = localStorage.getItem("token");
+
+            if (token) {
+                const logoutBtn = document.createElement("button");
+                logoutBtn.className = "btnhome btn-logout";
+                logoutBtn.textContent = "Se déconnecter";
+                logoutBtn.addEventListener("click", () => {
+                    localStorage.removeItem("token");
+                    window.location.reload();
+                });
+                authContainer.appendChild(logoutBtn);
+            } else {
+                const loginLink = document.createElement("a");
+                loginLink.href = "./auth_page.html";
+                loginLink.className = "btnhome";
+                loginLink.textContent = "Se connecter / S'inscrire";
+                authContainer.appendChild(loginLink);
+            }
+        });
+    </script>
 </body>
 </html>
