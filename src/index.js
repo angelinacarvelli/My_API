@@ -13,7 +13,7 @@ app.use(cors());
 
 app.use(express.static(path.join(__dirname, '..', 'GUI')));
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/Home_page.html'); // Ajuste le chemin du fichier
+  res.sendFile(__dirname + '/GUI/Home_page.html');
 });
 
 const loadRouter = (names) => {
