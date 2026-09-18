@@ -28,16 +28,27 @@
 
         async function loadCatalog(page = 1) {
             try {
-                const response = await fetch('/plats.json')
+                const response = await fetch('/api/plats?page=' + page);                
+                if (!response.ok) {
+                    throw new Error(`Erreur HTTP: ${response.status}`);
+                }
+
                 const result = await response.json();
                 
-                currentPage = result.page;
-                totalPages = result.totalPages;
+                currentPage = result.currentPage || page;
+                totalPages = result.totalPages || 1;
 
                 const container = document.getElementById('catalog-container');
                 container.innerHTML = '';
 
-                result.data.forEach(plat => {
+                const plats = result.data || result;
+
+                if (!plats || plats.length === 0) {
+                    container.innerHTML = '<p>Aucun plat disponible.</p>';
+                    return;
+                }
+
+                plats.forEach(plat => {
                     const btn = document.createElement('a');
                     btn.href = `./page_exemple.html?slug=${plat.slug}`;
                     btn.className = 'btnhome';
@@ -60,13 +71,14 @@
                 loadCatalog(newPage);
             }
         }
-    const urlParams = new URLSearchParams(window.location.search);
-    const token = urlParams.get('token');
 
-    if (token) {
-        localStorage.setItem('token', token);
-        window.history.replaceState({}, document.title, window.location.pathname);
-    }
+        const urlParams = new URLSearchParams(window.location.search);
+        const token = urlParams.get('token');
+
+        if (token) {
+            localStorage.setItem('token', token);
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
 
         loadCatalog(1);
     </script>
