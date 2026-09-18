@@ -5,12 +5,14 @@ const { createUser, findUserByUsername, validatePassword } = require('../service
 const router = express.Router();
 const JWT_SECRET = process.env.JWT_SECRET || 'v123456789AZERTY';
 
+const REDIRECT_URI = process.env.CALLBACK_URL || 'http://localhost:3000/api/auth/google/callback';
+
 router.get('/google', (req, res) => {
     console.log("CLIENT ID UTILISÉ :", process.env.GOOGLE_CLIENT_ID);
     const rootUrl = 'https://accounts.google.com/o/oauth2/v2/auth';
     
     const options = {
-        redirect_uri: 'http://localhost:3000/api/auth/google/callback',
+        redirect_uri: REDIRECT_URI, // Modifié ici
         client_id: process.env.GOOGLE_CLIENT_ID,
         access_type: 'offline',
         response_type: 'code',
@@ -40,7 +42,7 @@ router.get('/google/callback', async (req, res, next) => {
                 code,
                 client_id: process.env.GOOGLE_CLIENT_ID,
                 client_secret: process.env.GOOGLE_CLIENT_SECRET,
-                redirect_uri: 'http://localhost:3000/api/auth/google/callback',
+                redirect_uri: REDIRECT_URI, // Modifié ici
                 grant_type: 'authorization_code',
             }),
         });
