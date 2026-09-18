@@ -12,6 +12,9 @@ app.use(express.json());
 app.use(cors());
 
 app.use(express.static(path.join(__dirname, '..', 'GUI')));
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/public/Home_page.html'); // Ajuste le chemin du fichier
+});
 
 const loadRouter = (names) => {
     for (const name of names) {

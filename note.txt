@@ -31,7 +31,6 @@ You will provide the URL of your project inside the README
 | *J11.5* | OAuth                                 | OAuth opérationnel         | fait 
 | **J12** | Invalidation cache                    | POST/PUT/DELETE cohérents  |
 | **J13** | Swagger                               | documentation API          |
-| **J14** | Postman                               | collection + documentation |
 | **J15** | Tests complets + corrections          | API stable                 |
 | **J16** | Docker                                | application Dockerisée     |
 | **J17** | Cloud deployment                      | URL publique               |
