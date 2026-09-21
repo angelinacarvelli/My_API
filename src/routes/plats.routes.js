@@ -18,8 +18,13 @@ router.get('/', async (req, res, next) => {
             return res.status(400).json({ message: "La page doit être un entier supérieur ou égal à 1" });
         }
 
+        const search = req.query.search ? req.query.search.trim() : null;
         const redis = req.app.locals.redis;
-        const cacheKey = `plats:page:${page}`;
+
+        const cacheKey = search 
+            ? `plats:search:${encodeURIComponent(search.toLowerCase())}:page:${page}` 
+            : `plats:page:${page}`;
+
         if (redis) {
             const cachedData = await redis.get(cacheKey);
             if (cachedData) {
@@ -27,7 +32,7 @@ router.get('/', async (req, res, next) => {
             }
         }
 
-        const result = await getAllPlats(page);
+        const result = await getAllPlats(page, search);
 
         if (redis) {
             await redis.set(cacheKey, JSON.stringify(result), { EX: 60 });
@@ -59,6 +64,14 @@ router.get('/:id', async (req, res, next) => {
     }
 });
 
+const invalidatePlatsCache = async (redis) => {
+    if (!redis) return;
+    const pageKeys = await redis.keys('plats:page:*');
+    const searchKeys = await redis.keys('plats:search:*');
+    const allKeys = [...pageKeys, ...searchKeys];
+    if (allKeys.length) await redis.del(allKeys);
+};
+
 router.post('/', authMiddleware, async (req, res, next) => {
     try {
         const { nom } = req.body;
@@ -66,10 +79,7 @@ router.post('/', authMiddleware, async (req, res, next) => {
 
         const newPlat = await createPlat(req.body);
 
-        if (req.app.locals.redis) {
-            const keys = await req.app.locals.redis.keys('plats:page:*');
-            if (keys.length) await req.app.locals.redis.del(keys);
-        }
+        await invalidatePlatsCache(req.app.locals.redis);
 
         return res.status(201).json(newPlat);
     } catch (error) {
@@ -82,10 +92,7 @@ router.put('/:id', authMiddleware, async (req, res, next) => {
         const updated = await updatePlat(req.params.id, req.body);
         if (!updated) return res.status(404).json({ message: 'Plat non trouvé' });
 
-        if (req.app.locals.redis) {
-            const keys = await req.app.locals.redis.keys('plats:page:*');
-            if (keys.length) await req.app.locals.redis.del(keys);
-        }
+        await invalidatePlatsCache(req.app.locals.redis);
 
         return res.status(200).json(updated);
     } catch (error) {
@@ -98,10 +105,7 @@ router.delete('/:id', authMiddleware, async (req, res, next) => {
         const deleted = await deletePlat(req.params.id);
         if (!deleted) return res.status(404).json({ message: 'Plat non trouvé' });
 
-        if (req.app.locals.redis) {
-            const keys = await req.app.locals.redis.keys('plats:page:*');
-            if (keys.length) await req.app.locals.redis.del(keys);
-        }
+        await invalidatePlatsCache(req.app.locals.redis);
 
         return res.status(200).json({ message: 'Plat supprimé avec succès' });
     } catch (error) {

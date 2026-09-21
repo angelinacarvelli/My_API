@@ -19,7 +19,7 @@ You will provide the URL of your project inside the README
 | ------- | ------------------------------------- | -------------------------- |
 | **J1**  | Vérifier `plats.json` + config projet | +1000 plats valides        | fait
 | **J2**  | `index.js` + première route GET       | API démarre                | fait
-| **J3**  | `GET /plats` + `GE  T /plats/:id`       | GET fonctionnel          | fait
+| **J3**  | `GET /plats` + `GET /plats/:id`       | GET fonctionnel            | fait
 | **J4**  | Pagination                            | max 20/page                | fait
 | **J5**  | POST                                  | création d'un plat         | fait
 | **J6**  | PUT + DELETE                          | CRUD terminé               | fait
@@ -29,10 +29,10 @@ You will provide the URL of your project inside the README
 | **J10** | Redis connexion                       | Redis fonctionne           | fait
 | **J11** | Redis cache GET                       | cache opérationnel         | fait
 | *J11.5* | OAuth                                 | OAuth opérationnel         | fait 
-| **J13** | Swagger                               | documentation API          |
+| **J13** | Swagger                               | documentation API          | fait 
 | **J15** | Tests complets + corrections          | API stable                 |
 | **J16** | Docker                                | application Dockerisée     |
-| **J17** | Cloud deployment                      | URL publique               |
+| **J17** | Cloud deployment                      | URL publique               |  fait
 | **J18** | README + vérification finale          | projet livrable            |
 --------------------------------------------------------------------------------
 MCD MLD DATABASE EN BONUS
@@ -76,8 +76,21 @@ sa rturn 2)  "plats:page:2" et npm qu'elle page en dessous de 60sec
 + grace a giaccomo commande pour que sa supp cache quand on modifie ou supp donnée
 + npm test marche sa fais redis + plats.test
 j11 : http://localhost:3000/Home_page.html + node src/index.js
-crée deconnection + retirer s'inscrire quand on est inscrit ?
+crée deconnection + retirer s'inscrire quand on est inscrit ? fait
 j12 : AWS fait : http://recettedumonde.webhop.me:3000/Home_page.html
 j13: rajoute pouvoir choisir la page ou on va + page exmple a un problème on vois plus les recettes
+
 j15 inverser AWS + swagger et tt 
 ssh -i "C:\Users\user\.ssh\AngieMyApi.pem" ec2-user@15.237.189.5
+cd My_API
+node src/index.js + sur google http://recettedumonde.webhop.me:3000/Home_page.html
+
+Ameliorer barre de recherche : mettre dans la page d'accueil + catalogue_exemple + resoudre probleme
+quand j'ai magret de cnard au cerise deja dans plats.JSON
+quand je crée un nouveau magret de canard nature quand jvais dans la bare de reherche sa met celui le premier dans pagination
+si je met magret donc faut pouvor
++ POSTMAN a finir
+ + faut que la route http://recettedumonde.webhop.me:3000/page_exemple.html?slug=magret-de-canard
+ devienne http://recettedumonde.webhop.me:3000/recette/magret-de-canard
+ + ajouter le fait que dans la pagination a la place d'avir que les fleches je puisse taper la page ou je veut aller
+ docker aussi
