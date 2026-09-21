@@ -17,17 +17,17 @@
         <button type="button" id="btn-chercher" class="btn-action btn-load">Chercher Plat</button>
     </div>
 
-<div id="select-duplicate-container" 
-style="display:none;
-margin-top: 10px;
-background:#fff;
-padding:10px;
-border:2px solid #6d5852;
-border-radius:8px; z-index:100; width: fit-content;">
-    <p id="duplicate-count-text" style="margin:0 0 5px 0; font-weight:bold; font-size:14px; color:#6d5852;"></p>
-    <select id="duplicate-select" style="padding:5px; width:280px;"></select>
-    <button type="button" id="btn-validate-selection" class="btn-action btn-load" style="padding:5px 10px; margin-top:5px; font-size:12px; display:block;">Sélectionner</button>
-</div>
+    <div id="select-duplicate-container" 
+    style="display:none;
+    margin-top: 10px;
+    background:#fff;
+    padding:10px;
+    border:2px solid #6d5852;
+    border-radius:8px; z-index:100; width: fit-content;">
+        <p id="duplicate-count-text" style="margin:0 0 5px 0; font-weight:bold; font-size:14px; color:#6d5852;"></p>
+        <select id="duplicate-select" style="padding:5px; width:280px;"></select>
+        <button type="button" id="btn-validate-selection" class="btn-action btn-load" style="padding:5px 10px; margin-top:5px; font-size:12px; display:block;">Sélectionner</button>
+    </div>
 
     <form id="form-ajout-plat" class="main-add-container">
         <input type="hidden" id="input-id">
@@ -107,7 +107,6 @@ border-radius:8px; z-index:100; width: fit-content;">
 
         btnChercher.addEventListener('click', async () => {
             const rawTitre = searchInput.value.trim();
-            if (!rawTiter)
             if (!rawTitre) return alert("Veuillez saisir un titre de plat.");
 
             try {
