@@ -17,8 +17,8 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../GUI/Home_page.html'));
 });
 
-app.get('/recette/:slug', (req, res) => {
-  res.sendFile(path.join(__dirname, '../GUI/catalogue.html'));
+app.get('/:nom', (req, res) => {
+    res.sendFile(__dirname + '/recette.html');
 });
 
 const loadRouter = (names) => {
