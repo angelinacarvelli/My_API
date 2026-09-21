@@ -2,9 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recette - Cuisine du Monde</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,7 +12,7 @@
         <section class="left-section">
             <h1 class="title" id="recipe-title"> RECETTE </h1>
             <div class="image-frame">
-                <img src="./images/recipe.png" alt="Recette" id="recipe-image" Class="recipe-image">
+                <img src="./images/recipe.png" alt="Recette" id="recipe-image" class="recipe-image">
             </div>
             <div class="badge country-badge" id="recipe-country"> PAYS </div>
         </section>
@@ -24,81 +22,62 @@
             </div>
             <div class="ingredients-card">
                 <h2>INGRÉDIENTS</h2>
-                <ul id="recipe-ingredients"> </ul>
+                <ul id="recipe-ingredients"></ul>
             </div>
         </section>
     </main>
+
     <script>
-            const API_URL = "/api/plats";
+        const API_URL = "/api/plats";
+
         async function loadRecipe() {
-            const urlParams =
-                new URLSearchParams(
-                    window.location.search
-                );
-            const slug =
-                urlParams.get("slug");
+            const urlParams = new URLSearchParams(window.location.search);
+            const slug = urlParams.get("slug");
+
             if (!slug) {
-                console.error(
-                    "Aucun slug fourni"
-                );
+                console.error("Aucun slug fourni dans l'URL");
                 return;
-            } try {
-                const response =
-                    await fetch(
-                        `${API_URL}/slug/${encodeURIComponent(slug)}`
-                    );
+            }
+
+            try {
+                const response = await fetch(`${API_URL}/slug/${encodeURIComponent(slug)}`);
 
                 if (!response.ok) {
-                    throw new Error(
-                        "Plat introuvable"
-                    );
+                    throw new Error("Plat introuvable sur le serveur");
                 }
-                const plat =
-                    await response.json();
-                document.getElementById(
-                    "recipe-title"
-                ).textContent =
-                    plat.nom || "RECETTE";
-                document.getElementById(
-                    "recipe-country"
-                ).textContent =
-                    plat.pays || "PAYS";
+
+                const plat = await response.json();
+
+                document.getElementById("recipe-title").textContent = plat.nom || plat.title || "RECETTE";
+                document.getElementById("recipe-country").textContent = plat.pays || plat.origine || "PAYS";
+                
                 if (plat.image) {
-                    document.getElementById(
-                        "recipe-image"
-                    ).src = plat.image;
+                    document.getElementById("recipe-image").src = plat.image;
                 }
-                const ingredientsList =
-                    document.getElementById(
-                        "recipe-ingredients"
-                    );
+
+                const ingredientsList = document.getElementById("recipe-ingredients");
                 ingredientsList.innerHTML = "";
-                if (
-                    Array.isArray(
-                        plat.ingredients
-                    )
-                ) {
-                    plat.ingredients.forEach(
-                        (ingredient) => {
-                            const element =
-                                document.createElement(
-                                    "element"
-                                );
-                            element.textContent =
-                                ingredient;
-                            ingredientsList.appendChild(
-                                element
-                            );
+
+                if (Array.isArray(plat.ingredients)) {
+                    plat.ingredients.forEach((ingredient) => {
+                        const li = document.createElement("li");
+                        li.textContent = ingredient;
+                        ingredientsList.appendChild(li);
+                    });
+                } else if (typeof plat.ingredients === "string") {
+                    plat.ingredients.split("\n").forEach((ingredient) => {
+                        if (ingredient.trim() !== "") {
+                            const li = document.createElement("li");
+                            li.textContent = ingredient;
+                            ingredientsList.appendChild(li);
                         }
-                    );
+                    });
                 }
             } catch (error) {
-                console.error(
-                    "Erreur :",
-                    error
-                );
+                console.error("Erreur lors du chargement :", error);
             }
         }
+
         loadRecipe();
     </script>
 </body>
