@@ -21,6 +21,7 @@ for (const plat of plats) {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '');
+    
 }
 
 fs.writeFileSync(
