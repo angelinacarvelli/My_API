@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/recette/:slug', (req, res) => {
-  res.sendFile(path.join(__dirname, '../GUI/catalogue.html'));
+  res.sendFile(path.join(__dirname, '../GUI/catalogue_exemple.html'));
 });
 
 const loadRouter = (names) => {
