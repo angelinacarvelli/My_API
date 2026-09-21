@@ -123,11 +123,10 @@ border-radius:8px; z-index:100; width: fit-content;">
                     throw new Error("Aucun plat récupéré ou format de données non reconnu.");
                 }
                 
-                foundPlatsCache = plats.filter(p => {
-                    const nomPlat = p.nom || p.title || p.name || p.titre || '';
-                    const slugPlat = p.slug || slugify(nomPlat);
-                    return slugPlat.includes(slugRecherche) || nomPlat.toLowerCase().includes(rawTitre.toLowerCase());
-                });
+        foundPlatsCache = plats.filter(p => {
+            const nomPlat = (p.nom || p.title || p.name || p.titre || '').toLowerCase();
+            return nomPlat.includes(rawTitre.toLowerCase());
+        });
 
                 console.log("Plats trouvés après filtre :", foundPlatsCache);
 
