@@ -11,10 +11,12 @@
     <div class="top-right-logo">
         <img src="./images/logo.png" alt="Les Recettes - Cuisine du Monde" class="logo-img">
     </div>
+    
     <div class="search-title-bar">
         <input type="text" id="search-title" placeholder="Chercher un titre...">
         <button type="button" id="btn-chercher" class="btn-action btn-load">Chercher Plat</button>
     </div>
+
     <form id="form-ajout-plat" class="main-add-container">
         <input type="hidden" id="input-id">
         <section class="left-section-add">
@@ -32,6 +34,7 @@
             </div>
             <input type="text" id="input-pays" class="badge-input" placeholder="PAYS..." required>
         </section>
+
         <section class="right-section-add">
             <div class="ingredients-box">
                 <h2 class="ingredients-title">INGRÉDIENTS</h2>
@@ -44,6 +47,7 @@
             </div>
         </section>
     </form>
+
     <script>
         const API_URL = "/api/plats";
         const form = document.getElementById('form-ajout-plat');
@@ -57,7 +61,6 @@
         const btnDelete = document.getElementById('btn-delete');
         const btnChercher = document.getElementById('btn-chercher');
 
-        // Récupération du token JWT stocké lors de la connexion
         const getToken = () => localStorage.getItem('token');
 
         const slugify = text => text.toString().toLowerCase().trim()
@@ -65,17 +68,19 @@
             .replace(/[^\w\-]+/g, '')
             .replace(/\-\-+/g, '-');
 
-        // Recherche d'un plat par son titre (Public)
         btnChercher.addEventListener('click', async () => {
             const titre = searchInput.value.trim();
             if (!titre) return alert("Veuillez saisir un titre de plat.");
             const slug = slugify(titre);
+
             try {
                 const res = await fetch(`${API_URL}/slug/${slug}`);
                 if (!res.ok) throw new Error("Plat introuvable avec ce titre.");
+                
                 const plat = await res.json();
-                inputId.value = plat.id;
-                inputNom.value = plat.nom || '';
+                
+                inputId.value = plat.id || plat._id || '';
+                inputNom.value = plat.nom || plat.title || titre;
                 inputPays.value = plat.pays || plat.origine || '';
                 inputIngredients.value = Array.isArray(plat.ingredients)
                     ? plat.ingredients.join('\n')
@@ -84,16 +89,17 @@
                 btnSubmit.style.display = 'none';
                 btnUpdate.style.display = 'inline-block';
                 btnDelete.style.display = 'inline-block';
-                alert(`Plat "${plat.nom}" chargé avec succès !`);
+
+                alert(`Plat "${plat.nom || titre}" chargé avec succès !`);
             } catch (err) {
                 alert(err.message);
             }
         });
 
-        // Ajouter un plat (Protégé)
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
             const token = getToken();
+            
             if (!token) return alert("Vous devez être connecté pour effectuer cette action.");
 
             const nouveauPlat = {
@@ -102,6 +108,7 @@
                 ingredients: inputIngredients.value.split('\n').filter(i => i.trim() !== ''),
                 image: "./images/recipe.png"
             };
+
             try {
                 const response = await fetch(API_URL, {
                     method: 'POST',
@@ -111,23 +118,23 @@
                     },
                     body: JSON.stringify(nouveauPlat)
                 });
+
                 if (response.ok) {
                     alert("Recette ajoutée avec succès !");
                     window.location.href = "catalogue_exemple.html";
                 } else {
                     const err = await response.json();
-                    alert("Erreur : " + err.message);
+                    alert("Erreur : " + (err.message || err.error || "Impossible d'ajouter"));
                 }
             } catch (error) {
                 alert("Impossible de contacter le serveur.");
             }
         });
 
-        // Modifier un plat (Protégé)
         btnUpdate.addEventListener('click', async () => {
             const id = inputId.value;
             const token = getToken();
-            if (!id) return;
+            if (!id) return alert("Aucun plat sélectionné.");
             if (!token) return alert("Vous devez être connecté pour effectuer cette action.");
 
             const platModifie = {
@@ -135,6 +142,7 @@
                 pays: inputPays.value,
                 ingredients: inputIngredients.value.split('\n').filter(i => i.trim() !== '')
             };
+
             try {
                 const response = await fetch(`${API_URL}/${id}`, {
                     method: 'PUT',
@@ -144,26 +152,27 @@
                     },
                     body: JSON.stringify(platModifie)
                 });
+
                 if (response.ok) {
                     alert("Recette modifiée avec succès !");
                     window.location.href = "catalogue_exemple.html";
                 } else {
                     const err = await response.json();
-                    alert("Erreur : " + err.message);
+                    alert("Erreur : " + (err.message || err.error));
                 }
             } catch (error) {
                 alert("Erreur serveur lors de la modification.");
             }
         });
 
-        // Supprimer un plat (Protégé)
         btnDelete.addEventListener('click', async () => {
             const id = inputId.value;
             const token = getToken();
-            if (!id) return;
+            if (!id) return alert("Aucun plat sélectionné.");
             if (!token) return alert("Vous devez être connecté pour effectuer cette action.");
 
             if (!confirm(`Voulez-vous vraiment supprimer "${inputNom.value}" ?`)) return;
+
             try {
                 const response = await fetch(`${API_URL}/${id}`, {
                     method: 'DELETE',
@@ -171,12 +180,13 @@
                         'Authorization': `Bearer ${token}`
                     }
                 });
+
                 if (response.ok) {
                     alert("Recette supprimée avec succès !");
                     window.location.href = "catalogue_exemple.html";
                 } else {
                     const err = await response.json();
-                    alert("Erreur : " + err.message);
+                    alert("Erreur : " + (err.message || err.error));
                 }
             } catch (error) {
                 alert("Erreur serveur lors de la suppression.");
