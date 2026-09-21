@@ -19,8 +19,6 @@ services:
     image: redis:alpine
     container_name: recette_redis
     restart: always
-    ports:
-      - "6379:6379"
     volumes:
       - redis_data:/data
 
