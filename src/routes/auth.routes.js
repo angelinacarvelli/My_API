@@ -71,7 +71,7 @@ router.get('/google/callback', async (req, res, next) => {
             { expiresIn: '24h' }
         );
 
-        return res.redirect(`/catalogue_exemple.html?token=${token}`);
+        return res.redirect(`/catalogue.html?token=${token}`);
 
     } catch (error) {
         next(error);

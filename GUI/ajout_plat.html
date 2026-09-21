@@ -125,7 +125,7 @@
 
                 if (response.ok) {
                     alert("Recette ajoutée avec succès !");
-                    window.location.href = "catalogue_exemple.html";
+                    window.location.href = "catalogue.html";
                 } else {
                     const err = await response.json();
                     alert("Erreur : " + (err.message || err.error || "Impossible d'ajouter"));
