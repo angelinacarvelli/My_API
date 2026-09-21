@@ -1,3 +1,7 @@
 Dockerfile
 README.md
-.github/
+node_modules
+.git
+.gitignore
+README.md
+.env
