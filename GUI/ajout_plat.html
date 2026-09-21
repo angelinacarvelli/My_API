@@ -108,7 +108,6 @@ border-radius:8px; z-index:100; width: fit-content;">
         btnChercher.addEventListener('click', async () => {
             const rawTitre = searchInput.value.trim();
             if (!rawTitre) return alert("Veuillez saisir un titre de plat.");
-            const slugRecherche = slugify(rawTitre);
 
             try {
                 const res = await fetch(API_URL);
@@ -117,16 +116,24 @@ border-radius:8px; z-index:100; width: fit-content;">
                 const data = await res.json();
                 console.log("Données brutes reçues de l'API :", data);
                 
-                const plats = Array.isArray(data) ? data : (data.plats || data.data || data.results || Object.values(data).find(Array.isArray) || []);
-                
-                if (!Array.isArray(plats) || plats.length === 0) {
-                    throw new Error("Aucun plat récupéré ou format de données non reconnu.");
+                let plats = [];
+                if (Array.isArray(data)) {
+                    plats = data;
+                } else if (data && typeof data === 'object') {
+                    plats = data.plats || data.data || data.results || Object.values(data).find(Array.isArray) || Object.values(data);
                 }
+
+                if (!Array.isArray(plats) || plats.length === 0) {
+                    throw new Error("Aucun plat trouvé dans la réponse du serveur.");
+                }
+
+                console.log("Tableau des plats extrait :", plats);
                 
-        foundPlatsCache = plats.filter(p => {
-            const nomPlat = (p.nom || p.title || p.name || p.titre || '').toLowerCase();
-            return nomPlat.includes(rawTitre.toLowerCase());
-        });
+                foundPlatsCache = plats.filter(p => {
+                    if (!p) return false;
+                    const nomPlat = (p.nom || p.title || p.name || p.titre || '').toLowerCase();
+                    return nomPlat.includes(rawTitre.toLowerCase());
+                });
 
                 console.log("Plats trouvés après filtre :", foundPlatsCache);
 
