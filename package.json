@@ -16,7 +16,7 @@
     "jsonwebtoken": "^9.0.3",
     "redis": "^4.7.1",
     "swagger": "^0.7.5",
-    "swagger-jsdoc": "^6.2.8",
+    "swagger-jsdoc": "^6.3.0",
     "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
