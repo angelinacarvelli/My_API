@@ -120,7 +120,7 @@ border-radius:8px; z-index:100; width: fit-content;">
                 if (Array.isArray(data)) {
                     plats = data;
                 } else if (data && typeof data === 'object') {
-                    plats = data.plats || data.data || data.results || Object.values(data).find(Array.isArray) || Object.values(data);
+                    plats = data.plats || data.data || data.docs || data.items || Object.values(data).find(Array.isArray) || [];
                 }
 
                 if (!Array.isArray(plats) || plats.length === 0) {
@@ -130,9 +130,10 @@ border-radius:8px; z-index:100; width: fit-content;">
                 console.log("Tableau des plats extrait :", plats);
                 
                 foundPlatsCache = plats.filter(p => {
-                    if (!p) return false;
-                    const nomPlat = (p.nom || p.title || p.name || p.titre || '').toLowerCase();
-                    return nomPlat.includes(rawTitre.toLowerCase());
+                    if (!p || typeof p !== 'object') return false;
+                    return Object.values(p).some(val => 
+                        typeof val === 'string' && val.toLowerCase().includes(rawTitre.toLowerCase())
+                    );
                 });
 
                 console.log("Plats trouvés après filtre :", foundPlatsCache);
@@ -146,7 +147,7 @@ border-radius:8px; z-index:100; width: fit-content;">
                     foundPlatsCache.forEach((p, index) => {
                         const opt = document.createElement('option');
                         opt.value = index;
-                        const nomAffichage = p.nom || p.title || p.name || p.titre || 'Sans nom';
+                        const nomAffichage = p.nom || p.title || p.name || p.titre || p.libelle || 'Sans nom';
                         const paysAffichage = p.pays || p.origine || 'Inconnu';
                         const idAffichage = p.id || p._id || 'N/A';
                         opt.textContent = `${nomAffichage} (Pays: ${paysAffichage}) - ID: ${idAffichage}`;
