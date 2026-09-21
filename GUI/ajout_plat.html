@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="add-recipe-body">
-    <a href="catalogue_exemple.html" class="back-arrow">←</a>
+    <a href="/catalogue.html" class="back-arrow">←</a>
     <div class="top-right-logo">
         <img src="./images/logo.png" alt="Les Recettes - Cuisine du Monde" class="logo-img">
     </div>
@@ -107,7 +107,7 @@
 
             const nouveauPlat = {
                 nom: inputNom.value,
-                slug: slugify(inputNom.value), // <-- Génération et envoi du slug
+                slug: slugify(inputNom.value),
                 pays: inputPays.value,
                 ingredients: inputIngredients.value.split('\n').filter(i => i.trim() !== ''),
                 image: "./images/recipe.png"
@@ -125,7 +125,7 @@
 
                 if (response.ok) {
                     alert("Recette ajoutée avec succès !");
-                    window.location.href = "catalogue.html";
+                    window.location.href = "/catalogue.html";
                 } else {
                     const err = await response.json();
                     alert("Erreur : " + (err.message || err.error || "Impossible d'ajouter"));
@@ -160,7 +160,7 @@
 
                 if (response.ok) {
                     alert("Recette modifiée avec succès !");
-                    window.location.href = "catalogue_exemple.html";
+                    window.location.href = "/catalogue.html";
                 } else {
                     const err = await response.json();
                     alert("Erreur : " + (err.message || err.error));
@@ -188,7 +188,7 @@
 
                 if (response.ok) {
                     alert("Recette supprimée avec succès !");
-                    window.location.href = "catalogue_exemple.html";
+                    window.location.href = "/catalogue.html";
                 } else {
                     const err = await response.json();
                     alert("Erreur : " + (err.message || err.error));
