@@ -116,7 +116,13 @@
                 const res = await fetch(API_URL);
                 if (!res.ok) throw new Error("Impossible de récupérer la liste des plats.");
                 
-                const plats = await res.json();
+                const data = await res.json();
+                
+                const plats = Array.isArray(data) ? data : (data.plats || data.data || data.results || []);
+                
+                if (!Array.isArray(plats)) {
+                    throw new Error("Format de données invalide reçu du serveur.");
+                }
                 
                 foundPlatsCache = plats.filter(p => {
                     const pSlug = p.slug || slugify(p.nom || p.title || '');
