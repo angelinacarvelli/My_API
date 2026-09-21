@@ -63,10 +63,13 @@
 
         const getToken = () => localStorage.getItem('token');
 
-        const slugify = text => text.toString().toLowerCase().trim()
-            .replace(/\s+/g, '-')
-            .replace(/[^\w\-]+/g, '')
-            .replace(/\-\-+/g, '-');
+        const slugify = text => text.toString()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .toLowerCase()
+            .trim()
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '');
 
         btnChercher.addEventListener('click', async () => {
             const titre = searchInput.value.trim();
@@ -104,6 +107,7 @@
 
             const nouveauPlat = {
                 nom: inputNom.value,
+                slug: slugify(inputNom.value), // <-- Génération et envoi du slug
                 pays: inputPays.value,
                 ingredients: inputIngredients.value.split('\n').filter(i => i.trim() !== ''),
                 image: "./images/recipe.png"
@@ -139,6 +143,7 @@
 
             const platModifie = {
                 nom: inputNom.value,
+                slug: slugify(inputNom.value),
                 pays: inputPays.value,
                 ingredients: inputIngredients.value.split('\n').filter(i => i.trim() !== '')
             };
