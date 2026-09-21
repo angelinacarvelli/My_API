@@ -33,7 +33,6 @@ router.get('/', async (req, res, next) => {
             await redis.set(cacheKey, JSON.stringify(result), { EX: 60 });
         }
 
-
         return res.status(200).json(result);
     } catch (error) {
         next(error);

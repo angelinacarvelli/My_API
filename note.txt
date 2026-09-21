@@ -29,7 +29,6 @@ You will provide the URL of your project inside the README
 | **J10** | Redis connexion                       | Redis fonctionne           | fait
 | **J11** | Redis cache GET                       | cache opérationnel         | fait
 | *J11.5* | OAuth                                 | OAuth opérationnel         | fait 
-| **J12** | Invalidation cache                    | POST/PUT/DELETE cohérents  |
 | **J13** | Swagger                               | documentation API          |
 | **J15** | Tests complets + corrections          | API stable                 |
 | **J16** | Docker                                | application Dockerisée     |
@@ -80,3 +79,5 @@ j11 : http://localhost:3000/Home_page.html + node src/index.js
 crée deconnection + retirer s'inscrire quand on est inscrit ?
 j12 : AWS fait : http://recettedumonde.webhop.me:3000/Home_page.html
 j13: rajoute pouvoir choisir la page ou on va + page exmple a un problème on vois plus les recettes
+j15 inverser AWS + swagger et tt 
+ssh -i "C:\Users\user\.ssh\AngieMyApi.pem" ec2-user@15.237.189.5
