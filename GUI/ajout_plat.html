@@ -102,33 +102,37 @@ border-radius:8px; z-index:100; width: fit-content;">
             btnDelete.style.display = 'inline-block';
 
             duplicateContainer.style.display = 'none';
-            alert(`Plat "${plat.nom}" chargé avec succès !`);
+            alert(`Plat "${plat.nom || plat.title}" chargé avec succès !`);
         }
 
         btnChercher.addEventListener('click', async () => {
-            const titre = searchInput.value.trim();
-            if (!titre) return alert("Veuillez saisir un titre de plat.");
-            const slug = slugify(titre);
+            const rawTitre = searchInput.value.trim();
+            if (!rawTitre) return alert("Veuillez saisir un titre de plat.");
+            const slugRecherche = slugify(rawTitre);
 
             try {
                 const res = await fetch(API_URL);
                 if (!res.ok) throw new Error("Impossible de récupérer la liste des plats.");
                 
                 const data = await res.json();
-                const plats = Array.isArray(data) ? data : (data.plats || data.data || data.results || []);
+                console.log("Données brutes reçues de l'API :", data);
                 
-                if (!Array.isArray(plats)) {
-                    throw new Error("Format de données invalide reçu du serveur.");
+                const plats = Array.isArray(data) ? data : (data.plats || data.data || data.results || Object.values(data).find(Array.isArray) || []);
+                
+                if (!Array.isArray(plats) || plats.length === 0) {
+                    throw new Error("Aucun plat récupéré ou format de données non reconnu.");
                 }
                 
                 foundPlatsCache = plats.filter(p => {
-                    const nomPlat = (p.nom || p.title || '').toLowerCase();
-                    const pSlug = p.slug || slugify(nomPlat);
-                    return pSlug.includes(slug) || nomPlat.includes(titre.toLowerCase());
+                    const nomPlat = p.nom || p.title || p.name || p.titre || '';
+                    const slugPlat = p.slug || slugify(nomPlat);
+                    return slugPlat.includes(slugRecherche) || nomPlat.toLowerCase().includes(rawTitre.toLowerCase());
                 });
 
+                console.log("Plats trouvés après filtre :", foundPlatsCache);
+
                 if (foundPlatsCache.length === 0) {
-                    throw new Error("Aucun plat trouvé avec ce titre.");
+                    throw new Error(`Aucun plat trouvé pour "${rawTitre}". Vérifie l'orthographe.`);
                 } else if (foundPlatsCache.length === 1) {
                     remplirFormulaire(foundPlatsCache[0]);
                 } else {
@@ -136,11 +140,16 @@ border-radius:8px; z-index:100; width: fit-content;">
                     foundPlatsCache.forEach((p, index) => {
                         const opt = document.createElement('option');
                         opt.value = index;
-                        opt.textContent = `${p.nom} (${p.pays || 'Pays inconnu'}) - ID: ${p.id || p._id}`;
+                        const nomAffichage = p.nom || p.title || p.name || p.titre || 'Sans nom';
+                        const paysAffichage = p.pays || p.origine || 'Inconnu';
+                        const idAffichage = p.id || p._id || 'N/A';
+                        opt.textContent = `${nomAffichage} (Pays: ${paysAffichage}) - ID: ${idAffichage}`;
                         duplicateSelect.appendChild(opt);
                     });
                     
-                    document.getElementById('duplicate-count-text').textContent = `${foundPlatsCache.length} plats trouvés :`;
+                    const countText = document.getElementById('duplicate-count-text');
+                    if (countText) countText.textContent = `${foundPlatsCache.length} plats trouvés :`;
+                    
                     duplicateContainer.style.display = 'block';
                 }
 
