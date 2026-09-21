@@ -13,12 +13,22 @@
         <a href="ajout_plat.html" class="btnhome btn-add">+ Ajouter un plat</a>
     </div>
 
+    <div class="search-container" style="text-align: center; margin: 20px 0;">
+        <input type="text" id="search-input" placeholder="Rechercher un plat, un ingrédient ou un pays..." style="padding: 10px; width: 60%; max-width: 400px; border-radius: 5px; border: 1px solid #ccc;">
+        <button id="search-btn" onclick="triggerSearch()" class="btnhome" style="padding: 10px 15px;"> Rechercher</button>
+    </div>
+
     <div class="actions" id="catalog-container">
     </div>
 
-    <div class="pagination-container">
+    <div class="pagination-container" style="text-align: center; margin: 30px 0; display: flex; justify-content: center; align-items: center; gap: 10px;">
         <button id="btn-prev" onclick="changePage(-1)" class="pagination-btn">Précédent</button>
-        <span id="page-info" class="page-info">Page 1 / 1</span>
+        
+        <span>Page</span>
+        <input type="number" id="input-page" min="1" value="1" style="width: 50px; text-align: center; padding: 5px;" />
+        <span id="page-info" class="page-info">/ 1</span>
+        <button id="btn-go" onclick="goToPage()" class="btnhome" style="padding: 5px 10px;">Aller</button>
+
         <button id="btn-next" onclick="changePage(1)" class="pagination-btn">Suivant</button>
     </div>
 
@@ -28,14 +38,22 @@
 
         async function loadCatalog(page = 1) {
             try {
-                const response = await fetch('/api/plats?page=' + page);                
+                const searchInput = document.getElementById('search-input');
+                const searchQuery = searchInput ? searchInput.value.trim() : "";
+
+                let url = `/api/plats?page=${page}`;
+                if (searchQuery) {
+                    url += `&search=${encodeURIComponent(searchQuery)}`;
+                }
+
+                const response = await fetch(url);                
                 if (!response.ok) {
                     throw new Error(`Erreur HTTP: ${response.status}`);
                 }
 
                 const result = await response.json();
                 
-                currentPage = result.currentPage || page;
+                currentPage = result.page || result.currentPage || page;
                 totalPages = result.totalPages || 1;
 
                 const container = document.getElementById('catalog-container');
@@ -44,19 +62,22 @@
                 const plats = result.data || result;
 
                 if (!plats || plats.length === 0) {
-                    container.innerHTML = '<p>Aucun plat disponible.</p>';
-                    return;
+                    container.innerHTML = '<p style="text-align: center; width: 100%;">Aucun plat disponible.</p>';
+                } else {
+                    plats.forEach(plat => {
+                        const btn = document.createElement('a');
+                        
+                        const slug = plat.slug || encodeURIComponent((plat.nom || plat.title).toLowerCase().replace(/\s+/g, '-'));
+                        btn.href = `/recette/${slug}`;
+                        
+                        btn.className = 'btnhome';
+                        btn.textContent = plat.nom || plat.title;
+                        container.appendChild(btn);
+                    });
                 }
 
-                plats.forEach(plat => {
-                    const btn = document.createElement('a');
-                    btn.href = `./page_exemple.html?slug=${plat.slug}`;
-                    btn.className = 'btnhome';
-                    btn.textContent = plat.nom || plat.title;
-                    container.appendChild(btn);
-                });
-
-                document.getElementById('page-info').textContent = `Page ${currentPage} / ${totalPages}`;
+                document.getElementById('input-page').value = currentPage;
+                document.getElementById('page-info').textContent = `/ ${totalPages}`;
                 document.getElementById('btn-prev').disabled = (currentPage <= 1);
                 document.getElementById('btn-next').disabled = (currentPage >= totalPages);
 
@@ -72,15 +93,36 @@
             }
         }
 
-        const urlParams = new URLSearchParams(window.location.search);
-        const token = urlParams.get('token');
-
-        if (token) {
-            localStorage.setItem('token', token);
-            window.history.replaceState({}, document.title, window.location.pathname);
+        function goToPage() {
+            const pageInput = parseInt(document.getElementById('input-page').value);
+            if (pageInput >= 1 && pageInput <= totalPages) {
+                loadCatalog(pageInput);
+            } else {
+                alert(`Veuillez entrer une page valide entre 1 et ${totalPages}`);
+            }
         }
 
-        loadCatalog(1);
+        function triggerSearch() {
+            loadCatalog(1);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById('search-input').addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    triggerSearch();
+                }
+            });
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const token = urlParams.get('token');
+
+            if (token) {
+                localStorage.setItem('token', token);
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }
+
+            loadCatalog(1);
+        });
     </script>
 </body>
 </html>

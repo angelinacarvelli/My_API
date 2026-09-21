@@ -30,14 +30,34 @@ function normalizeString(str) {
         .trim();
 }
 
-async function getAllPlats(page = 1) {
+async function getAllPlats(page = 1, search = null) {
     const data = await readDataFromFile();
-    const plats = data.plats || [];
+    let plats = data.plats || [];
+
+    if (search) {
+        const queryNormalized = normalizeString(search);
+        
+        plats = plats.filter((item) => {
+            const nom = normalizeString(item.nom || item.title || item.name);
+            const slug = normalizeString(item.slug);
+            const pays = normalizeString(item.pays || item.country);
+            
+            const matchText = nom.includes(queryNormalized) || slug.includes(queryNormalized) || pays.includes(queryNormalized);
+            
+            const matchIngredient = Array.isArray(item.ingredients) && item.ingredients.some((ing) => 
+                normalizeString(ing).includes(queryNormalized)
+            );
+
+            return matchText || matchIngredient;
+        });
+    }
+
     const limit = 20;
     const totalPlats = plats.length;
     const totalPages = Math.ceil(totalPlats / limit) || 1;
     const start = (page - 1) * limit;
     const end = start + limit;
+
     return {
         page,
         limit,

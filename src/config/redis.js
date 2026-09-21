@@ -1,7 +1,7 @@
 require('dotenv').config();
 const { createClient } = require('redis');
 
-const REDIS_URL = process.env.REDIS_URL || 'redis://localhost:6379';
+const REDIS_URL = process.env.REDIS_URL || 'redis://redis:6379';
 
 const client = createClient({ url: REDIS_URL });
 
