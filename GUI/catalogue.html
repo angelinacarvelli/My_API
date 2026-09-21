@@ -5,11 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogue des recettes</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        #catalog-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            justify-items: center;
+            padding: 20px 5%;
+        }
+
+        .recipe-card-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .recipe-card-item .image-frame {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 6px solid #6d5852;
+            overflow: hidden;
+            background-color: #c4e4ff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .recipe-card-item .recipe-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .recipe-card-title {
+            margin-top: 12px;
+            font-size: 18px;
+            color: #6d5852;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <a href="/Home_page.html" class="back-button">&#10140;</a>
     <div class="bottom-actions">
-    <a href="/ajout_plat.html" class="btnhome btn-add">+ Ajouter un plat</a>
+        <a href="/ajout_plat.html" class="btnhome btn-add">+ Ajouter un plat</a>
     </div>
 
     <div class="search-container" style="text-align: center; margin: 20px 0;">
@@ -17,7 +57,7 @@
         <button id="search-btn" onclick="triggerSearch()" class="btnhome" style="padding: 10px 15px;">Rechercher</button>
     </div>
 
-    <div class="actions" id="catalog-container">
+    <div id="catalog-container">
     </div>
 
     <div class="pagination-container" style="text-align: center; margin: 30px 0; display: flex; justify-content: center; align-items: center; gap: 10px;">
@@ -64,14 +104,28 @@
                     container.innerHTML = '<p style="text-align: center; width: 100%;">Aucun plat disponible.</p>';
                 } else {
                     plats.forEach(plat => {
-                        const btn = document.createElement('a');
-                        
                         const slug = plat.slug || encodeURIComponent((plat.nom || plat.title).toLowerCase().replace(/\s+/g, '-'));
-                        btn.href = `/recette/${slug}`;
                         
-                        btn.className = 'btnhome';
-                        btn.textContent = plat.nom || plat.title;
-                        container.appendChild(btn);
+                        const card = document.createElement('a');
+                        card.href = `/recette/${slug}`;
+                        card.className = 'recipe-card-item';
+
+                        const frame = document.createElement('div');
+                        frame.className = 'image-frame';
+
+                        const img = document.createElement('img');
+                        img.src = plat.image || './images/recipe.png';
+                        img.alt = plat.nom || plat.title;
+                        img.className = 'recipe-image';
+                        frame.appendChild(img);
+
+                        const title = document.createElement('div');
+                        title.className = 'recipe-card-title';
+                        title.textContent = plat.nom || plat.title;
+
+                        card.appendChild(frame);
+                        card.appendChild(title);
+                        container.appendChild(card);
                     });
                 }
 
