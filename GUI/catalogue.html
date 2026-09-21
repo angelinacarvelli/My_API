@@ -15,7 +15,7 @@
 
     <div class="search-container" style="text-align: center; margin: 20px 0;">
         <input type="text" id="search-input" placeholder="Rechercher un plat, un ingrédient ou un pays..." style="padding: 10px; width: 60%; max-width: 400px; border-radius: 5px; border: 1px solid #ccc;">
-        <button id="search-btn" onclick="triggerSearch()" class="btnhome" style="padding: 10px 15px;"> Rechercher</button>
+        <button id="search-btn" onclick="triggerSearch()" class="btnhome" style="padding: 10px 15px;">Rechercher</button>
     </div>
 
     <div class="actions" id="catalog-container">
@@ -59,7 +59,7 @@
                 const container = document.getElementById('catalog-container');
                 container.innerHTML = '';
 
-                const plats = result.data || result;
+                const plats = result.data || result.plats || result;
 
                 if (!plats || plats.length === 0) {
                     container.innerHTML = '<p style="text-align: center; width: 100%;">Aucun plat disponible.</p>';
