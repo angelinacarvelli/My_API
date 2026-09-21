@@ -17,6 +17,20 @@
         <button type="button" id="btn-chercher" class="btn-action btn-load">Chercher Plat</button>
     </div>
 
+    <div id="select-duplicate-container" 
+    style="display:none;
+    position:absolute;
+    top:80px;
+    left:120px;
+    background:#fff;
+    padding:10px;
+    border:2px solid #6d5852;
+    border-radius:8px; z-index:100;">
+    <p style="margin:0 0 5px 0; font-weight:bold; font-size:14px; color:#6d5852;">Plusieurs plats trouvés :</p>
+    <select id="duplicate-select" style="padding:5px; width:220px;"></select>
+    <button type="button" id="btn-validate-selection" class="btn-action btn-load" style="padding:5px 10px; margin-top:5px; font-size:12px;">Sélectionner</button>
+    </div>
+
     <form id="form-ajout-plat" class="main-add-container">
         <input type="hidden" id="input-id">
         <section class="left-section-add">
@@ -60,6 +74,12 @@
         const btnUpdate = document.getElementById('btn-update');
         const btnDelete = document.getElementById('btn-delete');
         const btnChercher = document.getElementById('btn-chercher');
+        
+        const duplicateContainer = document.getElementById('select-duplicate-container');
+        const duplicateSelect = document.getElementById('duplicate-select');
+        const btnValidateSelection = document.getElementById('btn-validate-selection');
+
+        let foundPlatsCache = [];
 
         const getToken = () => localStorage.getItem('token');
 
@@ -71,31 +91,62 @@
             .replace(/[^a-z0-9]+/g, '-')
             .replace(/^-+|-+$/g, '');
 
+        function remplirFormulaire(plat) {
+            inputId.value = plat.id || plat._id || '';
+            inputNom.value = plat.nom || plat.title || '';
+            inputPays.value = plat.pays || plat.origine || '';
+            inputIngredients.value = Array.isArray(plat.ingredients)
+                ? plat.ingredients.join('\n')
+                : (plat.ingredients || '');
+
+            btnSubmit.style.display = 'none';
+            btnUpdate.style.display = 'inline-block';
+            btnDelete.style.display = 'inline-block';
+
+            duplicateContainer.style.display = 'none';
+            alert(`Plat "${plat.nom}" chargé avec succès !`);
+        }
+
         btnChercher.addEventListener('click', async () => {
             const titre = searchInput.value.trim();
             if (!titre) return alert("Veuillez saisir un titre de plat.");
             const slug = slugify(titre);
 
             try {
-                const res = await fetch(`${API_URL}/slug/${slug}`);
-                if (!res.ok) throw new Error("Plat introuvable avec ce titre.");
+                const res = await fetch(API_URL);
+                if (!res.ok) throw new Error("Impossible de récupérer la liste des plats.");
                 
-                const plat = await res.json();
+                const plats = await res.json();
                 
-                inputId.value = plat.id || plat._id || '';
-                inputNom.value = plat.nom || plat.title || titre;
-                inputPays.value = plat.pays || plat.origine || '';
-                inputIngredients.value = Array.isArray(plat.ingredients)
-                    ? plat.ingredients.join('\n')
-                    : (plat.ingredients || '');
+                foundPlatsCache = plats.filter(p => {
+                    const pSlug = p.slug || slugify(p.nom || p.title || '');
+                    return pSlug.includes(slug) || (p.nom && p.nom.toLowerCase().includes(titre.toLowerCase()));
+                });
 
-                btnSubmit.style.display = 'none';
-                btnUpdate.style.display = 'inline-block';
-                btnDelete.style.display = 'inline-block';
+                if (foundPlatsCache.length === 0) {
+                    throw new Error("Aucun plat trouvé avec ce titre.");
+                } else if (foundPlatsCache.length === 1) {
+                    remplirFormulaire(foundPlatsCache[0]);
+                } else {
+                    duplicateSelect.innerHTML = '';
+                    foundPlatsCache.forEach((p, index) => {
+                        const opt = document.createElement('option');
+                        opt.value = index;
+                        opt.textContent = `${p.nom} (Pays: ${p.pays || 'Inconnu'}) - ID: ${p.id || p._id}`;
+                        duplicateSelect.appendChild(opt);
+                    });
+                    duplicateContainer.style.display = 'block';
+                }
 
-                alert(`Plat "${plat.nom || titre}" chargé avec succès !`);
             } catch (err) {
                 alert(err.message);
+            }
+        });
+
+        btnValidateSelection.addEventListener('click', () => {
+            const selectedIndex = duplicateSelect.value;
+            if (selectedIndex !== "" && foundPlatsCache[selectedIndex]) {
+                remplirFormulaire(foundPlatsCache[selectedIndex]);
             }
         });
 
@@ -176,7 +227,7 @@
             if (!id) return alert("Aucun plat sélectionné.");
             if (!token) return alert("Vous devez être connecté pour effectuer cette action.");
 
-            if (!confirm(`Voulez-vous vraiment supprimer "${inputNom.value}" ?`)) return;
+            if (!confirm(`Voulez-vous vraiment supprimer "${inputNom.value}" (ID: ${id}) ?`)) return;
 
             try {
                 const response = await fetch(`${API_URL}/${id}`, {
