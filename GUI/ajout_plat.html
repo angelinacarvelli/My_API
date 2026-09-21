@@ -107,10 +107,11 @@ border-radius:8px; z-index:100; width: fit-content;">
 
         btnChercher.addEventListener('click', async () => {
             const rawTitre = searchInput.value.trim();
+            if (!rawTiter)
             if (!rawTitre) return alert("Veuillez saisir un titre de plat.");
 
             try {
-                const res = await fetch(API_URL);
+                const res = await fetch(`${API_URL}?limit=2000`);
                 if (!res.ok) throw new Error("Impossible de récupérer la liste des plats.");
                 
                 const data = await res.json();
@@ -131,9 +132,8 @@ border-radius:8px; z-index:100; width: fit-content;">
                 
                 foundPlatsCache = plats.filter(p => {
                     if (!p || typeof p !== 'object') return false;
-                    return Object.values(p).some(val => 
-                        typeof val === 'string' && val.toLowerCase().includes(rawTitre.toLowerCase())
-                    );
+                    const nomPlat = (p.nom || p.title || p.name || p.titre || p.libelle || '').toLowerCase();
+                    return nomPlat.includes(rawTitre.toLowerCase());
                 });
 
                 console.log("Plats trouvés après filtre :", foundPlatsCache);
