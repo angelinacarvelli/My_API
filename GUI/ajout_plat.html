@@ -17,19 +17,17 @@
         <button type="button" id="btn-chercher" class="btn-action btn-load">Chercher Plat</button>
     </div>
 
-    <div id="select-duplicate-container" 
-    style="display:none;
-    position:absolute;
-    top:80px;
-    left:120px;
-    background:#fff;
-    padding:10px;
-    border:2px solid #6d5852;
-    border-radius:8px; z-index:100;">
-    <p style="margin:0 0 5px 0; font-weight:bold; font-size:14px; color:#6d5852;">Plusieurs plats trouvés :</p>
-    <select id="duplicate-select" style="padding:5px; width:220px;"></select>
-    <button type="button" id="btn-validate-selection" class="btn-action btn-load" style="padding:5px 10px; margin-top:5px; font-size:12px;">Sélectionner</button>
-    </div>
+<div id="select-duplicate-container" 
+style="display:none;
+margin-top: 10px;
+background:#fff;
+padding:10px;
+border:2px solid #6d5852;
+border-radius:8px; z-index:100; width: fit-content;">
+    <p id="duplicate-count-text" style="margin:0 0 5px 0; font-weight:bold; font-size:14px; color:#6d5852;"></p>
+    <select id="duplicate-select" style="padding:5px; width:280px;"></select>
+    <button type="button" id="btn-validate-selection" class="btn-action btn-load" style="padding:5px 10px; margin-top:5px; font-size:12px; display:block;">Sélectionner</button>
+</div>
 
     <form id="form-ajout-plat" class="main-add-container">
         <input type="hidden" id="input-id">
@@ -117,7 +115,6 @@
                 if (!res.ok) throw new Error("Impossible de récupérer la liste des plats.");
                 
                 const data = await res.json();
-                
                 const plats = Array.isArray(data) ? data : (data.plats || data.data || data.results || []);
                 
                 if (!Array.isArray(plats)) {
@@ -125,8 +122,9 @@
                 }
                 
                 foundPlatsCache = plats.filter(p => {
-                    const pSlug = p.slug || slugify(p.nom || p.title || '');
-                    return pSlug.includes(slug) || (p.nom && p.nom.toLowerCase().includes(titre.toLowerCase()));
+                    const nomPlat = (p.nom || p.title || '').toLowerCase();
+                    const pSlug = p.slug || slugify(nomPlat);
+                    return pSlug.includes(slug) || nomPlat.includes(titre.toLowerCase());
                 });
 
                 if (foundPlatsCache.length === 0) {
@@ -138,9 +136,11 @@
                     foundPlatsCache.forEach((p, index) => {
                         const opt = document.createElement('option');
                         opt.value = index;
-                        opt.textContent = `${p.nom} (Pays: ${p.pays || 'Inconnu'}) - ID: ${p.id || p._id}`;
+                        opt.textContent = `${p.nom} (${p.pays || 'Pays inconnu'}) - ID: ${p.id || p._id}`;
                         duplicateSelect.appendChild(opt);
                     });
+                    
+                    document.getElementById('duplicate-count-text').textContent = `${foundPlatsCache.length} plats trouvés :`;
                     duplicateContainer.style.display = 'block';
                 }
 
