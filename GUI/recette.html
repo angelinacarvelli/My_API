@@ -26,21 +26,23 @@
             </div>
         </section>
     </main>
-
     <script>
         const API_URL = "/api/plats";
 
         async function loadRecipe() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const slug = urlParams.get("slug");
+            const pathParts = window.location.pathname.split('/');
+            const slug = pathParts[pathParts.length - 1] || pathParts[pathParts.length - 2];
 
-            if (!slug) {
+            const urlParams = new URLSearchParams(window.location.search);
+            const finalSlug = slug !== 'recette' ? slug : urlParams.get("slug");
+
+            if (!finalSlug) {
                 console.error("Aucun slug fourni dans l'URL");
                 return;
             }
 
             try {
-                const response = await fetch(`${API_URL}/slug/${encodeURIComponent(slug)}`);
+                const response = await fetch(`${API_URL}/slug/${encodeURIComponent(finalSlug)}`);
 
                 if (!response.ok) {
                     throw new Error("Plat introuvable sur le serveur");
@@ -61,14 +63,14 @@
                 if (Array.isArray(plat.ingredients)) {
                     plat.ingredients.forEach((ingredient) => {
                         const li = document.createElement("li");
-                        li.textContent = ingredient;
+                        li.textContent = `- ${ingredient}`;
                         ingredientsList.appendChild(li);
                     });
                 } else if (typeof plat.ingredients === "string") {
                     plat.ingredients.split("\n").forEach((ingredient) => {
                         if (ingredient.trim() !== "") {
                             const li = document.createElement("li");
-                            li.textContent = ingredient;
+                            li.textContent = `- ${ingredient}`;
                             ingredientsList.appendChild(li);
                         }
                     });
