@@ -12,7 +12,7 @@ router.get('/google', (req, res) => {
     const rootUrl = 'https://accounts.google.com/o/oauth2/v2/auth';
     
     const options = {
-        redirect_uri: REDIRECT_URI, // Modifié ici
+        redirect_uri: REDIRECT_URI,
         client_id: process.env.GOOGLE_CLIENT_ID,
         access_type: 'offline',
         response_type: 'code',
