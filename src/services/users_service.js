@@ -1,5 +1,6 @@
 const fs = require('fs').promises;
 const path = require('path');
+require('dotenv').config();
 const bcrypt = require('bcryptjs');
 
 const filePath = path.join(__dirname, '../../users.json');
