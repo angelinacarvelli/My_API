@@ -72,13 +72,25 @@ const swaggerDocument = {
       '/api/plats': {
         get: {
           tags: ['Plats'],
-          summary: 'Récupérer la liste des plats (Public - Pagination)',
+          summary: 'Récupérer la liste des plats (Public - Pagination & Recherche)',
           parameters: [
             {
               in: 'query',
               name: 'page',
               schema: { type: 'integer', default: 1 },
-              description: 'Numéro de la page (max 20 plats par page)',
+              description: 'Numéro de la page',
+            },
+            {
+              in: 'query',
+              name: 'limit',
+              schema: { type: 'integer', default: 20 },
+              description: 'Nombre de résultats par page (ex: 2000 pour tout récupérer)',
+            },
+            {
+              in: 'query',
+              name: 'search',
+              schema: { type: 'string' },
+              description: 'Terme de recherche (nom, pays, ingrédient...)',
             },
           ],
           responses: {
