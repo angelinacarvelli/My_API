@@ -110,11 +110,10 @@
             if (!rawTitre) return alert("Veuillez saisir un titre de plat.");
 
             try {
-                const res = await fetch(`${API_URL}?limit=2000`);
+                const res = await fetch(`${API_URL}?search=${encodeURIComponent(rawTitre)}&limit=2000`);
                 if (!res.ok) throw new Error("Impossible de récupérer la liste des plats.");
                 
                 const data = await res.json();
-                console.log("Données brutes reçues de l'API :", data);
                 
                 let plats = [];
                 if (Array.isArray(data)) {
@@ -123,23 +122,18 @@
                     plats = data.plats || data.data || data.docs || data.items || Object.values(data).find(Array.isArray) || [];
                 }
 
-                if (!Array.isArray(plats) || plats.length === 0) {
-                    throw new Error("Aucun plat trouvé dans la réponse du serveur.");
-                }
-
-                console.log("Tableau des plats extrait :", plats);
+                const rechercheNormalisee = rawTitre.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
                 
                 foundPlatsCache = plats.filter(p => {
-                    if (!p || typeof p !== 'object') return false;
-                    const nomPlat = (p.nom || p.title || p.name || p.titre || p.libelle || '').toLowerCase();
-                    return nomPlat.includes(rawTitre.toLowerCase());
+                    const nomPlat = (p.nom || p.title || p.name || p.titre || p.libelle || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+                    return nomPlat.includes(rechercheNormalisee);
                 });
-
-                console.log("Plats trouvés après filtre :", foundPlatsCache);
 
                 if (foundPlatsCache.length === 0) {
                     throw new Error(`Aucun plat trouvé pour "${rawTitre}". Vérifie l'orthographe.`);
-                } else if (foundPlatsCache.length === 1) {
+                }
+
+                if (foundPlatsCache.length === 1) {
                     remplirFormulaire(foundPlatsCache[0]);
                 } else {
                     duplicateSelect.innerHTML = '';
