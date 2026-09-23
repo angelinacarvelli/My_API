@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { getAllPlats, getPlatById, getPlatBySlug, createPlat, updatePlat, deletePlat } = require('../services/plats.service.js');
+const auth = require('../middleware/auth.js');
 
 router.get('/', async (req, res) => {
     try {
@@ -35,7 +36,7 @@ router.get('/:id', async (req, res) => {
     }
 });
 
-router.post('/', async (req, res) => {
+router.post('/', auth, async (req, res) => {
     try {
         const newPlat = await createPlat(req.body);
         res.status(201).json(newPlat);
@@ -44,7 +45,7 @@ router.post('/', async (req, res) => {
     }
 });
 
-router.put('/:id', async (req, res) => {
+router.put('/:id', auth, async (req, res) => {
     try {
         const updatedPlat = await updatePlat(req.params.id, req.body);
         if (!updatedPlat) return res.status(404).json({ error: 'Plat non trouvé' });
@@ -54,7 +55,7 @@ router.put('/:id', async (req, res) => {
     }
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', auth, async (req, res) => {
     try {
         const deletedPlat = await deletePlat(req.params.id);
         if (!deletedPlat) return res.status(404).json({ error: 'Plat non trouvé' });
