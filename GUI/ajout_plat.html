@@ -110,7 +110,6 @@
             if (!rawTitre) return alert("Veuillez saisir un titre de plat.");
 
             try {
-                // Utilisation du paramètre de recherche et d'une limite élargie pour gérer les 1000+ plats
                 const res = await fetch(`${API_URL}?search=${encodeURIComponent(rawTitre)}&limit=2000`);
                 if (!res.ok) throw new Error("Impossible de récupérer la liste des plats.");
                 
@@ -123,11 +122,16 @@
                     plats = data.plats || data.data || data.docs || data.items || Object.values(data).find(Array.isArray) || [];
                 }
 
-                if (!Array.isArray(plats) || plats.length === 0) {
+                const rechercheNormalisee = rawTitre.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+                
+                foundPlatsCache = plats.filter(p => {
+                    const nomPlat = (p.nom || p.title || p.name || p.titre || p.libelle || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+                    return nomPlat.includes(rechercheNormalisee);
+                });
+
+                if (foundPlatsCache.length === 0) {
                     throw new Error(`Aucun plat trouvé pour "${rawTitre}". Vérifie l'orthographe.`);
                 }
-
-                foundPlatsCache = plats;
 
                 if (foundPlatsCache.length === 1) {
                     remplirFormulaire(foundPlatsCache[0]);
