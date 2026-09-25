@@ -30,10 +30,10 @@ You will provide the URL of your project inside the README
 | **J11** | Redis cache GET                       | cache opérationnel         | fait
 | *J11.5* | OAuth                                 | OAuth opérationnel         | fait 
 | **J13** | Swagger                               | documentation API          | fait 
-| **J15** | Tests complets + corrections          | API stable                 |
-| **J16** | Docker                                | application Dockerisée     |
-| **J17** | Cloud deployment                      | URL publique               |  fait
-| **J18** | README + vérification finale          | projet livrable            |
+| **J15** | Tests complets + corrections          | API stable                 | fait
+| **J16** | Docker                                | application Dockerisée     | fait
+| **J17** | Cloud deployment                      | URL publique               | fait
+| **J18** | README + vérification finale          | projet livrable            | fait
 --------------------------------------------------------------------------------
 MCD MLD DATABASE EN BONUS
 
