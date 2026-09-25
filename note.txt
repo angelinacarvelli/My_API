@@ -33,7 +33,7 @@ You will provide the URL of your project inside the README
 | **J15** | Tests complets + corrections          | API stable                 | fait
 | **J16** | Docker                                | application Dockerisée     | fait
 | **J17** | Cloud deployment                      | URL publique               | fait
-| **J18** | README + vérification finale          | projet livrable            |
+| **J18** | README + vérification finale          | projet livrable            | fait
 --------------------------------------------------------------------------------
 MCD MLD DATABASE EN BONUS
 
