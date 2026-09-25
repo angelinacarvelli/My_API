@@ -12,7 +12,8 @@ services:
       - NODE_ENV=production
     depends_on:
       - redis
-
+    env_file:
+      - .env
   redis:
     image: redis:alpine
     container_name: recette_redis

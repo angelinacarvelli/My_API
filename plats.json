@@ -12898,6 +12898,26 @@
         "ognon"
       ],
       "slug": "kapenta-et-sadza"
+    },
+    {
+      "id": 1001,
+      "nom": "magret de canard",
+      "slug": "magret-de-canard",
+      "pays": "france",
+      "ingredients": [
+        "re"
+      ],
+      "image": "./images/recipe.png"
+    },
+    {
+      "id": 1002,
+      "nom": "recette",
+      "slug": "recette",
+      "pays": "re",
+      "ingredients": [
+        "rectte"
+      ],
+      "image": "./images/recipe.png"
     }
   ]
 }
