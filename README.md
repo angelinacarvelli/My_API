@@ -1,5 +1,5 @@
 Lien de l'Application en Ligne
-URL de l'API / Page d'accueil : http://recettedumonde.webhop.me:3000/Home_page.html
+URL de l'API / Page d'accueil : https://recettedumonde.webhop.me/Home_page.html
 Documentation Postman : https://documenter.getpostman.com/view/58397556/2sBYB2rSqR
 
 Stack Technique
