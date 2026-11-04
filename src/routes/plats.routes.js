@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
+const { getCache, setCache, clearPlatsCache } = require('../config/cache.js');
+
 const { getAllPlats, getPlatById, getPlatBySlug, createPlat, updatePlat, deletePlat } = require('../services/plats.service.js');
 const auth = require('../middleware/auth.js');
 
