@@ -83,7 +83,7 @@ j13: rajoute pouvoir choisir la page ou on va + page exmple a un problème on vo
 j15 inverser AWS + swagger et tt 
 ssh -i "C:\Users\user\.ssh\AngieMyApi.pem" ec2-user@15.237.189.5
 cd My_API
-node src/index.js + sur google http://recettedumonde.webhop.me:3000/Home_page.html
+node src/index.js + sur google http://recettedumonde.webhop.me/Home_page.html
 
 Ameliorer barre de recherche : mettre dans la page d'accueil + catalogue_exemple + resoudre probleme
 quand j'ai magret de cnard au cerise deja dans plats.JSON
@@ -94,3 +94,12 @@ si je met magret donc faut pouvor
  devienne http://recettedumonde.webhop.me:3000/recette/magret-de-canard
  + ajouter le fait que dans la pagination a la place d'avir que les fleches je puisse taper la page ou je veut aller
  docker aussi
+
+ AVANCEMENT projet
+
+Fichier 1
+première étape v
+deuxième étape v
+troisième étape v
+quatrième étape v
+cinquième étape v
