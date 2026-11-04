@@ -12898,6 +12898,15 @@
         "ognon"
       ],
       "slug": "kapenta-et-sadza"
+    },
+    {
+      "id": 1001,
+      "nom": "Plat de Test",
+      "pays": "France",
+      "ingredients": [
+        "Ingrédient 1"
+      ],
+      "slug": "plat-de-test"
     }
   ]
 }
