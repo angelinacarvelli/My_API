@@ -1,25 +1,46 @@
 const express = require('express');
 const router = express.Router();
+
 const { getAllPlats, getPlatById, getPlatBySlug, createPlat, updatePlat, deletePlat } = require('../services/plats.service.js');
 const auth = require('../middleware/auth.js');
 
 router.get('/', async (req, res) => {
     try {
-        const page = parseInt(req.query.page, 10) || 1;
-        const search = req.query.search || null;
-        const limit = req.query.limit ? parseInt(req.query.limit, 10) : null;
+        const page = Math.max(1, parseInt(req.query.page, 10) || 1);
+        const limit = Math.min(parseInt(req.query.limit, 10) || 20, 20);
+        const search = req.query.search || '';
+        const key = `plats:list:page=${page}:limit=${limit}:search=${search}`;
 
-        const result = await getAllPlats(page, search, limit);
+        const cached = await getCache(key);
+        if (cached) {
+            console.log('CACHE HIT', key);
+            return res.json(cached);
+        }
+        console.log('CACHE MISS', key);
+        const result = await getAllPlats(page, search || null, limit);
+        await setCache(key, result, 60);
         res.json(result);
     } catch (err) {
-        res.status(500).json({ error: err.message });
+        res.status(500).json({ error: 'Erreur serveur' });
     }
 });
 
 router.get('/slug/:slug', async (req, res) => {
     try {
-        const plat = await getPlatBySlug(req.params.slug);
+        const slug = req.params.slug;
+        const key = `plats:slug:${slug}`;
+
+        const cached = await getCache(key);
+        if (cached) {
+            console.log('CACHE HIT', key);
+            return res.json(cached);
+        }
+        console.log('CACHE MISS', key);
+
+        const plat = await getPlatBySlug(slug);
         if (!plat) return res.status(404).json({ error: 'Plat non trouvé' });
+
+        await setCache(key, plat, 60);
         res.json(plat);
     } catch (err) {
         res.status(500).json({ error: err.message });
@@ -28,14 +49,25 @@ router.get('/slug/:slug', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
     try {
-        const plat = await getPlatById(req.params.id);
+        const id = req.params.id;
+        const key = `plats:id:${id}`;
+
+        const cached = await getCache(key);
+        if (cached) {
+            console.log('CACHE HIT', key);
+            return res.json(cached);
+        }
+        console.log('CACHE MISS', key);
+
+        const plat = await getPlatById(id);
         if (!plat) return res.status(404).json({ error: 'Plat non trouvé' });
+
+        await setCache(key, plat, 60);
         res.json(plat);
     } catch (err) {
         res.status(500).json({ error: err.message });
     }
 });
-
 router.post('/', auth, async (req, res) => {
     try {
         const newPlat = await createPlat(req.body);
