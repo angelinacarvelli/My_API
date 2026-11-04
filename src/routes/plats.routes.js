@@ -71,6 +71,7 @@ router.get('/:id', async (req, res) => {
 router.post('/', auth, async (req, res) => {
     try {
         const newPlat = await createPlat(req.body);
+        await clearPlatsCache();
         res.status(201).json(newPlat);
     } catch (err) {
         res.status(400).json({ error: err.message });
@@ -80,6 +81,7 @@ router.post('/', auth, async (req, res) => {
 router.put('/:id', auth, async (req, res) => {
     try {
         const updatedPlat = await updatePlat(req.params.id, req.body);
+        await clearPlatsCache();
         if (!updatedPlat) return res.status(404).json({ error: 'Plat non trouvé' });
         res.json(updatedPlat);
     } catch (err) {
@@ -90,6 +92,7 @@ router.put('/:id', auth, async (req, res) => {
 router.delete('/:id', auth, async (req, res) => {
     try {
         const deletedPlat = await deletePlat(req.params.id);
+        await clearPlatsCache();
         if (!deletedPlat) return res.status(404).json({ error: 'Plat non trouvé' });
         res.json({ message: 'Plat supprimé avec succès', deletedPlat });
     } catch (err) {
