@@ -268,19 +268,17 @@ app.use((err, req, res, next) => {
 });
 
 const start = async () => {
-    try {
-        const redisClient = await getRedisClient();
-        if (redisClient) {
-            app.locals.redis = redisClient;
-            console.log('Connecté à Redis avec succès !');
-        }
-
-        app.listen(PORT, () => console.log(`Serveur démarré sur le port ${PORT}`));
-    } catch (error) {
-        console.error('Erreur démarrage serveur:', error);
-        process.exitCode = 1;
-    }
+try {
+await getRedisClient();
+console.log('Connecté à Redis avec succès !');
+} catch (error) {
+console.error('Redis indisponible, démarrage sans cache :',
+error.message);
+}
+app.listen(PORT, () => console.log(`Serveur démarré sur le port
+${PORT}`));
 };
+
 
 if (require.main === module) {
     start();
