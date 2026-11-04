@@ -23,8 +23,9 @@ router.get('/', async (req, res) => {
         await setCache(key, result, 60);
         res.json(result);
     } catch (err) {
-        res.status(500).json({ error: 'Erreur serveur' });
-    }
+            console.error('ERREUR ROUTE / :', err);
+            res.status(500).json({ error: 'Erreur serveur', details: err.message });
+            }
 });
 
 router.get('/slug/:slug', async (req, res) => {
