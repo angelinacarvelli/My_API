@@ -12907,6 +12907,24 @@
         "Ingrédient 1"
       ],
       "slug": "plat-de-test"
+    },
+    {
+      "id": 1002,
+      "nom": "kka",
+      "pays": "italie",
+      "ingredients": [
+        "cuisse"
+      ],
+      "slug": "kka"
+    },
+    {
+      "id": 1003,
+      "nom": "kk",
+      "pays": "italie",
+      "ingredients": [
+        "cuisse"
+      ],
+      "slug": "kk"
     }
   ]
 }
