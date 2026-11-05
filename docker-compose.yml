@@ -9,17 +9,24 @@ services:
       - PORT=3000
       - REDIS_HOST=redis
       - REDIS_PORT=6379
+      - REDIS_URL=redis://redis:6379
       - NODE_ENV=production
     depends_on:
       - redis
     env_file:
       - .env
+    volumes:
+      - ./plats.json:/app/plats.json
+
   redis:
     image: redis:alpine
     container_name: recette_redis
     restart: always
+    ports:
+      - "6379:6379"
     volumes:
       - redis_data:/data
 
 volumes:
   redis_data:
+
