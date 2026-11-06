@@ -71,7 +71,18 @@ router.get('/google/callback', async (req, res, next) => {
             { expiresIn: '24h' }
         );
 
-        return res.redirect(`/catalogue.html?token=${token}`);
+    return res.send(`
+        <html>
+            <body>
+                <script>
+                    // Stocke le token comme votre connexion classique
+                    localStorage.setItem('token', "${token}");
+                    // Redirige vers le catalogue proprement
+                    window.location.href = '/catalogue.html';
+                </script>
+            </body>
+        </html>
+    `);
 
     } catch (error) {
         next(error);
