@@ -69,7 +69,7 @@
                 plat.ingredients.exports = plat.ingredients;
                 plat.ingredients.forEach((ingredient) => {
                     const li = document.createElement("li");
-                    li.textContent = `- ${ingredient}`;
+                    li.textContent = `${ingredient}`;
                     ingredientsList.appendChild(li);
                 });
             } else if (typeof plat.ingredients === "string") {
