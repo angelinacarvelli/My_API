@@ -84,7 +84,7 @@ const swaggerDocument = {
               in: 'query',
               name: 'limit',
               schema: { type: 'integer', default: 20 },
-              description: 'Nombre de résultats par page (ex: 2000 pour tout récupérer)',
+              description: 'Nombre de résultats par page (20 maximum)',
             },
             {
               in: 'query',

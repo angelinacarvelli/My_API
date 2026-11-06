@@ -109,8 +109,8 @@
             const rawTitre = searchInput.value.trim();
             if (!rawTitre) return alert("Veuillez saisir un titre de plat.");
 
-            try {
-                const res = await fetch(`${API_URL}?search=${encodeURIComponent(rawTitre)}&limit=2000`);
+            try {   
+                const res = await fetch(`${API_URL}?search=${encodeURIComponent(rawTitre)}`);
                 if (!res.ok) throw new Error("Impossible de récupérer la liste des plats.");
                 
                 const data = await res.json();

@@ -29,7 +29,7 @@ function normalizeString(str) {
         .trim();
 }
 
-async function getAllPlats(page = 1, search = null, customLimit = null) {
+async function getAllPlats(page = Math.max(1, parseInt(page, 10) || 1), search = null, customLimit = null) {
     const data = await readDataFromFile();
     let plats = data.plats || [];
     
@@ -47,7 +47,7 @@ async function getAllPlats(page = 1, search = null, customLimit = null) {
         });
     }
 
-    const limit = customLimit ? parseInt(customLimit, 10) : 20;
+    const limit = Math.min(parseInt(customLimit, 10) || 20, 20);
     const totalPlats = plats.length;
     const totalPages = Math.ceil(totalPlats / limit) || 1;
     const start = (page - 1) * limit;
@@ -61,7 +61,6 @@ async function getAllPlats(page = 1, search = null, customLimit = null) {
         data: plats.slice(start, end)
     };
 }
-
 async function getPlatById(id) {
     const data = await readDataFromFile();
     return (data.plats || []).find((item) => String(item.id) === String(id)) || null;
