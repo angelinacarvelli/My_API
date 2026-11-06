@@ -5,7 +5,7 @@ const { createUser, findUserByUsername, validatePassword } = require('../service
 const router = express.Router();
 const JWT_SECRET = process.env.JWT_SECRET || 'v123456789AZERTY';
 
-const REDIRECT_URI = process.env.CALLBACK_URL || 'https://localhost:3000/api/auth/google/callback';
+const REDIRECT_URI = process.env.CALLBACK_URL || 'https:recettedumonde.webhop.me/api/auth/google/callback';
 
 router.get('/google', (req, res) => {
     console.log("CLIENT ID UTILISÉ :", process.env.GOOGLE_CLIENT_ID);
