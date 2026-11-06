@@ -168,7 +168,9 @@ const swaggerDocument = {
       get: {
         tags: ['Plats'],
         summary: 'Obtenir un plat par son id (Public)',
-        parameters: [{ in: 'path', name: 'id', required: true, schema: { type: 'integer' } }],
+        parameters: [
+          { in: 'path', name: 'id', required: true, schema: { type: 'integer' } }
+        ],
         responses: {
           200: { description: 'Détails du plat' },
           404: { description: 'Plat non trouvé' },
@@ -242,7 +244,7 @@ const swaggerDocument = {
                 type: 'object',
                 required: ['username', 'password'],
                 properties: {
-                  username: { type: 'string', example: 'angelina' },
+                  username: { type: 'string', example: 'user1' },
                   password: { type: 'string', example: 'motdepasse123' },
                 },
               },
@@ -267,7 +269,7 @@ const swaggerDocument = {
                 type: 'object',
                 required: ['username', 'password'],
                 properties: {
-                  username: { type: 'string', example: 'angelina' },
+                  username: { type: 'string', example: 'user1' },
                   password: { type: 'string', example: 'motdepasse123' },
                 },
               },
