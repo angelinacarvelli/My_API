@@ -50,7 +50,7 @@ const swaggerDocument = {
     },
     servers: [
       {
-        url: 'http://recettedumonde.webhop.me:3000',
+        url: ' https://recettedumonde.webhop.me',
         description: 'Serveur de Production (AWS EC2)',
       },
       {
@@ -67,8 +67,7 @@ const swaggerDocument = {
           description: 'Saisissez votre token sous la forme : Bearer <votre_token>',
         },
       },
-    },
-    paths: {
+   paths: {
       '/api/plats': {
         get: {
           tags: ['Plats'],
@@ -124,6 +123,24 @@ const swaggerDocument = {
           responses: {
             201: { description: 'Plat créé avec succès' },
             401: { description: 'Non autorisé - Token manquant ou invalide' },
+          },
+        },
+      }, 
+      '/api/auth/google': {
+        get: {
+          tags: ['Authentification'],
+          summary: 'Connexion via Google (Redirection)',
+          responses: {
+            302: { description: 'Redirection vers la page de connexion Google' },
+          },
+        },
+      },
+      '/api/auth/google/callback': {
+        get: {
+          tags: ['Authentification'],
+          summary: 'Callback de connexion Google (Redirection avec token)',
+          responses: {
+            302: { description: 'Redirection vers le catalogue avec le token JWT' },
           },
         },
       },
