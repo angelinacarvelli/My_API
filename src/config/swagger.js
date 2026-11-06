@@ -11,7 +11,7 @@ const options = {
     },
     servers: [
       {
-        url: 'http://recettedumonde.webhop.me:3000',
+        url: ' https://recettedumonde.webhop.me',
         description: 'Serveur de Production (AWS EC2)',
       },
       {
