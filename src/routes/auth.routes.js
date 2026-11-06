@@ -5,7 +5,7 @@ const { createUser, findUserByUsername, validatePassword } = require('../service
 const router = express.Router();
 const JWT_SECRET = process.env.JWT_SECRET || 'v123456789AZERTY';
 
-const REDIRECT_URI = process.env.CALLBACK_URL || 'http://localhost:3000/api/auth/google/callback';
+const REDIRECT_URI = process.env.CALLBACK_URL || 'https://localhost:3000/api/auth/google/callback';
 
 router.get('/google', (req, res) => {
     console.log("CLIENT ID UTILISÉ :", process.env.GOOGLE_CLIENT_ID);
@@ -42,7 +42,7 @@ router.get('/google/callback', async (req, res, next) => {
                 code,
                 client_id: process.env.GOOGLE_CLIENT_ID,
                 client_secret: process.env.GOOGLE_CLIENT_SECRET,
-                redirect_uri: REDIRECT_URI, // Modifié ici
+                redirect_uri: REDIRECT_URI,
                 grant_type: 'authorization_code',
             }),
         });
@@ -75,9 +75,7 @@ router.get('/google/callback', async (req, res, next) => {
         <html>
             <body>
                 <script>
-                    // Stocke le token comme votre connexion classique
                     localStorage.setItem('token', "${token}");
-                    // Redirige vers le catalogue proprement
                     window.location.href = '/catalogue.html';
                 </script>
             </body>
