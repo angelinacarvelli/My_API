@@ -76,7 +76,7 @@
                 plat.ingredients.split("\n").forEach((ingredient) => {
                     if (ingredient.trim() !== "") {
                         const li = document.createElement("li");
-                        li.textContent = `- ${ingredient}`;
+                        li.textContent = ` ${ingredient}`;
                         ingredientsList.appendChild(li);
                     }
                 });
