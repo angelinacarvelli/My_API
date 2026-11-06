@@ -12925,6 +12925,17 @@
         "cuisse"
       ],
       "slug": "kk"
+    },
+    {
+      "id": 1004,
+      "nom": "kkprout",
+      "slug": "kkprout",
+      "pays": "enfant",
+      "ingredients": [
+        "prout",
+        "kk"
+      ],
+      "image": "./images/recipe.png"
     }
   ]
 }
