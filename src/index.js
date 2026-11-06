@@ -147,62 +147,73 @@ const swaggerDocument = {
         },
       },
       '/api/plats/{id}': {
-        put: {
-          tags: ['Plats'],
-          summary: 'Modifier un plat (Protégé par Token)',
-          security: [{ bearerAuth: [] }],
-          parameters: [
-            {
-              in: 'path',
-              name: 'id',
-              required: true,
-              schema: { type: 'integer' },
-              description: 'Identifiant unique du plat',
-            },
-          ],
-          requestBody: {
-            required: true,
-            content: {
-              'application/json': {
-                schema: {
-                  type: 'object',
-                  properties: {
-                    nom: { type: 'string' },
-                    pays: { type: 'string' },
-                    ingredients: {
-                      type: 'array',
-                      items: { type: 'string' },
-                    },
-                  },
-                },
+  get: {
+    tags: ['Plats'],
+    summary: 'Obtenir un plat par son id (Public)',
+    parameters: [
+      { in: 'path', name: 'id', required: true, schema: { type: 'integer' } },
+    ],
+    responses: {
+      200: { description: 'Détails du plat' },
+      404: { description: 'Plat non trouvé' },
+    },
+  },
+  put: {
+    tags: ['Plats'],
+    summary: 'Modifier un plat (Protégé par Token)',
+    security: [{ bearerAuth: [] }],
+    parameters: [
+      {
+        in: 'path',
+        name: 'id',
+        required: true,
+        schema: { type: 'integer' },
+        description: 'Identifiant unique du plat',
+      },
+    ],
+    requestBody: {
+      required: true,
+      content: {
+        'application/json': {
+          schema: {
+            type: 'object',
+            properties: {
+              nom: { type: 'string' },
+              pays: { type: 'string' },
+              ingredients: {
+                type: 'array',
+                items: { type: 'string' },
               },
             },
           },
-          responses: {
-            200: { description: 'Plat mis à jour avec succès' },
-            401: { description: 'Non autorisé' },
-            404: { description: 'Plat non trouvé' },
-          },
-        },
-        delete: {
-          tags: ['Plats'],
-          summary: 'Supprimer un plat (Protégé par Token)',
-          security: [{ bearerAuth: [] }],
-          parameters: [
-            {
-              in: 'path',
-              name: 'id',
-              required: true,
-              schema: { type: 'integer' },
-            },
-          ],
-          responses: {
-            200: { description: 'Plat supprimé avec succès' },
-            401: { description: 'Non autorisé' },
-            404: { description: 'Plat non trouvé' },
-          },
         },
       },
+    },
+    responses: {
+      200: { description: 'Plat mis à jour avec succès' },
+      401: { description: 'Non autorisé' },
+      404: { description: 'Plat non trouvé' },
+    },
+  },
+  delete: {
+    tags: ['Plats'],
+    summary: 'Supprimer un plat (Protégé par Token)',
+    security: [{ bearerAuth: [] }],
+    parameters: [
+      {
+        in: 'path',
+        name: 'id',
+        required: true,
+        schema: { type: 'integer' },
+      },
+    ],
+    responses: {
+      200: { description: 'Plat supprimé avec succès' },
+      401: { description: 'Non autorisé' },
+      404: { description: 'Plat non trouvé' },
+    },
+  },
+},
       '/api/auth/register': {
         post: {
           tags: ['Authentification'],
