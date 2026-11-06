@@ -240,8 +240,8 @@ const swaggerDocument = {
                   type: 'object',
                   required: ['email', 'password'],
                   properties: {
-                    email: { type: 'string', example: 'user@example.com' },
-                    password: { type: 'string', example: 'motdepasse123' },
+                  email: { type: 'string', example: 'user@example.com' },
+                  password: { type: 'string', example: 'motdepasse123' },
                   },
                 },
               },
