@@ -6,6 +6,20 @@ const { getCache, setCache, clearPlatsCache } = require('../config/cache.js');
 const { getAllPlats, getPlatById, getPlatBySlug, createPlat, updatePlat, deletePlat } = require('../services/plats.service.js');
 const auth = require('../middleware/auth.js');
 
+function validatePlat(req, res, next) {
+  const { nom, pays, ingredients } = req.body || {};
+  if (typeof nom !== 'string' || nom.trim() === '') {
+    res.status(400).json({ error: 'Données invalides' });
+  }
+  if (typeof pays !== 'string' || pays.trim() === '') {
+    res.status(400).json({ error: 'Données invalides' });
+  }
+  if (!Array.isArray(ingredients) || ingredients.length === 0) {
+    res.status(400).json({ error: 'Données invalides' });
+  }
+  next();
+}
+
 router.get('/', async (req, res) => {
     try {
         const page = Math.max(1, parseInt(req.query.page, 10) || 1);
@@ -71,13 +85,13 @@ router.get('/:id', async (req, res) => {
         res.status(500).json({ error: err.message });
     }
 });
-router.post('/', auth, async (req, res) => {
+router.post('/', auth, validatePlat, async (req, res) => {
     try {
         const newPlat = await createPlat(req.body);
         await clearPlatsCache();
         res.status(201).json(newPlat);
     } catch (err) {
-        res.status(400).json({ error: err.message });
+        res.status(400).json({ error: 'Données invalides' });
     }
 });
 
@@ -88,7 +102,7 @@ router.put('/:id', auth, async (req, res) => {
         if (!updatedPlat) return res.status(404).json({ error: 'Plat non trouvé' });
         res.json(updatedPlat);
     } catch (err) {
-        res.status(400).json({ error: err.message });
+        res.status(400).json({ error: 'Données invalides' });
     }
 });
 

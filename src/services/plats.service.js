@@ -106,7 +106,7 @@ async function createPlat(platData) {
     const newId = maxId + 1;
     const nomRef = platData.nom || platData.title || "";
     const slug = platData.slug || nomRef.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, "");
-    const newPlat = { id: newId, ...platData, slug };
+    const newPlat = { ...platData, id: newId, slug };
     plats.push(newPlat);
     data.plats = plats;
     await writeDataToFile(data);
