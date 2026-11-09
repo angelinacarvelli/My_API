@@ -64,6 +64,16 @@
       "id": 1794233429278,
       "username": "agine",
       "password": "$2a$10$.wnowEHLzNfoEyxC0ZI/yuV4pRRx5iwwb5Vybv8..zDqAARbdhsBy"
+    },
+    {
+      "id": 1794235416662,
+      "username": "admin1234",
+      "password": "$2a$10$0/uPOnemUxzbPvWuH2L36.buXaKNnCnxlc2v/VirGTmQShMC2KzY."
+    },
+    {
+      "id": 1794236135078,
+      "username": "angine",
+      "password": "$2a$10$.iA1KHuCvoVWlVI7V6c3w.YP8ph1NT//qziuIYiZFBZSll/yzR/jW"
     }
   ]
 }
