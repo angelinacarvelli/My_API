@@ -14,7 +14,7 @@ async function readUsersFromFile() {
         return { users: [] };
     }
 }
-
+    
 async function writeUsersToFile(data) {
     await fs.writeFile(filePath, JSON.stringify(data, null, 2), 'utf8');
 }

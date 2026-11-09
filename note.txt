@@ -81,7 +81,6 @@ j12 : AWS fait : http://recettedumonde.webhop.me:3000/Home_page.html
 j13: rajoute pouvoir choisir la page ou on va + page exmple a un problème on vois plus les recettes
 
 j15 inverser AWS + swagger et tt 
-ssh -i "C:\Users\user\.ssh\AngieMyApi.pem" ec2-user@15.237.189.5
 cd My_API
 node src/index.js + sur google http://recettedumonde.webhop.me/Home_page.html
 

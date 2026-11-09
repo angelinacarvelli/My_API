@@ -21,22 +21,8 @@ app.get('/recette/:nom', (req, res) => {
     res.sendFile(path.join(__dirname, '../GUI/recette.html'));
 });
 
-const loadRouter = (names) => {
-    for (const name of names) {
-        try {
-            const router = require(name);
-            return router.default || router;
-        } catch (error) {
-            if (error.code !== 'MODULE_NOT_FOUND' || !error.message.includes(name)) {
-                throw error;
-            }
-        }
-    }
-    return null;
-};
-
-const authRouter = loadRouter(['./routes/auth.routes', './routes/auth']);
-const platsRouter = loadRouter(['./routes/plats.routes', './routes/plats']);
+const authRouter = require('./routes/auth.routes'); 
+const platsRouter = require('./routes/plats.routes');
 
 if (authRouter) app.use('/api/auth', authRouter);
 if (platsRouter) app.use('/api/plats', platsRouter);
