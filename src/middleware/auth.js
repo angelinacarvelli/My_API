@@ -1,6 +1,9 @@
 const jwt = require('jsonwebtoken');
 
-const JWT_SECRET = process.env.JWT_SECRET || 'v123456789AZERTY';
+const JWT_SECRET = process.env.JWT_SECRET;
+if (!JWT_SECRET) {
+throw new Error('La variable JWT_SECRET est obligatoire dans le fichier.env');
+}
 
 module.exports = (req, res, next) => {
     const authHeader = req.headers.authorization;
