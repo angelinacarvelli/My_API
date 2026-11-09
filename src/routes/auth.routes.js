@@ -3,7 +3,11 @@ const jwt = require('jsonwebtoken');
 const { createUser, findUserByUsername, validatePassword } = require('../services/users_service');
 
 const router = express.Router();
-const JWT_SECRET = process.env.JWT_SECRET || 'v123456789AZERTY';
+const JWT_SECRET = process.env.JWT_SECRET;
+if (!JWT_SECRET) {
+throw new Error('La variable JWT_SECRET est obligatoire dans le fichier .env');
+}
+
 
 const REDIRECT_URI = process.env.CALLBACK_URL || 'https:recettedumonde.webhop.me/api/auth/google/callback';
 
