@@ -66,37 +66,9 @@ async function getPlatById(id) {
     return (data.plats || []).find((item) => String(item.id) === String(id)) || null;
 }
 
-async function getPlatBySlug(searchQuery) {
-    const data = await readDataFromFile();
-    const plats = data.plats || [];
-    const normalizedQuery = normalizeString(searchQuery);
-    if (!normalizedQuery) return null;
-    const stopWords = ["et", "and", "avec", "de", "du", "la", "le", "des", "au", "aux", "with"];
-    const queryKeywords = normalizedQuery
-        .split(/\s+/)
-        .filter(word => word.length > 1 && !stopWords.includes(word));
-    let found = plats.find((item) => {
-        const itemNom = normalizeString(item.nom || item.title || item.name);
-        const itemSlug = normalizeString(item.slug);
-        if (itemNom === normalizedQuery || itemSlug === normalizedQuery) {
-            return true;
-        }
-        if (itemNom.includes(normalizedQuery)) {
-            return true;
-        }
-        if (queryKeywords.length > 0) {
-            return queryKeywords.every(keyword => itemNom.includes(keyword) || itemSlug.includes(keyword));
-        }
-        return false;
-    });
-    if (!found && queryKeywords.length > 0) {
-        found = plats.find((item) => {
-            const itemNom = normalizeString(item.nom || item.title || item.name);
-            const itemSlug = normalizeString(item.slug);
-            return queryKeywords.some(keyword => itemNom.includes(keyword) || itemSlug.includes(keyword));
-        });
-    }
-    return found || null;
+async function getPlatBySlug(slug) {
+  const data = await readDataFromFile();
+  return (data.plats || []).find((item) => item.slug === slug) || null;
 }
 
 async function createPlat(platData) {
@@ -105,7 +77,7 @@ async function createPlat(platData) {
     const maxId = plats.reduce((max, item) => Math.max(max, Number(item.id) || 0), 0);
     const newId = maxId + 1;
     const nomRef = platData.nom || platData.title || "";
-    const slug = platData.slug || nomRef.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, "");
+    const slug = uniqueSlug(slugify(platData.nom), plats);
     const newPlat = { ...platData, id: newId, slug };
     plats.push(newPlat);
     data.plats = plats;
@@ -119,9 +91,9 @@ async function updatePlat(id, platData) {
     const index = plats.findIndex((item) => String(item.id) === String(id));
     if (index === -1) return null;
     const nomRef = platData.nom || platData.title || "";
-    const slug = nomRef
-        ? nomRef.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, "")
-        : plats[index].slug;
+    const slug = platData.nom
+  ? uniqueSlug(slugify(platData.nom), plats, plats[index].id)
+  : plats[index].slug;
     const updatedPlat = { ...plats[index], ...platData, id: plats[index].id, slug };
     plats[index] = updatedPlat;
     data.plats = plats;

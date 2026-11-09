@@ -1,4 +1,5 @@
 const fs = require('fs');
+const { slugify } = require('../src/utils/slugify');
 const path = require('path');
 
 const filePath = path.join(__dirname, '..', 'plats.json');
@@ -15,13 +16,7 @@ for (const plat of plats) {
     continue;
   }
 
-  plat.slug = plat.nom
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '');
-    
+  plat.slug = slugify(plat.nom);
 }
 
 fs.writeFileSync(

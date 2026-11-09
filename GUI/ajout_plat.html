@@ -173,7 +173,6 @@
 
             const nouveauPlat = {
                 nom: inputNom.value,
-                slug: slugify(inputNom.value),
                 pays: inputPays.value,
                 ingredients: inputIngredients.value.split('\n').filter(i => i.trim() !== ''),
                 image: "./images/recipe.png"
@@ -209,7 +208,6 @@
 
             const platModifie = {
                 nom: inputNom.value,
-                slug: slugify(inputNom.value),
                 pays: inputPays.value,
                 ingredients: inputIngredients.value.split('\n').filter(i => i.trim() !== '')
             };
