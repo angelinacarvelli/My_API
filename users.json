@@ -54,6 +54,16 @@
       "id": 1793799299837,
       "username": "user_1793799299336",
       "password": "$2a$10$WNdEgKHkmJEM6rXAbcDP/.geJcll6A7n1Kv2JJgINzMCoVXN3pYDC"
+    },
+    {
+      "id": 1794232350356,
+      "username": "user1",
+      "password": "$2a$10$DNoPlewhFewEIIzVEo2DMuztKfgTY1NVfeanPQ7qvf74V/JTv4lja"
+    },
+    {
+      "id": 1794233429278,
+      "username": "agine",
+      "password": "$2a$10$.wnowEHLzNfoEyxC0ZI/yuV4pRRx5iwwb5Vybv8..zDqAARbdhsBy"
     }
   ]
 }
