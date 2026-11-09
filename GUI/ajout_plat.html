@@ -172,34 +172,20 @@
             if (!token) return alert("Vous devez être connecté pour effectuer cette action.");
 
             const nouveauPlat = {
-                nom: inputNom.value,
-                pays: inputPays.value,
-                ingredients: inputIngredients.value.split('\n').filter(i => i.trim() !== ''),
-                image: "./images/recipe.png"
-            };
+    nom: inputNom.value,
+    pays: inputPays.value,
+    ingredients: inputIngredients.value.split('\n').filter(i => i.trim() !== '')
+};
 
-            try {
-                const response = await fetch(API_URL, {
-                    method: 'POST',
-                    headers: { 
-                        'Content-Type': 'application/json',
-                        'Authorization': `Bearer ${token}`
-                    },
-                    body: JSON.stringify(nouveauPlat)
-                });
-
-                if (response.ok) {
-                    alert("Recette ajoutée avec succès !");
-                    window.location.href = "/catalogue.html";
-                } else {
-                    const err = await response.json();
-                    alert("Erreur : " + (err.message || err.error || "Impossible d'ajouter"));
-                }
-            } catch (error) {
-                alert("Impossible de contacter le serveur.");
-            }
-        });
-
+try {
+    const response = await fetch(API_URL, {
+        method: 'POST',
+        headers: { 
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify(nouveauPlat)
+    });
         btnUpdate.addEventListener('click', async () => {
             const id = inputId.value;
             const token = getToken();
