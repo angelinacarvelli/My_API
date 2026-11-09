@@ -7,16 +7,46 @@ const { getAllPlats, getPlatById, getPlatBySlug, createPlat, updatePlat, deleteP
 const auth = require('../middleware/auth.js');
 
 function validatePlat(req, res, next) {
-  const { nom, pays, ingredients } = req.body || {};
+  if (!req.body || typeof req.body !== 'object') {
+    return res.status(400).json({ 
+      error: 'Données invalides', 
+      details: 'Le corps de la requête (body) est vide ou n\'est pas au format JSON.' 
+    });
+  }
+
+  const nom = req.body.nom || req.body.title || req.body.name;
   if (typeof nom !== 'string' || nom.trim() === '') {
-    return res.status(400).json({ error: 'Données invalides' });
+    return res.status(400).json({ 
+      error: 'Données invalides', 
+      details: 'Le champ "nom" est obligatoire et doit être un texte non vide.' 
+    });
   }
+
+  const pays = req.body.pays || req.body.country || req.body.origine;
   if (typeof pays !== 'string' || pays.trim() === '') {
-    return res.status(400).json({ error: 'Données invalides' });
+    return res.status(400).json({ 
+      error: 'Données invalides', 
+      details: 'Le champ "pays" est obligatoire et doit être un texte non vide.' 
+    });
   }
+
+  let ingredients = req.body.ingredients;
+  if (typeof ingredients === 'string') {
+    ingredients = ingredients.includes('\n')
+      ? ingredients.split('\n').map(i => i.trim()).filter(Boolean)
+      : ingredients.split(',').map(i => i.trim()).filter(Boolean);
+  }
+
   if (!Array.isArray(ingredients) || ingredients.length === 0) {
-    return res.status(400).json({ error: 'Données invalides' });
+    return res.status(400).json({ 
+      error: 'Données invalides', 
+      details: 'Le champ "ingredients" est obligatoire et doit contenir au moins un ingrédient (ex: ["tomate", "sel"]).' 
+    });
   }
+
+  req.body.nom = nom.trim();
+  req.body.pays = pays.trim();
+  req.body.ingredients = ingredients;
   next();
 }
 

@@ -1,10 +1,15 @@
 const request = require('supertest');
 const app = require('../src/index');
+const { disconnectRedis } = require('../src/config/redis');
 
 describe('Tests Auth + CRUD Plats', () => {
     let token = '';
     const testUser = { username: `user_${Date.now()}`, password: 'password123' };
     let createdPlatId = null;
+
+    afterAll(async () => {
+        await disconnectRedis();
+    });
 
     test('1. Inscription utilisateur', async () => {
         const res = await request(app)

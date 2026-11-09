@@ -11,12 +11,22 @@ if (!Array.isArray(plats)) {
   throw new TypeError('plats.json doit contenir un tableau de plats.');
 }
 
+const usedSlugs = new Set();
+
 for (const plat of plats) {
   if (typeof plat.nom !== 'string') {
     continue;
   }
 
-  plat.slug = slugify(plat.nom);
+  const base = slugify(plat.nom);
+  let slug = base;
+  let count = 2;
+  while (usedSlugs.has(slug)) {
+    slug = `${base}-${count}`;
+    count++;
+  }
+  usedSlugs.add(slug);
+  plat.slug = slug;
 }
 
 fs.writeFileSync(
