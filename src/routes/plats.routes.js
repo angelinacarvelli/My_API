@@ -9,13 +9,13 @@ const auth = require('../middleware/auth.js');
 function validatePlat(req, res, next) {
   const { nom, pays, ingredients } = req.body || {};
   if (typeof nom !== 'string' || nom.trim() === '') {
-    res.status(400).json({ error: 'Données invalides' });
+    return res.status(400).json({ error: 'Données invalides' });
   }
   if (typeof pays !== 'string' || pays.trim() === '') {
-    res.status(400).json({ error: 'Données invalides' });
+    return res.status(400).json({ error: 'Données invalides' });
   }
   if (!Array.isArray(ingredients) || ingredients.length === 0) {
-    res.status(400).json({ error: 'Données invalides' });
+    return res.status(400).json({ error: 'Données invalides' });
   }
   next();
 }
