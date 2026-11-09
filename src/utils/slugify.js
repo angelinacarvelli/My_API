@@ -1,10 +1,12 @@
 function slugify(text) {
-  return String(text)
+  if (!text) return 'plat';
+  const slug = String(text)
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '');
+  return slug || 'plat';
 }
 
 function uniqueSlug(base, plats, ignoreId = null) {

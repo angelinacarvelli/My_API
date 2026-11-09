@@ -1,5 +1,6 @@
 const fs = require("fs").promises;
 const path = require("path");
+const { slugify, uniqueSlug } = require("../utils/slugify");
 const filePath = path.join(__dirname, "../../plats.json");
 
 async function readDataFromFile() {
@@ -77,7 +78,7 @@ async function createPlat(platData) {
     const maxId = plats.reduce((max, item) => Math.max(max, Number(item.id) || 0), 0);
     const newId = maxId + 1;
     const nomRef = platData.nom || platData.title || "";
-    const slug = uniqueSlug(slugify(platData.nom), plats);
+    const slug = uniqueSlug(slugify(nomRef), plats);
     const newPlat = { ...platData, id: newId, slug };
     plats.push(newPlat);
     data.plats = plats;
@@ -91,9 +92,9 @@ async function updatePlat(id, platData) {
     const index = plats.findIndex((item) => String(item.id) === String(id));
     if (index === -1) return null;
     const nomRef = platData.nom || platData.title || "";
-    const slug = platData.nom
-  ? uniqueSlug(slugify(platData.nom), plats, plats[index].id)
-  : plats[index].slug;
+    const slug = nomRef
+      ? uniqueSlug(slugify(nomRef), plats, plats[index].id)
+      : plats[index].slug;
     const updatedPlat = { ...plats[index], ...platData, id: plats[index].id, slug };
     plats[index] = updatedPlat;
     data.plats = plats;

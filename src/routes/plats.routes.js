@@ -91,7 +91,8 @@ router.post('/', auth, validatePlat, async (req, res) => {
         await clearPlatsCache();
         res.status(201).json(newPlat);
     } catch (err) {
-        res.status(400).json({ error: 'Données invalides' });
+        console.error('Erreur POST /plats :', err);
+        res.status(500).json({ error: 'Erreur serveur', details: err.message });
     }
 });
 
@@ -102,7 +103,8 @@ router.put('/:id', auth, async (req, res) => {
         if (!updatedPlat) return res.status(404).json({ error: 'Plat non trouvé' });
         res.json(updatedPlat);
     } catch (err) {
-        res.status(400).json({ error: 'Données invalides' });
+        console.error('Erreur PUT /plats :', err);
+        res.status(500).json({ error: 'Erreur serveur', details: err.message });
     }
 });
 
