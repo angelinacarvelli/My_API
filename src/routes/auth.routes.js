@@ -5,14 +5,12 @@ const { createUser, findUserByUsername, validatePassword } = require('../service
 const router = express.Router();
 const JWT_SECRET = process.env.JWT_SECRET;
 if (!JWT_SECRET) {
-throw new Error('La variable JWT_SECRET est obligatoire dans le fichier .env');
+    throw new Error('La variable JWT_SECRET est obligatoire dans le fichier .env');
 }
 
-
-const REDIRECT_URI = process.env.CALLBACK_URL || 'https:recettedumonde.webhop.me/api/auth/google/callback';
+const REDIRECT_URI = process.env.CALLBACK_URL || 'https://recettedumonde.webhop.me/api/auth/google/callback';
 
 router.get('/google', (req, res) => {
-    console.log("CLIENT ID UTILISÉ :", process.env.GOOGLE_CLIENT_ID);
     const rootUrl = 'https://accounts.google.com/o/oauth2/v2/auth';
     
     const options = {
@@ -75,16 +73,18 @@ router.get('/google/callback', async (req, res, next) => {
             { expiresIn: '24h' }
         );
 
-    return res.send(`
-        <html>
-            <body>
-                <script>
-                    localStorage.setItem('token', "${token}");
-                    window.location.href = '/catalogue.html';
-                </script>
-            </body>
-        </html>
-    `);
+        return res.send(`
+            <html>
+                <body>
+                    <script>
+                        localStorage.setItem('token', "${token}");
+                        // Nettoyage de l'URL pour ne pas y laisser traîner d'informations sensibles (consigne 7.6)
+                        history.replaceState(null, '', window.location.pathname);
+                        window.location.href = '/catalogue.html';
+                    </script>
+                </body>
+            </html>
+        `);
 
     } catch (error) {
         next(error);
